@@ -146,17 +146,60 @@ cd code/federated
 
 Then:
 ```bash
-uv run python generate_experiments.py
+uv run python generate_experiments.py --just BPI_Challenge_2013_open_problems
 run-all-experiments experiment-specs/split-miner.yml
 ```
 
 Both paths are relative to the current directory, so the specifications are
 written to `code/federated/experiment-specs` and read back from there.
 
-The specifications cover both SMPC primitives of the paper, the semi-honest
-`replicated-ring` and the maliciously secure `sy-rep-ring`, over three
-organizations. A full run over all ten event logs takes days rather than hours,
-and BPIC 11, BPIC 18, and BPIC 19 are excluded from the malicious setting.
+`--just` restricts the run to one event log, and BPIC 13 Open Problems is the
+smallest of the ten: 2,351 events over 3 activities, against 1.6 million over 42
+for BPIC 19. It exercises the whole pipeline, from the merge of the three
+partial logs to the pooled collaboration model, and took about 7 seconds under
+`replicated-ring` and 19 under `sy-rep-ring` on the machine we tried it on.
+
+**Do not drop the flag unless you mean it.** Without it every one of the ten
+logs is run under both primitives, which takes days rather than hours and needs
+far more memory than the small logs do -- MP-SPDZ compiles a circuit whose size
+grows with the number of events and activities, so the large logs can exhaust a
+workstation. Add logs one at a time, e.g.
+
+```bash
+uv run python generate_experiments.py --just sepsis_by_department
+```
+
+and see `--help` for the names.
+
+### Getting the results out
+
+Inside the container, a run writes, relative to `code/federated`:
+
+| | |
+|---|---|
+| `evaluation-reports/split-miner/computation-<timestamp>.json` | one computation report per run; the input to `plot-eval.py` |
+| `model_output/bpmn/` | the discovered collaboration, as `.bpmn` and `.svg` |
+| `logs/<timestamp>.tar.zst` | the compressed run logs |
+| `tables/split-miner/`, `figures/` | written by `plot-eval.py` from the reports |
+
+The `docker run` above passes `--rm`, so all of that is discarded when the
+container exits. To keep it, name the container instead and copy what you want
+out afterwards:
+
+```bash
+docker run -it --name fsm-run --init --cap-add=NET_ADMIN --cap-add=SYS_ADMIN     --security-opt apparmor=unconfined federated-split-miner
+# ... run the evaluation inside, then exit the shell ...
+docker cp fsm-run:/artifact/code/federated/evaluation-reports .
+docker cp fsm-run:/artifact/code/federated/model_output .
+docker rm fsm-run
+```
+
+Placing the reports under `experiment-results/evaluation-reports` of a checkout
+is what lets `code/federated/plot-eval.py` regenerate the runtime tables of the
+paper from them. The specifications cover both SMPC primitives of
+the paper, the semi-honest `replicated-ring` and the maliciously secure
+`sy-rep-ring`, over three organizations; BPIC 11, BPIC 18, and BPIC 19 are
+excluded from the malicious setting.
 
 ## Protocol names
 
