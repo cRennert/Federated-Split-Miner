@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+
+# populated by a secure evaluation run
+experiment-results/evaluation-reports/*
+!experiment-results/evaluation-reports/.gitkeep
+
+# IDE settings
+.idea/
+
+# assembled from its parts by experiment-inputs/assemble_logs.py
+experiment-inputs/original-logs/BPI_Challenge_2018.xes.gz
+*.partial

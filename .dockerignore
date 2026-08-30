@@ -1,0 +1,8 @@
+.git
+.venv
+.idea
+__pycache__
+*.pyc
+mp-spdz
+code/federated/temp
+experiment-results/evaluation-reports
