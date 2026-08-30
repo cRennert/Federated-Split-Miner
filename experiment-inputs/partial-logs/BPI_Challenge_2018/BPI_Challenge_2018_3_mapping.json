@@ -1,0 +1,166 @@
+{
+  "log": "BPI_Challenge_2018",
+  "P": 3,
+  "seed": 20260824,
+  "activities": 41,
+  "labels_per_organization": [
+    20,
+    15,
+    24
+  ],
+  "repaired_empty_organizations": [],
+  "events": 2514266,
+  "events_per_organization": [
+    820965,
+    489318,
+    1203983
+  ],
+  "traces_per_organization": [
+    43809,
+    43809,
+    43809
+  ],
+  "mapping": {
+    "abort external": [
+      0
+    ],
+    "abort payment": [
+      0
+    ],
+    "approve": [
+      0
+    ],
+    "begin admissibility check": [
+      0
+    ],
+    "begin editing": [
+      2
+    ],
+    "begin editing from refused": [
+      2
+    ],
+    "begin payment": [
+      1
+    ],
+    "begin preparations": [
+      0
+    ],
+    "calculate": [
+      0
+    ],
+    "calculate protocol": [
+      2
+    ],
+    "cancel offline": [
+      0,
+      2
+    ],
+    "change department": [
+      0
+    ],
+    "check": [
+      0,
+      1,
+      2
+    ],
+    "check admissibility": [
+      1,
+      2
+    ],
+    "clear": [
+      0,
+      2
+    ],
+    "correction GFM17": [
+      2
+    ],
+    "create": [
+      0,
+      2
+    ],
+    "decide": [
+      0
+    ],
+    "discard": [
+      0
+    ],
+    "finish editing": [
+      1,
+      2
+    ],
+    "finish payment": [
+      1
+    ],
+    "finish pre-check": [
+      1
+    ],
+    "finish preparations": [
+      1
+    ],
+    "initialize": [
+      2
+    ],
+    "insert document": [
+      2
+    ],
+    "mail income": [
+      0,
+      2
+    ],
+    "mail valid": [
+      2
+    ],
+    "performed": [
+      1
+    ],
+    "performed offline": [
+      0
+    ],
+    "plan": [
+      0,
+      1,
+      2
+    ],
+    "prepare external": [
+      1
+    ],
+    "prepare offline": [
+      1,
+      2
+    ],
+    "refuse": [
+      0,
+      1,
+      2
+    ],
+    "remove document": [
+      1,
+      2
+    ],
+    "restart editing": [
+      2
+    ],
+    "revoke approval": [
+      1
+    ],
+    "revoke decision": [
+      0,
+      2
+    ],
+    "revoke withdrawal": [
+      2
+    ],
+    "save": [
+      0,
+      2
+    ],
+    "take original document": [
+      2
+    ],
+    "withdraw": [
+      0,
+      1,
+      2
+    ]
+  }
+}

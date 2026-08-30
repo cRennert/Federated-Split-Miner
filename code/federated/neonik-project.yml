@@ -1,0 +1,53 @@
+components:
+  - identifier: "split-miner"
+    properties:
+      - identifier: "event-log"
+        description: "Name of the event log to mine (expects data/<name>/<name>_<n-parties>_<i>.xes.gz)."
+        type: text
+
+      - identifier: "timestamp-bit-size"
+        description: "The bit-length of the (hashed) timestamps."
+        type: integer
+
+      - identifier: "case-id-bit-size"
+        description: "The bit-length of the (hashed) case IDs."
+        type: integer
+
+      - identifier: "repetitions"
+        description: "How often the computation is repeated within a single SMPC run (to average out batching effects)."
+        type: integer
+
+      - identifier: "epsilon"
+        description: "Concurrency-detection threshold in [0.0, 1.0]. Lower values require (a,b) and (b,a) to be more balanced to detect concurrency."
+        type: decimal
+
+      - identifier: "eta"
+        description: "Frequency-filtering threshold in [0.0, 1.0]: the share of behavior the filtering removes, as in the original Split Miner, whose default of 0.4 this is. 0.0 selects the smallest of the per-node best edge frequencies as the cutoff and thus keeps every edge, 1.0 selects the largest and keeps the fewest."
+        type: decimal
+
+      - identifier: "use-split"
+        description: "Whether the UseSplit comparison optimization should be enabled (not compatible with every primitive)."
+        type: choice
+        possible-choices:
+          - identifier: "True"
+            description: "Yes"
+          - identifier: "False"
+            description: "No"
+
+      - identifier: "validate-inputs"
+        description: "Whether the input values are checked to be well formed. Required against malicious clients, since the ABB constrains how inputs are processed but not what they are; unnecessary overhead in the semi-honest setting."
+        type: choice
+        possible-choices:
+          - identifier: "True"
+            description: "Yes"
+          - identifier: "False"
+            description: "No"
+
+      - identifier: "fixed-event-order"
+        description: "Whether the ordering of activities is fixed across runs, i.e., events with identical timestamps get a deterministic ordering."
+        type: choice
+        possible-choices:
+          - identifier: "True"
+            description: "Yes"
+          - identifier: "False"
+            description: "No"

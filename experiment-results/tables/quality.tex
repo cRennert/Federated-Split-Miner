@@ -1,0 +1,35 @@
+\begin{table}[ht!]
+    \caption{Alignment-based fitness (\emph{f}), ETC-precision (\emph{p}), and their
+    harmonic mean (\emph{F\textsubscript{1}}) of the discovered models.
+    \emph{SM 1.0} is the original Split Miner, \emph{FSM (original)} our
+    federated Split Miner applied to the original event data, \emph{FSM (federated)} to the federated event data, and \emph{IMd} the Inductive Miner directly-follows at
+    three noise thresholds. A dash marks a measurement that the conformance checker
+    did not return, either because it exceeded the time limit or because it failed.}
+    \label{split-miner:tab:quality}
+    \centering
+    \resizebox{\linewidth}{!}{\begin{tabular}{lrrrrrrrrrrrrrrrrrr}
+        \toprule
+        & \multicolumn{3}{c}{SM~1.0} & \multicolumn{3}{c}{FSM (original)}
+        & \multicolumn{3}{c}{FSM (federated)} & \multicolumn{3}{c}{IMd $\tau=0$}
+        & \multicolumn{3}{c}{IMd $\tau=0.1$} & \multicolumn{3}{c}{IMd $\tau=0.2$} \\
+        \cmidrule(lr){2-4}\cmidrule(lr){5-7}\cmidrule(lr){8-10}\cmidrule(lr){11-13}\cmidrule(lr){14-16}\cmidrule(lr){17-19}
+        Event log & \emph{f} & \emph{p} & \emph{F\textsubscript{1}}
+        & \emph{f} & \emph{p} & \emph{F\textsubscript{1}}
+        & \emph{f} & \emph{p} & \emph{F\textsubscript{1}}
+        & \emph{f} & \emph{p} & \emph{F\textsubscript{1}}
+        & \emph{f} & \emph{p} & \emph{F\textsubscript{1}}
+        & \emph{f} & \emph{p} & \emph{F\textsubscript{1}} \\
+        \midrule
+        BPIC 11: Hospital Log & 1.000 & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- \\
+        BPIC 12: Loan applications & 0.823 & 0.611 & 0.702 & 0.961 & 0.520 & 0.675 & 0.951 & 0.544 & 0.692 & 1.000 & 0.175 & 0.298 & --- & --- & --- & 0.996 & 0.544 & 0.704 \\
+        BPIC 13: Open Problems & 0.811 & 0.768 & 0.789 & 0.939 & 0.959 & 0.948 & 0.939 & 0.959 & 0.948 & 0.977 & 0.716 & 0.826 & 0.977 & 0.724 & 0.832 & 0.977 & 0.712 & 0.824 \\
+        BPIC 13: Closed Problems & 0.941 & 0.930 & 0.936 & 0.988 & 0.871 & 0.926 & 0.988 & 0.871 & 0.926 & 1.000 & 0.709 & 0.830 & 0.993 & 0.876 & 0.931 & 0.993 & 0.876 & 0.931 \\
+        BPIC 13: Incidents & 0.913 & 0.949 & 0.931 & 0.977 & 0.874 & 0.923 & 0.977 & 0.874 & 0.923 & 1.000 & 0.705 & 0.827 & 0.993 & 0.683 & 0.810 & 0.993 & 0.686 & 0.811 \\
+        BPIC 17: Offer log & 0.980 & 1.000 & 0.990 & 0.980 & 1.000 & 0.990 & 0.980 & 1.000 & 0.990 & 1.000 & 0.955 & 0.977 & 1.000 & 0.955 & 0.977 & 1.000 & 0.955 & 0.977 \\
+        BPIC 18: Payment process & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- \\
+        BPIC 19: Purchase order handling & 1.000 & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- & --- \\
+        Sepsis Cases & 0.729 & 0.802 & 0.763 & 0.764 & 0.710 & 0.736 & --- & --- & --- & --- & --- & --- & 0.991 & 0.320 & 0.484 & 0.900 & 0.311 & 0.462 \\
+        Road Traffic Fines & 0.993 & 1.000 & 0.996 & 0.996 & 0.958 & 0.977 & 0.996 & 0.958 & 0.977 & 1.000 & 0.502 & 0.669 & 0.854 & 0.903 & 0.878 & 0.854 & 0.903 & 0.878 \\
+        \bottomrule
+    \end{tabular}}
+\end{table}

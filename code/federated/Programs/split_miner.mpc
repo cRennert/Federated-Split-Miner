@@ -1,0 +1,95 @@
+# I have outsourced the DFG protocol into it's own file not only because that's usually required at a certain scale,
+# but also because VSCode's Autocompletion works better with dependency files due to the need to explicetly import
+# MP-SPDZ types (which does not work in .mpc files).
+from Dependencies.split_miner import discover_bpmn
+from Dependencies.utils.timers import TimersEnabled, Timer
+from fractions import Fraction
+import json
+
+
+def run():
+    # Force recompilation counter: 2
+
+    # program.use_edabit(True)
+
+    # Prevent compilation timeouts.
+    program.unlimited_compilation()
+
+    case_id_bitsize = int("NEON_CASE_ID_BITSIZE")
+    timestamp_bitsize = int("NEON_TIMESTAMP_BITSIZE")
+    repetitions = int("NEON_REPETITIONS")
+    number_of_event_types = int("NEON_NUMBER_OF_EVENT_TYPES")
+    numb_of_organizations = int("NEON_NUMBER_OF_ORGANIZATIONS")
+    activities = json.loads('NEON_ACTIVITIES')
+    # Parsed as exact decimal rationals rather than floats. Both thresholds only
+    # ever appear inside a comparison that is cleared of its division by scaling
+    # with the denominator, so an exact fraction removes the rounding a float (or
+    # a fixed-point encoding) would introduce right at the threshold. The
+    # denominator is then whatever precision was actually written -- 10 for "0.4",
+    # 100 for "0.05" -- which also keeps the scaled operands small.
+    epsilon = Fraction("NEON_EPSILON")
+    eta = Fraction("NEON_ETA")
+
+    number_of_events_per_party = json.loads("NEON_NUMBER_OF_EVENTS")
+    sum_of_events = json.loads("NEON_SUM_OF_EVENTS")
+    validate_inputs = "NEON_VALIDATE_INPUTS" == "True"
+
+    # In some settings, we can use faster comparisons.
+    if "NEON_USE_SPLIT" == "True":
+        program.use_split(3)
+
+    with Timer("init"):
+        # TODO: Use "sint.get_input_from()" with vectors, or "public_input" and MP-SPDZ loops for large inputs.
+        # Case ID, Event ID, Timestamp
+        client_inputs = sint.Matrix(rows=sum_of_events, columns=3)
+        pos = 0
+        for i, size in enumerate(number_of_events_per_party):
+            complete_party_inputs = sint.get_input_from(player=i, size=3 * size)
+            client_inputs.assign_part_vector(complete_party_inputs, base=pos)
+            pos += size
+        organizations = sint.Array(sum_of_events)
+        pos = 0
+        for i, size in enumerate(number_of_events_per_party):
+            organizations.assign(sint(i, size=size), base=pos)
+            pos += size
+
+        # Case ID, Event ID, Timestamp, Organization
+        inputs = sint.Matrix(rows=sum_of_events, columns=4)
+        for column in range(3):
+            inputs.set_column(column, client_inputs.get_column(column))
+        inputs.set_column(3, organizations[:])
+
+    # We want to "repeat" the protocol multiple times within a single run to "average out" the effects of batched operations
+    # such as multiplication triplet generation.
+    @for_range(repetitions)
+    def repetition(i: cint) -> None:
+        print_ln(f"Repetitions %s/{repetitions}", i + 1)
+
+        with Timer("loop-pre"):
+            print("Empty pre-loop")  # Required for timer to appear.
+
+        with Timer("main"):
+            dfg = discover_bpmn(
+                inputs,
+                number_of_event_types,
+                numb_of_organizations,
+                case_id_bitsize,
+                timestamp_bitsize,
+                epsilon,
+                eta,
+                False,
+                activities,
+                validate_inputs,
+                # batcher_sort,
+                # combined_sort,
+            )
+
+        with Timer("loop-post"):
+            for row in dfg.reveal():
+                print_ln("%s", row)
+
+
+with TimersEnabled():
+    with Timer("eval"):
+        run()
+        Timer.pretty_print_timer_ids()

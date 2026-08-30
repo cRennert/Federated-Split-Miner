@@ -1,0 +1,49 @@
+{
+  "log": "BPIC17_Offer_log",
+  "P": 3,
+  "seed": 20260824,
+  "activities": 8,
+  "labels_per_organization": [
+    1,
+    3,
+    4
+  ],
+  "repaired_empty_organizations": [],
+  "events": 193849,
+  "events_per_organization": [
+    20898,
+    87397,
+    85554
+  ],
+  "traces_per_organization": [
+    20898,
+    42995,
+    42995
+  ],
+  "mapping": {
+    "O_Accepted": [
+      2
+    ],
+    "O_Cancelled": [
+      0
+    ],
+    "O_Create Offer": [
+      1
+    ],
+    "O_Created": [
+      2
+    ],
+    "O_Refused": [
+      1
+    ],
+    "O_Returned": [
+      2
+    ],
+    "O_Sent (mail and online)": [
+      1
+    ],
+    "O_Sent (online only)": [
+      2
+    ]
+  }
+}

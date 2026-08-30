@@ -1,0 +1,101 @@
+{
+  "algorithm": "Federated Split Miner",
+  "input": "three partial logs",
+  "parameters": {
+    "epsilon": 0.1,
+    "eta": 0.4
+  },
+  "model_file": "FederatedSplitMiner_federated.apnml",
+  "results": [
+    {
+      "log": "BPIC 11: Hospital Log",
+      "log_file": "Hospital_log.xes.gz",
+      "fitness": null,
+      "precision": null,
+      "f1": null,
+      "status": "failed",
+      "measured_in": "base"
+    },
+    {
+      "log": "BPIC 12: Loan applications",
+      "log_file": "BPI_Challenge_2012.xes.gz",
+      "fitness": 0.9510930419871244,
+      "precision": 0.5440077782532711,
+      "f1": 0.692129929539291,
+      "status": "measured",
+      "measured_in": "federated-split-miner re-measurement"
+    },
+    {
+      "log": "BPIC 13: Open Problems",
+      "log_file": "BPI_Challenge_2013_open_problems.xes.gz",
+      "fitness": 0.9385776921491207,
+      "precision": 0.9585550900237799,
+      "f1": 0.9484612069818918,
+      "status": "measured",
+      "measured_in": "federated-split-miner re-measurement"
+    },
+    {
+      "log": "BPIC 13: Closed Problems",
+      "log_file": "BPI_Challenge_2013_closed_problems.xes.gz",
+      "fitness": 0.9880978038499545,
+      "precision": 0.8705435651478817,
+      "f1": 0.9256031843756223,
+      "status": "measured",
+      "measured_in": "federated-split-miner re-measurement"
+    },
+    {
+      "log": "BPIC 13: Incidents",
+      "log_file": "BPI_Challenge_2013_incidents.xes.gz",
+      "fitness": 0.9769377378875743,
+      "precision": 0.8741823762754118,
+      "f1": 0.9227080907884198,
+      "status": "measured",
+      "measured_in": "federated-split-miner re-measurement"
+    },
+    {
+      "log": "BPIC 17: Offer log",
+      "log_file": "BPIC17 - Offer log.xes.gz",
+      "fitness": 0.9803136023568632,
+      "precision": 1.0,
+      "f1": 0.9900589494412868,
+      "status": "measured",
+      "measured_in": "federated-split-miner re-measurement"
+    },
+    {
+      "log": "BPIC 18: Payment process",
+      "log_file": "BPI_Challenge_2018.xes.gz",
+      "fitness": null,
+      "precision": null,
+      "f1": null,
+      "status": "timeout",
+      "measured_in": "federated-split-miner re-measurement"
+    },
+    {
+      "log": "BPIC 19: Purchase order handling",
+      "log_file": "BPI_Challenge_2019.xes.gz",
+      "fitness": null,
+      "precision": null,
+      "f1": null,
+      "status": "timeout",
+      "measured_in": "federated-split-miner re-measurement"
+    },
+    {
+      "log": "Sepsis Cases",
+      "log_file": "Sepsis Cases.xes.gz",
+      "fitness": null,
+      "precision": null,
+      "f1": null,
+      "status": "timeout",
+      "measured_in": "federated-split-miner re-measurement"
+    },
+    {
+      "log": "Road Traffic Fines",
+      "log_file": "road_traffic_fine_management.xes.gz",
+      "fitness": 0.9959116933582585,
+      "precision": 0.9582857399671628,
+      "f1": 0.9767364931881409,
+      "status": "measured",
+      "measured_in": "federated-split-miner re-measurement"
+    }
+  ]
+}

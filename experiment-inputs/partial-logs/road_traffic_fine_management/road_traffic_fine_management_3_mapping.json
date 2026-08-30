@@ -1,0 +1,66 @@
+{
+  "log": "road_traffic_fine_management",
+  "P": 3,
+  "seed": 20260824,
+  "activities": 11,
+  "labels_per_organization": [
+    6,
+    6,
+    7
+  ],
+  "repaired_empty_organizations": [],
+  "events": 561470,
+  "events_per_organization": [
+    63748,
+    126735,
+    370987
+  ],
+  "traces_per_organization": [
+    51315,
+    103987,
+    150370
+  ],
+  "mapping": {
+    "Add penalty": [
+      2
+    ],
+    "Appeal to Judge": [
+      0,
+      1
+    ],
+    "Create Fine": [
+      2
+    ],
+    "Insert Date Appeal to Prefecture": [
+      0,
+      1,
+      2
+    ],
+    "Insert Fine Notification": [
+      0,
+      2
+    ],
+    "Notify Result Appeal to Offender": [
+      0,
+      1
+    ],
+    "Payment": [
+      2
+    ],
+    "Receive Result Appeal from Prefecture": [
+      1
+    ],
+    "Send Appeal to Prefecture": [
+      0,
+      2
+    ],
+    "Send Fine": [
+      1
+    ],
+    "Send for Credit Collection": [
+      0,
+      1,
+      2
+    ]
+  }
+}

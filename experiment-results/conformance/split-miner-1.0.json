@@ -1,0 +1,101 @@
+{
+  "algorithm": "Split Miner 1.0",
+  "input": "original log",
+  "parameters": {
+    "epsilon": 0.1,
+    "eta": 0.4
+  },
+  "model_file": "SplitMiner1.0.apnml",
+  "results": [
+    {
+      "log": "BPIC 11: Hospital Log",
+      "log_file": "Hospital_log.xes.gz",
+      "fitness": 1.0,
+      "precision": null,
+      "f1": null,
+      "status": "undefined",
+      "measured_in": "base"
+    },
+    {
+      "log": "BPIC 12: Loan applications",
+      "log_file": "BPI_Challenge_2012.xes.gz",
+      "fitness": 0.8232611091960312,
+      "precision": 0.6113226772560839,
+      "f1": 0.7016365166083381,
+      "status": "measured",
+      "measured_in": "base"
+    },
+    {
+      "log": "BPIC 13: Open Problems",
+      "log_file": "BPI_Challenge_2013_open_problems.xes.gz",
+      "fitness": 0.8109472402512695,
+      "precision": 0.7680265654648957,
+      "f1": 0.788903554256146,
+      "status": "measured",
+      "measured_in": "base"
+    },
+    {
+      "log": "BPIC 13: Closed Problems",
+      "log_file": "BPI_Challenge_2013_closed_problems.xes.gz",
+      "fitness": 0.9410443907164181,
+      "precision": 0.9302867801352297,
+      "f1": 0.9356346646066714,
+      "status": "measured",
+      "measured_in": "base"
+    },
+    {
+      "log": "BPIC 13: Incidents",
+      "log_file": "BPI_Challenge_2013_incidents.xes.gz",
+      "fitness": 0.9130466597198764,
+      "precision": 0.948936587784446,
+      "f1": 0.9306457326335902,
+      "status": "measured",
+      "measured_in": "base"
+    },
+    {
+      "log": "BPIC 17: Offer log",
+      "log_file": "BPIC17 - Offer log.xes.gz",
+      "fitness": 0.9803136023568632,
+      "precision": 1.0,
+      "f1": 0.9900589494412868,
+      "status": "measured",
+      "measured_in": "base"
+    },
+    {
+      "log": "BPIC 18: Payment process",
+      "log_file": "BPI_Challenge_2018.xes.gz",
+      "fitness": null,
+      "precision": null,
+      "f1": null,
+      "status": "failed",
+      "measured_in": "base"
+    },
+    {
+      "log": "BPIC 19: Purchase order handling",
+      "log_file": "BPI_Challenge_2019.xes.gz",
+      "fitness": 1.0,
+      "precision": null,
+      "f1": null,
+      "status": "undefined",
+      "measured_in": "base"
+    },
+    {
+      "log": "Sepsis Cases",
+      "log_file": "Sepsis Cases.xes.gz",
+      "fitness": 0.7285786620451433,
+      "precision": 0.8018238945513066,
+      "f1": 0.7634485159084349,
+      "status": "measured",
+      "measured_in": "base"
+    },
+    {
+      "log": "Road Traffic Fines",
+      "log_file": "road_traffic_fine_management.xes.gz",
+      "fitness": 0.9926783348470853,
+      "precision": 0.999905893467715,
+      "f1": 0.9962790061535144,
+      "status": "measured",
+      "measured_in": "base"
+    }
+  ]
+}

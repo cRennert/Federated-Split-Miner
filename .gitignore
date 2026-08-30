@@ -12,3 +12,7 @@ experiment-results/evaluation-reports/*
 # assembled from its parts by experiment-inputs/assemble_logs.py
 experiment-inputs/original-logs/BPI_Challenge_2018.xes.gz
 *.partial
+
+# development and CI environment; the reviewer image is the root Dockerfile
+code/federated/.devcontainer/
+code/federated/Dockerfile

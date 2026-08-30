@@ -1,0 +1,166 @@
+{
+  "log": "BPI_Challenge_2019",
+  "P": 3,
+  "seed": 20260824,
+  "activities": 42,
+  "labels_per_organization": [
+    16,
+    19,
+    22
+  ],
+  "repaired_empty_organizations": [],
+  "events": 1595923,
+  "events_per_organization": [
+    430302,
+    733584,
+    432037
+  ],
+  "traces_per_organization": [
+    219577,
+    251734,
+    241675
+  ],
+  "mapping": {
+    "Block Purchase Order Item": [
+      0,
+      2
+    ],
+    "Cancel Goods Receipt": [
+      0,
+      1,
+      2
+    ],
+    "Cancel Invoice Receipt": [
+      0
+    ],
+    "Cancel Subsequent Invoice": [
+      1
+    ],
+    "Change Approval for Purchase Order": [
+      0,
+      1,
+      2
+    ],
+    "Change Currency": [
+      2
+    ],
+    "Change Delivery Indicator": [
+      1
+    ],
+    "Change Final Invoice Indicator": [
+      1
+    ],
+    "Change Price": [
+      2
+    ],
+    "Change Quantity": [
+      1
+    ],
+    "Change Rejection Indicator": [
+      2
+    ],
+    "Change Storage Location": [
+      0,
+      2
+    ],
+    "Change payment term": [
+      1,
+      2
+    ],
+    "Clear Invoice": [
+      1
+    ],
+    "Create Purchase Order Item": [
+      1
+    ],
+    "Create Purchase Requisition Item": [
+      0,
+      1
+    ],
+    "Delete Purchase Order Item": [
+      1,
+      2
+    ],
+    "Reactivate Purchase Order Item": [
+      0
+    ],
+    "Receive Order Confirmation": [
+      2
+    ],
+    "Record Goods Receipt": [
+      2
+    ],
+    "Record Invoice Receipt": [
+      1
+    ],
+    "Record Service Entry Sheet": [
+      0
+    ],
+    "Record Subsequent Invoice": [
+      1,
+      2
+    ],
+    "Release Purchase Order": [
+      0,
+      1
+    ],
+    "Release Purchase Requisition": [
+      1
+    ],
+    "Remove Payment Block": [
+      2
+    ],
+    "SRM: Awaiting Approval": [
+      0
+    ],
+    "SRM: Change was Transmitted": [
+      0
+    ],
+    "SRM: Complete": [
+      1,
+      2
+    ],
+    "SRM: Created": [
+      2
+    ],
+    "SRM: Deleted": [
+      0
+    ],
+    "SRM: Document Completed": [
+      2
+    ],
+    "SRM: Held": [
+      1
+    ],
+    "SRM: In Transfer to Execution Syst.": [
+      2
+    ],
+    "SRM: Incomplete": [
+      2
+    ],
+    "SRM: Ordered": [
+      2
+    ],
+    "SRM: Transaction Completed": [
+      0,
+      1,
+      2
+    ],
+    "SRM: Transfer Failed (E.Sys.)": [
+      2
+    ],
+    "Set Payment Block": [
+      0,
+      1
+    ],
+    "Update Order Confirmation": [
+      2
+    ],
+    "Vendor creates debit memo": [
+      0
+    ],
+    "Vendor creates invoice": [
+      0
+    ]
+  }
+}

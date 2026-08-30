@@ -1,0 +1,2226 @@
+{
+  "log": "Hospital_log",
+  "P": 3,
+  "seed": 20260824,
+  "activities": 624,
+  "labels_per_organization": [
+    326,
+    305,
+    322
+  ],
+  "repaired_empty_organizations": [],
+  "events": 150291,
+  "events_per_organization": [
+    62265,
+    28084,
+    59942
+  ],
+  "traces_per_organization": [
+    849,
+    1071,
+    1129
+  ],
+  "mapping": {
+    "1-25-oh2-vitamine d mbv hplc": [
+      0
+    ],
+    "17-hydroxyprogesteron mbv ria": [
+      1,
+      2
+    ],
+    "190021 klinische opname a002": [
+      0,
+      1,
+      2
+    ],
+    "190034 afwezigheidsdag  a006": [
+      1
+    ],
+    "190035 dagverpleging    a007": [
+      0,
+      1
+    ],
+    "190055 zware dagverpleging a009": [
+      1,
+      2
+    ],
+    "190101 bovenreg.toesl.  a101": [
+      0
+    ],
+    "190204 klasse 3a        a204": [
+      1,
+      2
+    ],
+    "190205 klasse 3b        a205": [
+      0
+    ],
+    "1e consult      bezoek": [
+      1
+    ],
+    "1e consult poliklinisch": [
+      1
+    ],
+    "339849d toegangschir- c.v.d.-catheter v.": [
+      0,
+      1,
+      2
+    ],
+    "aanname laboratoriumonderzoek": [
+      2
+    ],
+    "abortus     - overige technieken": [
+      0
+    ],
+    "acth mbv radioisotopen": [
+      0,
+      2
+    ],
+    "actuele ph - pco2 - stand.bicarbonaat": [
+      0
+    ],
+    "administratief tarief       - eerste pol": [
+      1,
+      2
+    ],
+    "afereseplasma gesplitst fq1 en fq2": [
+      2
+    ],
+    "albumine": [
+      1
+    ],
+    "albumine - spoed": [
+      2
+    ],
+    "albumineratio": [
+      1
+    ],
+    "alfa amylase - spoed": [
+      0,
+      2
+    ],
+    "alfa-1-foetoproteine": [
+      1,
+      2
+    ],
+    "alfa-amylase": [
+      1,
+      2
+    ],
+    "alkalische fosfatase - kinetisch - spoed": [
+      1,
+      2
+    ],
+    "alkalische fosfatase -kinetisch-": [
+      0
+    ],
+    "aluminium": [
+      0
+    ],
+    "ammoniak": [
+      0
+    ],
+    "ammoniak - spoed": [
+      0,
+      1,
+      2
+    ],
+    "amylase": [
+      0,
+      1
+    ],
+    "analgesie   - epiduraal door anesthesist": [
+      2
+    ],
+    "anesthesie  - bij behandeling met radium": [
+      1,
+      2
+    ],
+    "anesthesie  - bij spec.onderz.en verr.ge": [
+      1
+    ],
+    "anesthesie  - bij vervoer beademde patie": [
+      0,
+      1,
+      2
+    ],
+    "anesthesie  - epiduraal met bloedpatch": [
+      2
+    ],
+    "anti-chlamydia iga mbv elisa": [
+      0,
+      2
+    ],
+    "anti-chlamydia igg mbv ind.ift": [
+      2
+    ],
+    "anti-cytomegalovirus ig of igg -elisa": [
+      0,
+      1,
+      2
+    ],
+    "anti-epstein-barr na igg mbv elisa": [
+      0
+    ],
+    "anti-epstein-barr vca igg mbv elisa": [
+      1
+    ],
+    "anti-epstein-barr vca igm mbv elisa": [
+      1
+    ],
+    "anti-hav ig of igg-elisa of ria- in een": [
+      1
+    ],
+    "anti-hepatitis-c-virus mbv elisa": [
+      0,
+      2
+    ],
+    "anti-hiv mbv elisa": [
+      2
+    ],
+    "anti-parvovirus -ig of igg antist. ind.": [
+      1
+    ],
+    "anti-parvovirus igm mbv ind.ift": [
+      0,
+      1
+    ],
+    "anti-rubella igg -elisa - in een monster": [
+      0
+    ],
+    "anti-rubella igm -elisa": [
+      0,
+      1
+    ],
+    "anticoagulans lupus mbv elisa": [
+      1,
+      2
+    ],
+    "antigeendetectie - direct preparaat - hs": [
+      2
+    ],
+    "antigeendetectie - direct preparaat - vz": [
+      1
+    ],
+    "antigeendetectie mbv ift -influenza-a": [
+      2
+    ],
+    "antigeendetectie mbv ift -influenza-b": [
+      0,
+      2
+    ],
+    "antinucleaire factor -anf-": [
+      1
+    ],
+    "antist. specifiek mbv elisa histonen of": [
+      0,
+      1,
+      2
+    ],
+    "antist. tegen acetylcholinereceptoren": [
+      1
+    ],
+    "antist. tegen hiv-e of hiv-c": [
+      1,
+      2
+    ],
+    "antist.tegen hepatitis-b surface antigee": [
+      0,
+      1
+    ],
+    "antistoffen tegen erys - specificiteit -": [
+      0
+    ],
+    "antitrombine iii mbv chromogeen-n-substr": [
+      0
+    ],
+    "arterie     - punctie tbv.verblijfsnaald": [
+      0
+    ],
+    "aspect supernatant": [
+      1,
+      2
+    ],
+    "bacteriologisch onderzoek met kweek -nie": [
+      0,
+      1,
+      2
+    ],
+    "beademing - anesthesie - eerste dag": [
+      1
+    ],
+    "beademing - anesthesie - tweede t-m vijf": [
+      0
+    ],
+    "behandelen  - in hyperpressietank": [
+      0,
+      1
+    ],
+    "behandeltijd - eenheid t1 - megavolt": [
+      0
+    ],
+    "behandeltijd - eenheid t2 - megavolt": [
+      0,
+      1,
+      2
+    ],
+    "behandeltijd - eenheid t3 - megavolt": [
+      1
+    ],
+    "behandeltijd - eenheid t4 - megavolt": [
+      0
+    ],
+    "bekken": [
+      1
+    ],
+    "bekken - liggend": [
+      0,
+      2
+    ],
+    "bekken - staand": [
+      0
+    ],
+    "bepaling antist. hepatitis-be-antigeen": [
+      0,
+      1,
+      2
+    ],
+    "bepaling hepatitis-be-antigeen": [
+      0,
+      1,
+      2
+    ],
+    "betasubunit bep. mbv. ria hcg": [
+      1
+    ],
+    "bezinkingssnelheid foto-elektrisch": [
+      0
+    ],
+    "bicarbonaat": [
+      0,
+      1,
+      2
+    ],
+    "bilirubine - totaal": [
+      0,
+      1,
+      2
+    ],
+    "bilirubine -geconjugeerd": [
+      0,
+      2
+    ],
+    "bilirubine kwantitatief totaal of direct": [
+      0,
+      1
+    ],
+    "blaas       - bladder wash-out": [
+      0
+    ],
+    "blaas       - catheter a demeure - inbre": [
+      0,
+      1
+    ],
+    "blaas       - cystoscopie": [
+      0,
+      1,
+      2
+    ],
+    "blaas       - cystoscopie met biopsie": [
+      0,
+      1
+    ],
+    "blaas       - suprapubische katheter inb": [
+      0,
+      1
+    ],
+    "blaas       - uretrocystoscopie nno": [
+      1,
+      2
+    ],
+    "blaas       - voorste en achterste exent": [
+      0
+    ],
+    "bloedgroep abo en rhesusfactor": [
+      2
+    ],
+    "bloedgroepantigenen andere dan abo-rhesu": [
+      0,
+      2
+    ],
+    "bloedgroepbep. anders dan abo per bloedg": [
+      1
+    ],
+    "bloedgroepbepaling anders dan abo  kidd": [
+      2
+    ],
+    "bloedstollingsfactor ix - coagulatie": [
+      1
+    ],
+    "bloedstollingsfactor v - kwantitatief -": [
+      1,
+      2
+    ],
+    "bloedstollingsfactor vii - coagulatie": [
+      2
+    ],
+    "bloedstollingsfactor xi - activiteit": [
+      0
+    ],
+    "bloedstollingsfactor xii - activiteit": [
+      2
+    ],
+    "bot - densitometrie femurhals": [
+      2
+    ],
+    "bot - densitometrie lwk": [
+      1
+    ],
+    "bovenarm": [
+      2
+    ],
+    "bovenbeen": [
+      2
+    ],
+    "brachytherapie - interstitieel - bijzond": [
+      0
+    ],
+    "brachytherapie - interstitieel - intensi": [
+      1,
+      2
+    ],
+    "brain natriuretic peptide -bnp- mbv immu": [
+      0,
+      2
+    ],
+    "bronchus    - bronch.toilet door verpl.-": [
+      0,
+      2
+    ],
+    "buffy coat": [
+      0,
+      2
+    ],
+    "buik        - adhesiolyse en biopsie dmv": [
+      0
+    ],
+    "buik        - excisie patholog.afwijking": [
+      1,
+      2
+    ],
+    "buik        - laparoscopie - diagnostisc": [
+      0,
+      1
+    ],
+    "buik        - littekenbreuk - plastische": [
+      2
+    ],
+    "buik        - omentumplastiek": [
+      0
+    ],
+    "buik        - primaire stageringsoperati": [
+      0,
+      1
+    ],
+    "buik        - proeflaparotomie": [
+      0,
+      1,
+      2
+    ],
+    "buik        - punctie ascites ontlastend": [
+      0,
+      1,
+      2
+    ],
+    "buik        - second-look-oper.ovariumca": [
+      0
+    ],
+    "buik        - second-look-oper.stagering": [
+      1,
+      2
+    ],
+    "buik        - stag.lap-tumorred.-omentec": [
+      0,
+      2
+    ],
+    "buik        - stag.laparotom.-omentect.-": [
+      1
+    ],
+    "buik        - stageringslaparotom.-oment": [
+      0,
+      2
+    ],
+    "buikoverzicht": [
+      0,
+      2
+    ],
+    "buikoverzicht - op zaal": [
+      0
+    ],
+    "buikoverzicht - staand": [
+      0,
+      2
+    ],
+    "ca 15.3 - tumormarker mbv meia": [
+      1
+    ],
+    "ca-125 mbv meia": [
+      2
+    ],
+    "ca-19.9 tumormarker": [
+      1
+    ],
+    "calcium": [
+      0
+    ],
+    "calcium - spoed": [
+      1,
+      2
+    ],
+    "cbr -coxsackie-b-900-virus": [
+      2
+    ],
+    "cde fenotypering": [
+      2
+    ],
+    "cea - tumormarker mbv meia": [
+      1
+    ],
+    "cefalinetijd - coagulatie": [
+      0,
+      2
+    ],
+    "celkweek en isolatie": [
+      2
+    ],
+    "cervix      - conisatie": [
+      2
+    ],
+    "cervix      - curettage": [
+      2
+    ],
+    "cervix      - lisexcisie portio - diathe": [
+      0
+    ],
+    "cervix      - portio - lasercoagulatie": [
+      0
+    ],
+    "chloride": [
+      0
+    ],
+    "chloride - spoed": [
+      0,
+      1,
+      2
+    ],
+    "chloride -ionselectief-": [
+      2
+    ],
+    "cholesterol hdl": [
+      1
+    ],
+    "cholesterol totaal": [
+      0
+    ],
+    "cito histologisch onderzoek": [
+      0,
+      2
+    ],
+    "clostridium elisa-test": [
+      0,
+      1,
+      2
+    ],
+    "co-hb kwn.": [
+      0,
+      1
+    ],
+    "colon inloop": [
+      0,
+      1
+    ],
+    "complementcomponent c3 kwn.": [
+      0
+    ],
+    "complementcomponent c4 kwn .": [
+      0,
+      1,
+      2
+    ],
+    "complementdeficientie ond.bij afwezigh.a": [
+      0,
+      2
+    ],
+    "cortisol": [
+      0
+    ],
+    "cortisol immunofluorimetrisch": [
+      2
+    ],
+    "coupe ter inzage": [
+      2
+    ],
+    "creatine fosfokinase isoenzym ckmb": [
+      2
+    ],
+    "creatine fosfokinase mb - spoed": [
+      2
+    ],
+    "creatinefosfokinase -kinetisch-": [
+      1
+    ],
+    "creatinine": [
+      2
+    ],
+    "creatinine - spoed": [
+      0,
+      2
+    ],
+    "crp c-reactief proteine": [
+      0,
+      1
+    ],
+    "crp c-reactief proteine - spoed": [
+      2
+    ],
+    "ct a.pulmonalis": [
+      2
+    ],
+    "ct abdomen": [
+      0,
+      2
+    ],
+    "ct art. en ven.pulmonales": [
+      2
+    ],
+    "ct arterien hersenen": [
+      1
+    ],
+    "ct bekken": [
+      0,
+      1,
+      2
+    ],
+    "ct bovenbuik": [
+      2
+    ],
+    "ct hals": [
+      1
+    ],
+    "ct hersenen": [
+      0
+    ],
+    "ct knie": [
+      2
+    ],
+    "ct lever en galwegen": [
+      0,
+      1
+    ],
+    "ct nier": [
+      0,
+      1
+    ],
+    "ct pancreas en milt": [
+      2
+    ],
+    "ct retroperitoneum": [
+      1
+    ],
+    "ct thorax": [
+      0,
+      1,
+      2
+    ],
+    "ct totale lichaam": [
+      0
+    ],
+    "ct wervelkolom - lumbaal": [
+      0,
+      1,
+      2
+    ],
+    "ct-gel. als ass. bij punctie - biopsie i": [
+      0,
+      2
+    ],
+    "cvvhd       --continue veno-veneuze hemo": [
+      0
+    ],
+    "cystografie retrograad": [
+      2
+    ],
+    "cytologisch onderzoek - ascites -": [
+      0,
+      1
+    ],
+    "cytologisch onderzoek - buiktumorpunctie": [
+      0,
+      1,
+      2
+    ],
+    "cytologisch onderzoek - diversen -": [
+      0,
+      2
+    ],
+    "cytologisch onderzoek - ectocervix -": [
+      0
+    ],
+    "cytologisch onderzoek - endocervix -": [
+      1,
+      2
+    ],
+    "cytologisch onderzoek - hersenen -": [
+      0
+    ],
+    "cytologisch onderzoek - leverpunctie -": [
+      2
+    ],
+    "cytologisch onderzoek - liquor cerebrosp": [
+      0
+    ],
+    "cytologisch onderzoek - lymfeklierpuncti": [
+      0
+    ],
+    "cytologisch onderzoek - nierpunctie -": [
+      1
+    ],
+    "cytologisch onderzoek - pancreaspunctie": [
+      1
+    ],
+    "cytologisch onderzoek - pleuravocht -": [
+      2
+    ],
+    "cytologisch onderzoek - schildklier  pun": [
+      0,
+      1,
+      2
+    ],
+    "cytologisch onderzoek - urine niercyste": [
+      0,
+      1,
+      2
+    ],
+    "cytologisch onderzoek - vagina -": [
+      1
+    ],
+    "cytologisch onderzoek - vulva -": [
+      0
+    ],
+    "cytologisch onderzoek tbv bevolkingsonde": [
+      0,
+      1
+    ],
+    "cytostatica - infuustherapie": [
+      0
+    ],
+    "dagverpleging - alle spec.beh.kind.-rev.": [
+      0,
+      1
+    ],
+    "darm        - katheteriseren stoma": [
+      2
+    ],
+    "darm - colonpassage scint.comp.statisch": [
+      1,
+      2
+    ],
+    "darm - colonpassage scint.comp.vervolg": [
+      2
+    ],
+    "delta-4-androsteendion": [
+      0,
+      1,
+      2
+    ],
+    "determinatie en orient. typering -dmv ce": [
+      0
+    ],
+    "dhea-sulfaat met extractie mbv ria": [
+      0
+    ],
+    "diagnostische punctie onder echocontrole": [
+      0,
+      1,
+      2
+    ],
+    "dieet nno": [
+      1
+    ],
+    "differentiatie leukocyten - handmatig": [
+      0
+    ],
+    "differentiele telling automatisch": [
+      1
+    ],
+    "digoxine": [
+      2
+    ],
+    "dikke darm  - appendectomie acuut via me": [
+      1
+    ],
+    "dikke darm  - appendectomie nno": [
+      0
+    ],
+    "dikke darm  - colonoscopie met biopsie": [
+      2
+    ],
+    "dikke darm  - resectie sigmoid met prima": [
+      2
+    ],
+    "dikke darm  - sigmoidoscopie met flexibe": [
+      0,
+      1
+    ],
+    "direct ondz. naar rs-virus antigeen mbv": [
+      0
+    ],
+    "directe antiglobulinetest - coombs": [
+      1
+    ],
+    "dna - farr-assay mbv ria": [
+      0
+    ],
+    "doorlichting bij niersteenvergruizing": [
+      0
+    ],
+    "doorlichting zonder opname buik": [
+      1,
+      2
+    ],
+    "doorlichting zonder opname thorax": [
+      1
+    ],
+    "doxorubicine liposomal --caelyx--": [
+      1
+    ],
+    "drainageprocedure onder rontgencontrole": [
+      0
+    ],
+    "dunne darm  - mech.ileus-adhes.streng.-i": [
+      2
+    ],
+    "duodenum    - inbrengen voedingssonde in": [
+      0,
+      1
+    ],
+    "duodenum    - oesofagogastroduodenoscopi": [
+      0,
+      1,
+      2
+    ],
+    "duplexscan - venen been": [
+      1
+    ],
+    "e.c.g.      - elektrocardiografie": [
+      1,
+      2
+    ],
+    "e.m.g.      - elektromyografisch onderzo": [
+      1
+    ],
+    "echo abdomen": [
+      1,
+      2
+    ],
+    "echo arteriae carotis dextra": [
+      1
+    ],
+    "echo arteriae carotis sinistra": [
+      2
+    ],
+    "echo been": [
+      1
+    ],
+    "echo bekken inhoud muv anatomiecode 83 t": [
+      1,
+      2
+    ],
+    "echo bovenbeen": [
+      0,
+      2
+    ],
+    "echo bovenbuik": [
+      0,
+      2
+    ],
+    "echo buikwand": [
+      2
+    ],
+    "echo en rontgen als ass. bij drainage ab": [
+      0,
+      1,
+      2
+    ],
+    "echo hals --waaronder schildklier--": [
+      1
+    ],
+    "echo mamma": [
+      0,
+      2
+    ],
+    "echo nier": [
+      2
+    ],
+    "echo nieren-urinewegen": [
+      1
+    ],
+    "echo onderbuik": [
+      0,
+      1,
+      2
+    ],
+    "echo pancreas en milt": [
+      0
+    ],
+    "echo pleura": [
+      0
+    ],
+    "echo schouder - m-z bovenarm": [
+      2
+    ],
+    "echo thorax": [
+      2
+    ],
+    "echo tractus urogenitalis-bekken": [
+      0,
+      1
+    ],
+    "echogeleide als ass. bij drainage intrap": [
+      0,
+      1,
+      2
+    ],
+    "echogeleide als ass. bij punctie abdomen": [
+      0,
+      1,
+      2
+    ],
+    "echogeleide als ass. bij punctie-biopsie": [
+      0,
+      1
+    ],
+    "echogeleide als ass.bij punctie-biopsie": [
+      1,
+      2
+    ],
+    "echografie  - blaas - extern": [
+      1
+    ],
+    "echografie  - genitalia interna": [
+      0,
+      1
+    ],
+    "echografie  - transuretraal prostaat": [
+      0,
+      1,
+      2
+    ],
+    "echografie a vue ivm zwangerschap - rout": [
+      0,
+      2
+    ],
+    "echografie a vue ivw zwangerschap - met": [
+      2
+    ],
+    "echografie-doppler v.jugularis": [
+      1,
+      2
+    ],
+    "echografie-doppler vena cava inferior en": [
+      0,
+      2
+    ],
+    "echografie-doppler venen been": [
+      0,
+      2
+    ],
+    "eerste hulp - niet seh afdeling - elders": [
+      1
+    ],
+    "eiwit -colorimetrisch- totaal": [
+      1,
+      2
+    ],
+    "eiwit beperkt - mineralen beperkt": [
+      0,
+      1,
+      2
+    ],
+    "eiwitfractionering mbv ief": [
+      2
+    ],
+    "eiwitspectrum -elektroforese kwn. bep. f": [
+      0,
+      2
+    ],
+    "elutie van auto-antistoffen tegen erytro": [
+      2
+    ],
+    "endoretrograde cholangiografie": [
+      0,
+      2
+    ],
+    "enkel": [
+      1
+    ],
+    "erythrocyten tellen -electronisch- spoed": [
+      2
+    ],
+    "erytrocyten": [
+      0,
+      1,
+      2
+    ],
+    "erytrocyten leukocyten verwijderd bestra": [
+      1,
+      2
+    ],
+    "erytrocyten tellen - elektronisch": [
+      0,
+      2
+    ],
+    "ethanol -enzymatisch of gaschromatografi": [
+      0,
+      1
+    ],
+    "factor ii mutatie mbv pcr": [
+      0,
+      1,
+      2
+    ],
+    "factor v leiden -r506q- mbv dna-test": [
+      0,
+      1
+    ],
+    "fdp - dimeer - immunologisch": [
+      2
+    ],
+    "fenytoine kwantitatief": [
+      1,
+      2
+    ],
+    "ferritine kwn mbv chemieluminescentie": [
+      0
+    ],
+    "fibrinogeen": [
+      0
+    ],
+    "foliumzuur mbv radioisotopen": [
+      0
+    ],
+    "fosfaat": [
+      1
+    ],
+    "fosfaat - spoed": [
+      1
+    ],
+    "fsh enzym-immunologisch": [
+      0,
+      1,
+      2
+    ],
+    "gamma glutamyltranspeptidase - spoed": [
+      0,
+      1
+    ],
+    "gammaglutamyltranspeptidase": [
+      2
+    ],
+    "geb. antistoffen tegen erys - dir. coomb": [
+      0
+    ],
+    "geb. antistoffen tegen erys - dir.coombs": [
+      0
+    ],
+    "gefiltreerd erytrocytenconcentraat": [
+      1
+    ],
+    "gemcitabine": [
+      2
+    ],
+    "gentamycine kwn - immuno-assay": [
+      2
+    ],
+    "gipskamer-ok - gebruik": [
+      1
+    ],
+    "glucose": [
+      0,
+      1
+    ],
+    "glucose - spoed": [
+      1
+    ],
+    "glucosebepaling -kwantitatief -": [
+      0
+    ],
+    "haemoglobine foto-electrisch - spoed": [
+      0
+    ],
+    "haptoglobine": [
+      2
+    ],
+    "hart        - doppler echocardiografie 2": [
+      2
+    ],
+    "hart        - resuscitatie": [
+      1,
+      2
+    ],
+    "hart - functie gated bloodpool rust": [
+      0,
+      1,
+      2
+    ],
+    "hele bovenbeen met onderbeen en voet": [
+      1
+    ],
+    "hematocriet - spoed": [
+      0
+    ],
+    "hematocriet mbv centrifuge": [
+      0,
+      2
+    ],
+    "hematologie - ontstek.scint.tot.lichaam": [
+      2
+    ],
+    "hemoglobine a1": [
+      1,
+      2
+    ],
+    "hemoglobine foto-elektrisch": [
+      1,
+      2
+    ],
+    "hemoglobinen -abnormaal incl. hba2": [
+      0
+    ],
+    "heparine anti-xa": [
+      1,
+      2
+    ],
+    "heparinebepaling - kaoline - cefalinetij": [
+      0
+    ],
+    "hepatitis-b surface antigeen confirmatie": [
+      2
+    ],
+    "hepatitis-b-anti-core igm": [
+      0,
+      2
+    ],
+    "hepatitis-c-virus roche -hcvr- mbv pcr": [
+      0,
+      2
+    ],
+    "heup": [
+      0,
+      2
+    ],
+    "high sensitive crp -hscrp- nefelometrisc": [
+      1
+    ],
+    "histologisch onderzoek - biopten nno": [
+      0,
+      2
+    ],
+    "histologisch onderzoek - grote resectiep": [
+      1,
+      2
+    ],
+    "histologisch onderzoek - kleine resectie": [
+      1,
+      2
+    ],
+    "homocystine chromatografisch": [
+      0,
+      1
+    ],
+    "hoogfrequente audiometrie - audiologisch": [
+      1,
+      2
+    ],
+    "huid        - transcutane po2 en pco2 me": [
+      0
+    ],
+    "huid        - verwijderen retentie cyste": [
+      1
+    ],
+    "huidplastiek- z-plastiek huid hoofd en h": [
+      0,
+      1
+    ],
+    "humaan metapneumovirus kwl. mbv dna-rna-": [
+      0,
+      1
+    ],
+    "hyperthermie": [
+      0,
+      1
+    ],
+    "hyperthermie behandeling - h-1 -": [
+      0,
+      1
+    ],
+    "ident. irregulaire a.s. tegen erys na po": [
+      0,
+      1,
+      2
+    ],
+    "igg anticardiolipine mbv elisa": [
+      0
+    ],
+    "igg antistoffen tegen heparine-pf4-compl": [
+      0,
+      2
+    ],
+    "igg-index": [
+      1
+    ],
+    "igm anticardiolipine mbv elisa": [
+      2
+    ],
+    "igm-as. tegen cmv virus": [
+      0,
+      2
+    ],
+    "ijzer": [
+      0,
+      1,
+      2
+    ],
+    "immuno-elektroforese liquor na concentra": [
+      2
+    ],
+    "immunofixatie": [
+      0,
+      1,
+      2
+    ],
+    "immunoforese na concentratie": [
+      2
+    ],
+    "immunoglobuline a                    iga": [
+      1
+    ],
+    "immunoglobuline g                    igg": [
+      2
+    ],
+    "immunoglobuline m                    igm": [
+      1
+    ],
+    "immunopathologisch onderzoek": [
+      2
+    ],
+    "inbrengen voedings- of lavagesonde duode": [
+      0,
+      1
+    ],
+    "infuus      - bloed": [
+      0,
+      1
+    ],
+    "infuus      - inbrengen": [
+      2
+    ],
+    "intensive care ligdag - 1e tot en met 5e": [
+      0,
+      1
+    ],
+    "intensive care ligdag - 6e tot en met 14": [
+      0,
+      2
+    ],
+    "interc.consult klinisch  anesthesie": [
+      0,
+      2
+    ],
+    "interc.consult klinisch  chirurgie": [
+      0,
+      1
+    ],
+    "interc.consult klinisch  interne ziekten": [
+      0,
+      2
+    ],
+    "interc.consult klinisch  longziekten": [
+      1,
+      2
+    ],
+    "interc.consult klinisch  neurologie": [
+      1
+    ],
+    "interc.consult klinisch  radiotherapie": [
+      0
+    ],
+    "interc.consult klinisch  reumatologie": [
+      0
+    ],
+    "interc.consult klinisch  urologie": [
+      0
+    ],
+    "interc.consult poliklinisch": [
+      0,
+      1
+    ],
+    "interc.consult vervolg klinisch  anesthe": [
+      0
+    ],
+    "interc.consult vervolg klinisch  chirurg": [
+      0,
+      1
+    ],
+    "interc.consult vervolg klinisch  interne": [
+      0
+    ],
+    "international normalised ratio mbv tromb": [
+      1
+    ],
+    "inwend.geneesk.    jaarkaart kosten-out": [
+      2
+    ],
+    "inwend.geneesk.   aanv.kaart kosten-out": [
+      0,
+      1
+    ],
+    "inwend.geneesk.  korte kaart kosten-out": [
+      0,
+      1
+    ],
+    "itraconazol mbv hplc": [
+      0
+    ],
+    "kalium potentiometrisch": [
+      1,
+      2
+    ],
+    "kalium vlamfotometrisch": [
+      2
+    ],
+    "kalium vlamfotometrisch - spoed": [
+      0,
+      1,
+      2
+    ],
+    "kleurproef sabin-feldman - leishmania": [
+      0,
+      2
+    ],
+    "klinisch tarief": [
+      0,
+      1,
+      2
+    ],
+    "klinische kaart - anesthesie": [
+      0,
+      1
+    ],
+    "klinische kaart - inwendige geneeskunde": [
+      1
+    ],
+    "klinische kaart - verloskunde en gynaeco": [
+      1
+    ],
+    "knie - m-z onderbeen": [
+      0,
+      1
+    ],
+    "kreatinine fosfokinase - spoed": [
+      0,
+      1,
+      2
+    ],
+    "kruisproef volledig -drie methoden-": [
+      0
+    ],
+    "legionella antigeen sneltest": [
+      0
+    ],
+    "leucocyten tellen -electronisch- spoed": [
+      2
+    ],
+    "leukocyten tellen elektronisch": [
+      0,
+      1
+    ],
+    "lever       - excisie tumor of metastase": [
+      2
+    ],
+    "lh mbv radioisotopen": [
+      0
+    ],
+    "ligase chain reaction -lcr-": [
+      0,
+      2
+    ],
+    "ligdagen - alle spec.beh.kinderg.-reval.": [
+      0
+    ],
+    "lipase": [
+      0,
+      2
+    ],
+    "lithium": [
+      2
+    ],
+    "lithium - spoed": [
+      0,
+      1,
+      2
+    ],
+    "longfunctie - co2 - capnografie": [
+      0,
+      2
+    ],
+    "longfunctie - spirometrie": [
+      0
+    ],
+    "longfunctie - stroomvolume curve": [
+      2
+    ],
+    "lymf.syst.  - lymfadenectomie dmv laparo": [
+      0,
+      1,
+      2
+    ],
+    "lymf.syst.  - lymfeklierextirpatie para-": [
+      1
+    ],
+    "lymf.syst.  - lymfekliertoilet diep - li": [
+      2
+    ],
+    "lymf.syst.  - regionale lymfeklierdissec": [
+      0,
+      1
+    ],
+    "lymf.syst.  - sentinel node procedure li": [
+      0,
+      1
+    ],
+    "lymf.syst.  - stageringslymfadenectomie": [
+      2
+    ],
+    "lymfeklier - scint sentinel node dynamis": [
+      1
+    ],
+    "lymfeklier - scint sentinel node met pro": [
+      1
+    ],
+    "lymfeklier - scint sentinel node vervolg": [
+      1,
+      2
+    ],
+    "maag - ontledig.-scint vast-vloeib.voeds": [
+      0,
+      1
+    ],
+    "magnesium  -aas": [
+      0,
+      2
+    ],
+    "magnesium  -aas - spoed": [
+      1
+    ],
+    "mammografie thoraxwand": [
+      0,
+      2
+    ],
+    "mandibula-kaakgewricht": [
+      2
+    ],
+    "mec-a-bepaling voor mrsa mbv pcr": [
+      1
+    ],
+    "melkzuur dehydrogenase - spoed": [
+      2
+    ],
+    "melkzuur enzymatisch": [
+      1
+    ],
+    "melkzuur enzymatisch - spoed": [
+      0
+    ],
+    "melkzuurdehydrogenase -ldh- kinetisch": [
+      0
+    ],
+    "methemoglobine - sulfhemoglobine elk": [
+      0,
+      1
+    ],
+    "microalbumine immunonefelometrisch": [
+      1
+    ],
+    "microscopisch onderzoek  - elektronenmic": [
+      1
+    ],
+    "microscopisch onderzoek - gekleurd en on": [
+      1
+    ],
+    "mictie-cysto-uretrografie": [
+      1
+    ],
+    "morfometrie": [
+      0,
+      1
+    ],
+    "mri abdomen": [
+      2
+    ],
+    "mri art. en ven.abdomen": [
+      0
+    ],
+    "mri bekken": [
+      1,
+      2
+    ],
+    "mri bijnier": [
+      0
+    ],
+    "mri grote hersenen": [
+      2
+    ],
+    "mri heup": [
+      1
+    ],
+    "mri orbita": [
+      0,
+      2
+    ],
+    "mri tractus urogenitalis": [
+      2
+    ],
+    "mri wervelkolom - cervicaal": [
+      1
+    ],
+    "mri wervelkolom - lumbaal": [
+      0,
+      1
+    ],
+    "mri wervelkolom - thoracaal": [
+      0
+    ],
+    "mycobacterium mbv pcr": [
+      0
+    ],
+    "natrium - vlamfotometrisch - spoed": [
+      0,
+      1,
+      2
+    ],
+    "natrium vlamfotometrisch": [
+      0,
+      2
+    ],
+    "natrium vlamfotometrisch - spoed": [
+      0,
+      1
+    ],
+    "neuronspecifiek enolase": [
+      1,
+      2
+    ],
+    "nieren - renografie lasix": [
+      0,
+      2
+    ],
+    "niet declarabele dagverpleging-bv klin.p": [
+      0,
+      1
+    ],
+    "nucleair onderzoek van elders": [
+      2
+    ],
+    "o2-saturatie": [
+      2
+    ],
+    "obductie": [
+      1,
+      2
+    ],
+    "occult bloed - kwalitatief-": [
+      1
+    ],
+    "oesofagografie - oraal": [
+      1
+    ],
+    "oestradiol mbv radioisotopen -ria": [
+      2
+    ],
+    "oestron mbv radioisotopen": [
+      0,
+      1
+    ],
+    "onderbeen": [
+      0
+    ],
+    "onderz. naar aanwezigheid van koude anti": [
+      0,
+      1
+    ],
+    "onderzoek dunne darm m-z duodenum": [
+      2
+    ],
+    "onderzoek van elders niet beoordeeld": [
+      0,
+      1,
+      2
+    ],
+    "onderzoek via percutane veneuze katheter": [
+      1
+    ],
+    "opname volgens barsonie": [
+      0
+    ],
+    "opspuiten hickman-katheter": [
+      1
+    ],
+    "ordertarief": [
+      0,
+      2
+    ],
+    "orthopantomogram 'panoramixopname' gebit": [
+      2
+    ],
+    "osmolaliteit": [
+      0
+    ],
+    "osmolaliteit - spoed": [
+      2
+    ],
+    "ovarium     - adnex-extirpatie dmv lapar": [
+      0
+    ],
+    "ovarium     - debulking ovariumcarcinoom": [
+      1
+    ],
+    "ovarium     - excisie cyste via laparosc": [
+      0,
+      1
+    ],
+    "ovarium     - ovariopexie -excl.torsie-": [
+      0,
+      1,
+      2
+    ],
+    "ovarium     - redebulking ovarium carcin": [
+      0,
+      2
+    ],
+    "paclitaxel": [
+      0,
+      1
+    ],
+    "para-influenza-1-virus mbv pcr": [
+      1,
+      2
+    ],
+    "paraproteine typering mbv monospecifieke": [
+      0,
+      1
+    ],
+    "parathormoon mbv radioisotopen": [
+      1
+    ],
+    "partiele gebitsstatus": [
+      0,
+      2
+    ],
+    "partus      - klin.of poliklin.met voorb": [
+      2
+    ],
+    "patient niet verschenen ngiv- no show -": [
+      2
+    ],
+    "patient niet verschenen radiologie": [
+      0
+    ],
+    "patienten kontakt audiologie korter dan": [
+      2
+    ],
+    "perif.vaten - doppler-onderz.oppervl.ven": [
+      0,
+      1,
+      2
+    ],
+    "perif.vaten - duplexonderzoek - veneus": [
+      1
+    ],
+    "perif.vaten - duplexscan arterieel cruro": [
+      2
+    ],
+    "perif.vaten - inbrengen port-a-cath syst": [
+      1
+    ],
+    "perif.vaten - verwijderen port-a-cath": [
+      0
+    ],
+    "peritoneum  - omentectomie": [
+      0
+    ],
+    "ph-meting": [
+      1
+    ],
+    "pijnbestrijd- aanleggen patient controll": [
+      1
+    ],
+    "plaatsen van v.cava filter": [
+      1
+    ],
+    "pleura      - punctie - diagnostisch": [
+      0,
+      1
+    ],
+    "progesteron mbv radioisotopen": [
+      0
+    ],
+    "prolactine mbv eia": [
+      2
+    ],
+    "prostaatspecifiek antigeen -psa- mbv imm": [
+      0,
+      2
+    ],
+    "proteine-c-activiteit": [
+      0,
+      2
+    ],
+    "proteine-s-antigeen -totaal": [
+      2
+    ],
+    "proteine-s-antigeen -vrij": [
+      0,
+      1
+    ],
+    "protrombinetijd": [
+      2
+    ],
+    "protrombinetijd -quick owren of modif.-": [
+      0,
+      1,
+      2
+    ],
+    "punctie cyste tumor ed. door radioloog o": [
+      2
+    ],
+    "punctie tbv cytologisch onderzoek door p": [
+      0
+    ],
+    "pyelografie --wo niertransplantaat--": [
+      1
+    ],
+    "pyelografie antegraad via drain": [
+      1
+    ],
+    "pyelografie antegraad via punctie": [
+      0
+    ],
+    "pyelografie retrograad": [
+      0,
+      1
+    ],
+    "resistentiebepalingen - 5 bepalingen": [
+      1,
+      2
+    ],
+    "reticulocyten tellen mbv facscan": [
+      0
+    ],
+    "rhesusfactor d - centrifugeermethode - e": [
+      0,
+      2
+    ],
+    "rib-sternum": [
+      1
+    ],
+    "rituximab": [
+      1,
+      2
+    ],
+    "ro-gel. als ass. bij drainage nier-nefro": [
+      2
+    ],
+    "ro-gel. als ass. bij inbrengen endoproth": [
+      2
+    ],
+    "ro-gel. als ass. bij punctie - biopsie l": [
+      2
+    ],
+    "ro-gel. als ass. bij punktie - biopsie t": [
+      2
+    ],
+    "rontgenonderzoek onvolledig": [
+      2
+    ],
+    "sacrum-os coccygis-s.i.gewrichten": [
+      0,
+      1
+    ],
+    "schoudergewricht": [
+      0
+    ],
+    "screening antistoffen erytrocyten": [
+      0
+    ],
+    "sect.caesar.- met voorbehandeling en kra": [
+      0
+    ],
+    "sediment": [
+      0,
+      2
+    ],
+    "sediment - spoed": [
+      2
+    ],
+    "sex-hormone-binding globuline mbv ria": [
+      0,
+      1
+    ],
+    "sgot - asat kinetisch": [
+      0,
+      1,
+      2
+    ],
+    "sgot asat kinetisch - spoed": [
+      0,
+      2
+    ],
+    "sgpt - alat kinetisch": [
+      0,
+      1
+    ],
+    "sgpt alat kinetisch - spoed": [
+      2
+    ],
+    "sikkelcel": [
+      0
+    ],
+    "simulator - gebruik voor aanvang megavol": [
+      0,
+      2
+    ],
+    "sinus": [
+      0
+    ],
+    "skelet - scintigrafie totale lichaam": [
+      0
+    ],
+    "spraakaudiometrie  -  standaard - audiol": [
+      2
+    ],
+    "squamous cell carcinoma mbv eia": [
+      2
+    ],
+    "standaard materiaal n.n.o.": [
+      1,
+      2
+    ],
+    "stollingsfactor - viii - activiteit": [
+      2
+    ],
+    "t3-uptake latente bindingscap. geb. tbg": [
+      2
+    ],
+    "telefonisch consult": [
+      2
+    ],
+    "teletherapie - megavolt fotonen bestrali": [
+      1,
+      2
+    ],
+    "testosteron mbv radioisotopen": [
+      2
+    ],
+    "thorax": [
+      2
+    ],
+    "thorax      - zuigdrainage behandeling a": [
+      2
+    ],
+    "thorax - op zaal": [
+      1
+    ],
+    "titratie directe antiglobulinetest - coo": [
+      0,
+      2
+    ],
+    "toegangschir- c.v.d.-katheter perifeer b": [
+      0,
+      2
+    ],
+    "toonaudiometrie - audiologisch centrum": [
+      2
+    ],
+    "totaal eiwit": [
+      1
+    ],
+    "totaal eiwit colorimetrisch - spoed": [
+      1,
+      2
+    ],
+    "totaal t3 - trijoodthyronine mbv radiois": [
+      1
+    ],
+    "totaal t4 - thyroxine immunofluorimetris": [
+      0,
+      1,
+      2
+    ],
+    "totale gebitsstatus": [
+      2
+    ],
+    "toxoplasmose mbv eia toxo-igg": [
+      0,
+      1
+    ],
+    "toxoplasmose mbv eia toxo-igm": [
+      0
+    ],
+    "transferrine mbv ics": [
+      0
+    ],
+    "triglyceriden - enzymatisch": [
+      1,
+      2
+    ],
+    "trombinetijd": [
+      2
+    ],
+    "trombocyten - leuko verwijderd - 5 donor": [
+      0
+    ],
+    "trombocyten tellen - elektronisch": [
+      0
+    ],
+    "trombocyten tellen - spoed": [
+      2
+    ],
+    "trombotest": [
+      2
+    ],
+    "troponine-t mbv elisa": [
+      2
+    ],
+    "tsh enzym-immunologisch": [
+      0,
+      1
+    ],
+    "tuba uterina- aanbrengen clips tijdens l": [
+      0,
+      1,
+      2
+    ],
+    "tuba uterina- excisie parovariale cyste": [
+      1
+    ],
+    "tuba uterina- reanastomose na sterilisat": [
+      0,
+      1,
+      2
+    ],
+    "tumor - petscan totale lichaam": [
+      0,
+      1
+    ],
+    "tympanometrie - standaard - audiologisch": [
+      1
+    ],
+    "uitsluiten irregulaire a.s. tegen erys d": [
+      1
+    ],
+    "unknown": [
+      1,
+      2
+    ],
+    "ureter - splintografie cq opspuiten uret": [
+      1,
+      2
+    ],
+    "urethra     - dilatatie meatus": [
+      0,
+      1,
+      2
+    ],
+    "ureum": [
+      0,
+      1
+    ],
+    "ureum - spoed": [
+      2
+    ],
+    "urine onderzoek - kwalitatief": [
+      2
+    ],
+    "urinewegen  - urodynamisch onderzoek-vij": [
+      0,
+      1,
+      2
+    ],
+    "urinezuur met uricase u.v. spectrofotome": [
+      0
+    ],
+    "uterus      - carc. cervix vlgs. werthei": [
+      1
+    ],
+    "uterus      - curettage - diagnostisch": [
+      1
+    ],
+    "uterus      - excisie-destructie path.af": [
+      0,
+      1
+    ],
+    "uterus      - extirp.abd.rad. - lymfaden": [
+      1,
+      2
+    ],
+    "uterus      - extirp.abd.vag.rad.- lymfa": [
+      2
+    ],
+    "uterus      - extirpatie - abdominaal me": [
+      2
+    ],
+    "uterus      - extirpatie abdom.totaal me": [
+      0,
+      1,
+      2
+    ],
+    "uterus      - extirpatie abdominaal radi": [
+      2
+    ],
+    "uterus      - extirpatie abdominaal tota": [
+      1
+    ],
+    "uterus      - extirpatie vaginaal totaal": [
+      1,
+      2
+    ],
+    "uterus      - hysteroscopie": [
+      1
+    ],
+    "uterus      - intra-uterine device inbre": [
+      0,
+      1
+    ],
+    "uterus      - tot. laparoscopische hyste": [
+      1,
+      2
+    ],
+    "vagina      - biopsie-punctie-cytologie": [
+      1
+    ],
+    "vagina      - colpocleisis lefort": [
+      0,
+      1
+    ],
+    "vagina      - extirpatie van vagina met": [
+      1,
+      2
+    ],
+    "vagina      - operatie vesicovaginale fi": [
+      0
+    ],
+    "vagina      - overige excisie pathologis": [
+      0,
+      1
+    ],
+    "vagina      - scopie excl.weefselwegname": [
+      1
+    ],
+    "vagina      - scopie incl.evt.vulvabiops": [
+      0
+    ],
+    "vagina      - tension-free vaginal tape": [
+      0,
+      1,
+      2
+    ],
+    "vagina      - toucher onder anesthesie": [
+      2
+    ],
+    "vagina      - vaginotomie": [
+      2
+    ],
+    "vancomycine kwn - immuno-assay": [
+      0,
+      1
+    ],
+    "vaten       - venapunctie": [
+      0,
+      1
+    ],
+    "ven. d.s.a. vena cava inferior": [
+      2
+    ],
+    "verlosk.-gynaec.   jaarkaart kosten-out": [
+      1,
+      2
+    ],
+    "verlosk.-gynaec.  aanv.kaart kosten-out": [
+      2
+    ],
+    "verlosk.-gynaec. korte kaart kosten-out": [
+      0,
+      1,
+      2
+    ],
+    "vervolgconsult poliklinisch": [
+      2
+    ],
+    "verwisselen van nefrostomie drain": [
+      1
+    ],
+    "vitamine a": [
+      0,
+      2
+    ],
+    "vitamine b1 - thiamine": [
+      0,
+      1,
+      2
+    ],
+    "vitamine b12 mbv chemieluminescentie": [
+      0
+    ],
+    "vitamine b2": [
+      0,
+      2
+    ],
+    "vitamine b3": [
+      2
+    ],
+    "vitamine b6": [
+      0
+    ],
+    "vitamine d3": [
+      0
+    ],
+    "vitamine e -hplc-methode": [
+      1
+    ],
+    "voet": [
+      2
+    ],
+    "von willebrand profiel mbv protease": [
+      1
+    ],
+    "vriescoupe": [
+      0
+    ],
+    "vrij t4 mbv ria -ft 4": [
+      2
+    ],
+    "vrw.gesl.org- adhesiolysis ovaria-tubae": [
+      0
+    ],
+    "vrw.gesl.org- adhesiolysis ovarium plus": [
+      0
+    ],
+    "vrw.gesl.org- adnex-extirpatie dmv lapar": [
+      0,
+      1
+    ],
+    "vrw.gesl.org- aspiratie of microcurett.-": [
+      1
+    ],
+    "vrw.gesl.org- biopsie-punctie-cytologie": [
+      1
+    ],
+    "vrw.gesl.org- curettage gefractioneerd": [
+      0
+    ],
+    "vrw.gesl.org- exc.destruct.path.afwijkin": [
+      2
+    ],
+    "vrw.gesl.org- operatie van clitoris nno": [
+      0,
+      1,
+      2
+    ],
+    "vrw.gesl.org- plastische operatie van vu": [
+      0,
+      2
+    ],
+    "vrw.gesl.org- second-look-oper.ovariumca": [
+      1
+    ],
+    "vulva       - biopsie-punctie-cytologie": [
+      0,
+      1,
+      2
+    ],
+    "vulva       - hechten van vulva": [
+      2
+    ],
+    "vulva       - incisie - overige": [
+      0
+    ],
+    "vulva       - partiele vulvectomie": [
+      0
+    ],
+    "vulva       - rad.vulvectomie - opp.en d": [
+      0,
+      1
+    ],
+    "vulva       - radicale vulvect. znd ingu": [
+      0
+    ],
+    "vulva       - ruime lokale excisie van a": [
+      0
+    ],
+    "vulva       - therapeutische punctie aan": [
+      0,
+      1,
+      2
+    ],
+    "vulva       - vulvectomie - liesblok": [
+      2
+    ],
+    "vulva       - vulvectomie zonder lieskli": [
+      0,
+      1,
+      2
+    ],
+    "wervelkolom - cervicaal": [
+      2
+    ],
+    "wervelkolom - lumbaal": [
+      0
+    ],
+    "wervelkolom - thoracaal": [
+      0
+    ],
+    "wervelkolom - thoracolumbale overgang": [
+      0,
+      1,
+      2
+    ],
+    "widal agglutinatie - yersinia 3": [
+      0
+    ],
+    "widal agglutinatie - yersinia 9": [
+      0,
+      1,
+      2
+    ],
+    "wisselen drain onder rontgencontrole": [
+      1
+    ],
+    "wormeieren - uitgebreid -vervolg-": [
+      1,
+      2
+    ],
+    "zink": [
+      0,
+      2
+    ],
+    "zwachtelverband sling - aanleggen": [
+      2
+    ],
+    "zwangerschapsreactie": [
+      2
+    ],
+    "zwangerschapsreactie - spoed": [
+      2
+    ]
+  }
+}

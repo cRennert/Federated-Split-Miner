@@ -1,0 +1,35 @@
+{
+  "log": "BPI_Challenge_2013_open_problems",
+  "P": 3,
+  "seed": 20260824,
+  "activities": 3,
+  "labels_per_organization": [
+    2,
+    1,
+    1
+  ],
+  "repaired_empty_organizations": [],
+  "events": 2351,
+  "events_per_organization": [
+    568,
+    1581,
+    202
+  ],
+  "traces_per_organization": [
+    385,
+    800,
+    196
+  ],
+  "mapping": {
+    "Accepted": [
+      1
+    ],
+    "Completed": [
+      0,
+      2
+    ],
+    "Queued": [
+      0
+    ]
+  }
+}

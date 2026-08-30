@@ -1,0 +1,42 @@
+[project]
+name = "federated-split-miner"
+version = "0.1.0"
+description = "A federated Split Miner over secure multi-party computation."
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "gmpy2>=2.3.1",
+    "neonik>=0.1.0",
+    "pm4py>=2.7.22.4",
+    "powl>=2.3.7",
+    "r4pm[polars]>=0.6.0",
+    "sympy>=1.14.0",
+]
+
+[tool.uv]
+exclude-newer = "7 days"
+exclude-newer-package = { neonik = false, r4pm = false }
+# powl hard-depends on rustxes, but only imports it lazily inside its (unused-by-us)
+# import_event_log(); we do XES import via r4pm instead. rustxes ships no musllinux wheel
+# and its pinned Cargo.lock forces ethnum 1.4.0, which no longer compiles on current rustc,
+# so building it from source on Alpine fails. The never-true marker drops it from the graph.
+# neonik pins zstd==1.5.7.2, whose cp314 wheels are published for manylinux only,
+# so installing the full stack on Windows would have to build zstd from source.
+# The one release that does ship a cp314 Windows wheel, 1.5.7.3, is yanked as
+# "buggy - not thread safe", so there is nothing to bump to; Linux is the
+# supported platform for a secure run.
+override-dependencies = [
+    "rustxes; sys_platform == 'never'",
+]
+
+[tool.uv.sources]
+# the runtime ships with this artifact, so it is resolved from the checkout
+neonik = { path = "neonik-runtime", editable = true }
+
+[dependency-groups]
+dev = [
+    "humanize>=4.15.0",
+    "rustxes>=0.2.11",
+    "seaborn>=0.13.2",
+    "tqdm>=4.67.3",
+]

@@ -1,0 +1,82 @@
+{
+  "log": "Sepsis_Cases",
+  "P": 3,
+  "seed": 20260824,
+  "activities": 16,
+  "labels_per_organization": [
+    10,
+    7,
+    8
+  ],
+  "repaired_empty_organizations": [],
+  "events": 15214,
+  "events_per_organization": [
+    6447,
+    1863,
+    6904
+  ],
+  "traces_per_organization": [
+    1050,
+    759,
+    1050
+  ],
+  "mapping": {
+    "Admission IC": [
+      1
+    ],
+    "Admission NC": [
+      0,
+      1,
+      2
+    ],
+    "CRP": [
+      2
+    ],
+    "ER Registration": [
+      2
+    ],
+    "ER Sepsis Triage": [
+      0
+    ],
+    "ER Triage": [
+      0
+    ],
+    "IV Antibiotics": [
+      0,
+      2
+    ],
+    "IV Liquid": [
+      0
+    ],
+    "LacticAcid": [
+      0
+    ],
+    "Leucocytes": [
+      0,
+      1,
+      2
+    ],
+    "Release A": [
+      2
+    ],
+    "Release B": [
+      0,
+      1
+    ],
+    "Release C": [
+      2
+    ],
+    "Release D": [
+      1,
+      2
+    ],
+    "Release E": [
+      0,
+      1
+    ],
+    "Return ER": [
+      0,
+      1
+    ]
+  }
+}

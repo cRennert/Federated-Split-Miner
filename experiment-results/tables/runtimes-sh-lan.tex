@@ -1,0 +1,21 @@
+\begin{table}[ht!]
+    \caption{Runtimes (in seconds) of the split-miner protocol stages using the \texttt{replicated-ring} primitive in the LAN setting.}
+    \label{split-miner:tab:runtime-by-stage-replicated-ring-lan}
+    \centering
+    \resizebox{\linewidth}{!}{\begin{tabular}{lrrrrrrrrrrrrrr}
+        \toprule
+        Event log & Events & $|A|$ & Input & $\algname{}{EventEncoding}$ & $\algname{}{DFG}$ & $\algname{}{SelfLoops}$ & $\algname{}{ShortLoops}$ & $\algname{}{Concurrency}$ & $\algname{}{Prune}$ & $\algname{}{Filter}$ & $\algname{}{Sanitize}$ & $\algname{}{Binning}$ & Building model & Total [s] \\
+        \midrule
+        BPIC 11: Hospital Log & 150\,291 & 624 & 0.24 & 102.68 & 1\,743.69 & 0.04 & 1\,687.06 & 2.60 & 0.51 & 298.44 & 10.57 & 5.71 & 23.94 & 3\,876.42 \\
+        BPIC 12: Loan applications & 262\,200 & 24 & 0.30 & 160.52 & 6.83 & 0.01 & 5.51 & 0.10 & 0.02 & 5.69 & 0.16 & 0.80 & 0.37 & 180.60 \\
+        BPIC 13: Open Problems & 2\,351 & 3 & 0.07 & 4.04 & 0.06 & 0.01 & 0.03 & 0.07 & 0.02 & 1.81 & 0.07 & 0.03 & 0.24 & 8.68 \\
+        BPIC 13: Closed Problems & 6\,660 & 4 & 0.08 & 6.86 & 0.12 & 0.01 & 0.06 & 0.07 & 0.02 & 2.04 & 0.09 & 0.04 & 0.25 & 11.84 \\
+        BPIC 13: Incidents & 65\,533 & 4 & 0.13 & 43.19 & 0.39 & 0.01 & 0.20 & 0.07 & 0.02 & 2.03 & 0.09 & 0.15 & 0.25 & 48.48 \\
+        BPIC 17: Offer log & 193\,849 & 8 & 0.29 & 117.63 & 1.63 & 0.01 & 0.91 & 0.08 & 0.02 & 2.60 & 0.10 & 0.41 & 0.26 & 125.21 \\
+        BPIC 18: Payment process & 2\,514\,266 & 41 & 2.21 & 1\,406.56 & 182.82 & 0.05 & 155.28 & 0.13 & 0.02 & 9.66 & 0.21 & 11.36 & 5.99 & 1\,774.55 \\
+        BPIC 19: Purchase order handling & 1\,595\,923 & 42 & 1.20 & 877.90 & 123.79 & 0.04 & 100.76 & 0.13 & 0.02 & 9.87 & 0.22 & 6.77 & 3.78 & 1\,125.06 \\
+        Sepsis Cases (by department) & 15\,214 & 16 & 0.08 & 12.07 & 0.41 & 0.01 & 0.23 & 0.09 & 0.02 & 4.03 & 0.13 & 0.07 & 0.38 & 19.64 \\
+        Road Traffic Fines & 561\,470 & 11 & 0.52 & 317.74 & 5.83 & 0.02 & 4.41 & 0.08 & 0.02 & 3.17 & 0.12 & 1.19 & 0.30 & 333.93 \\
+        \bottomrule
+    \end{tabular}}
+\end{table}

@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.signavio.com/bpmn20" typeLanguage="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.w3.org/1999/XPath">
+	<bpmn:process id="id38c5a42c-ce75-4b34-8e34-3a4a42c67363" isClosed="false" isExecutable="false" processType="None">
+		<bpmn:task id="Release E" name="Release E">
+			<bpmn:incoming>id6c84b71b-df72-46df-b1a5-08673d68edf8</bpmn:incoming>
+			<bpmn:outgoing>id3831a129-57c4-4e78-9aaf-9f30caf338da</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:task id="Release B" name="Release B">
+			<bpmn:incoming>id6df6002f-5217-40b2-a662-0f76d9df5dc3</bpmn:incoming>
+			<bpmn:outgoing>idf8364af6-f89e-4362-8c30-5be723898ce0</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:task id="IV Antibiotics" name="IV Antibiotics">
+			<bpmn:incoming>id6a0953c0-d464-45b1-ad37-f3d9752f4488</bpmn:incoming>
+			<bpmn:outgoing>id58d4714a-daae-475d-8c14-565724637c2a</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:exclusiveGateway id="Admission IC__loop_join" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>id92fdb305-e3eb-4e7a-a84b-90761d86baf6</bpmn:incoming>
+			<bpmn:incoming>id5c4baa86-7d77-4c9e-ac16-ed4c0c963b58</bpmn:incoming>
+			<bpmn:outgoing>id240dfbd4-f5a3-40be-8d7f-f45e140147bd</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:task id="Admission NC" name="Admission NC">
+			<bpmn:incoming>id3913f26d-c4f5-46e7-87ac-f47d61259295</bpmn:incoming>
+			<bpmn:outgoing>id585dad1f-a325-4cb7-90cb-ae4078049ceb</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:exclusiveGateway id="Leucocytes__loop_join" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>ida020a41b-5993-4fe6-b38b-eea479fa1a76</bpmn:incoming>
+			<bpmn:incoming>id6b8b41ae-8410-48c0-a1c1-bcc65fc51d97</bpmn:incoming>
+			<bpmn:incoming>idd39bffee-39ea-446b-99e9-bbb58089b193</bpmn:incoming>
+			<bpmn:outgoing>ide10ff634-ea9e-4470-93f3-5c7321c471ff</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:task id="Leucocytes" name="Leucocytes">
+			<bpmn:incoming>ide10ff634-ea9e-4470-93f3-5c7321c471ff</bpmn:incoming>
+			<bpmn:outgoing>id4f0e9815-7f26-4613-9605-77bb08898f6d</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:startEvent id="__start__" isInterrupting="false" name="" parallelMultiple="false">
+			<bpmn:outgoing>id27c657f9-569e-4045-9b4f-52fd2ee6734e</bpmn:outgoing>
+		</bpmn:startEvent>
+		<bpmn:task id="ER Sepsis Triage" name="ER Sepsis Triage">
+			<bpmn:incoming>id610bfe71-f2b8-4ca5-94c5-aedb9befbdb5</bpmn:incoming>
+			<bpmn:outgoing>id0dc6764e-4b87-4d80-8991-7d9938a22f32</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:exclusiveGateway id="LacticAcid__loop_join" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>id4b2df518-0993-4c4e-9105-b57370d5cdeb</bpmn:incoming>
+			<bpmn:incoming>iddc8bead4-e642-4afc-81e3-8c138a28134b</bpmn:incoming>
+			<bpmn:incoming>id12caa1d7-2d23-4667-a8cc-baac55d6c41d</bpmn:incoming>
+			<bpmn:incoming>id4f0bed22-6a1e-4a8b-8681-36b5e5b28230</bpmn:incoming>
+			<bpmn:outgoing>id87894e47-0f33-44cb-a979-0c48fc8ef146</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:exclusiveGateway id="Admission NC__loop_join" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>ide5629e7f-6063-4e50-9feb-7c805386f634</bpmn:incoming>
+			<bpmn:incoming>idf9f68746-359b-4201-8113-97a9073a931b</bpmn:incoming>
+			<bpmn:outgoing>id3913f26d-c4f5-46e7-87ac-f47d61259295</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:task id="Release D" name="Release D">
+			<bpmn:incoming>id88ec41b2-acac-45c1-ab5b-3b0b6aba3b98</bpmn:incoming>
+			<bpmn:outgoing>id51604f62-2f8e-4daf-b76d-fa0acc283309</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:task id="IV Liquid" name="IV Liquid">
+			<bpmn:incoming>id0dc6764e-4b87-4d80-8991-7d9938a22f32</bpmn:incoming>
+			<bpmn:outgoing>id6a0953c0-d464-45b1-ad37-f3d9752f4488</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:exclusiveGateway id="xor_5" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>ida0801ffc-7fbb-45cd-8a8c-9f848cb2760d</bpmn:incoming>
+			<bpmn:outgoing>id80191d30-5a8e-4b45-959b-8241e2afb898</bpmn:outgoing>
+			<bpmn:outgoing>id019d7ed9-326b-47ab-abd8-f0ff76c73231</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:task id="CRP" name="CRP">
+			<bpmn:incoming>idb8326237-91a4-4b90-8f32-67ae1b9d4bdc</bpmn:incoming>
+			<bpmn:outgoing>id1717636e-00fe-4002-8201-c06b062116f5</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:endEvent id="__end__" name="">
+			<bpmn:incoming>idc53aa8d3-cd68-4898-8d75-60da0b253791</bpmn:incoming>
+		</bpmn:endEvent>
+		<bpmn:exclusiveGateway id="LacticAcid__loop_split" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>id46467aec-badc-4747-b955-6da07cae6915</bpmn:incoming>
+			<bpmn:outgoing>id134d06fd-e1ee-49c4-9989-9edee14c9d41</bpmn:outgoing>
+			<bpmn:outgoing>id4b2df518-0993-4c4e-9105-b57370d5cdeb</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:exclusiveGateway id="xor_1" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>id58d4714a-daae-475d-8c14-565724637c2a</bpmn:incoming>
+			<bpmn:outgoing>ide5629e7f-6063-4e50-9feb-7c805386f634</bpmn:outgoing>
+			<bpmn:outgoing>id92fdb305-e3eb-4e7a-a84b-90761d86baf6</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:task id="Admission IC" name="Admission IC">
+			<bpmn:incoming>id240dfbd4-f5a3-40be-8d7f-f45e140147bd</bpmn:incoming>
+			<bpmn:outgoing>id265ad703-7064-4a34-9b41-106ff9d76e47</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:task id="Release A" name="Release A">
+			<bpmn:incoming>id753c3e9c-e11d-4eae-a84e-cc5898973594</bpmn:incoming>
+			<bpmn:outgoing>ida0801ffc-7fbb-45cd-8a8c-9f848cb2760d</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:exclusiveGateway id="Admission IC__loop_split" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>id265ad703-7064-4a34-9b41-106ff9d76e47</bpmn:incoming>
+			<bpmn:outgoing>id5c4baa86-7d77-4c9e-ac16-ed4c0c963b58</bpmn:outgoing>
+			<bpmn:outgoing>id12caa1d7-2d23-4667-a8cc-baac55d6c41d</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:exclusiveGateway id="xor_7" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>id3831a129-57c4-4e78-9aaf-9f30caf338da</bpmn:incoming>
+			<bpmn:incoming>id51604f62-2f8e-4daf-b76d-fa0acc283309</bpmn:incoming>
+			<bpmn:incoming>id48e4f507-62b9-422b-a7ea-efee6ea6ca43</bpmn:incoming>
+			<bpmn:incoming>idf8364af6-f89e-4362-8c30-5be723898ce0</bpmn:incoming>
+			<bpmn:incoming>id019d7ed9-326b-47ab-abd8-f0ff76c73231</bpmn:incoming>
+			<bpmn:incoming>id1d4ff0f5-3006-4a0c-a10c-4310992dc663</bpmn:incoming>
+			<bpmn:outgoing>idc53aa8d3-cd68-4898-8d75-60da0b253791</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:task id="LacticAcid" name="LacticAcid">
+			<bpmn:incoming>id87894e47-0f33-44cb-a979-0c48fc8ef146</bpmn:incoming>
+			<bpmn:outgoing>id46467aec-badc-4747-b955-6da07cae6915</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:exclusiveGateway id="xor_2" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>id134d06fd-e1ee-49c4-9989-9edee14c9d41</bpmn:incoming>
+			<bpmn:incoming>id8a30d7fc-eb41-46bf-bcbd-62be85391bc7</bpmn:incoming>
+			<bpmn:outgoing>idd39bffee-39ea-446b-99e9-bbb58089b193</bpmn:outgoing>
+			<bpmn:outgoing>ide7ac4f06-e5f7-45af-a36d-72fdb7986dce</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:task id="Release C" name="Release C">
+			<bpmn:incoming>idb92f3ee3-a3d0-4649-9844-c38d40901de6</bpmn:incoming>
+			<bpmn:outgoing>id48e4f507-62b9-422b-a7ea-efee6ea6ca43</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:exclusiveGateway id="Admission NC__loop_split" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>id585dad1f-a325-4cb7-90cb-ae4078049ceb</bpmn:incoming>
+			<bpmn:outgoing>id8a30d7fc-eb41-46bf-bcbd-62be85391bc7</bpmn:outgoing>
+			<bpmn:outgoing>idf9f68746-359b-4201-8113-97a9073a931b</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:task id="ER Triage" name="ER Triage">
+			<bpmn:incoming>id6f71b9c2-19d2-4ff5-936e-6f78cf94986c</bpmn:incoming>
+			<bpmn:outgoing>id610bfe71-f2b8-4ca5-94c5-aedb9befbdb5</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:exclusiveGateway id="CRP__loop_join" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>idfed4b411-1287-422d-ba7d-84e018b414ed</bpmn:incoming>
+			<bpmn:incoming>ide7ac4f06-e5f7-45af-a36d-72fdb7986dce</bpmn:incoming>
+			<bpmn:incoming>idd9f89582-46cc-47d5-95d6-01c16cc8fccf</bpmn:incoming>
+			<bpmn:outgoing>idb8326237-91a4-4b90-8f32-67ae1b9d4bdc</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:exclusiveGateway id="Leucocytes__loop_split" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>id4f0e9815-7f26-4613-9605-77bb08898f6d</bpmn:incoming>
+			<bpmn:outgoing>ida020a41b-5993-4fe6-b38b-eea479fa1a76</bpmn:outgoing>
+			<bpmn:outgoing>id4f0bed22-6a1e-4a8b-8681-36b5e5b28230</bpmn:outgoing>
+			<bpmn:outgoing>idd9f89582-46cc-47d5-95d6-01c16cc8fccf</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:exclusiveGateway id="CRP__loop_split" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>id1717636e-00fe-4002-8201-c06b062116f5</bpmn:incoming>
+			<bpmn:outgoing>idfed4b411-1287-422d-ba7d-84e018b414ed</bpmn:outgoing>
+			<bpmn:outgoing>id753c3e9c-e11d-4eae-a84e-cc5898973594</bpmn:outgoing>
+			<bpmn:outgoing>idb92f3ee3-a3d0-4649-9844-c38d40901de6</bpmn:outgoing>
+			<bpmn:outgoing>id6c84b71b-df72-46df-b1a5-08673d68edf8</bpmn:outgoing>
+			<bpmn:outgoing>id88ec41b2-acac-45c1-ab5b-3b0b6aba3b98</bpmn:outgoing>
+			<bpmn:outgoing>id6df6002f-5217-40b2-a662-0f76d9df5dc3</bpmn:outgoing>
+			<bpmn:outgoing>id6b8b41ae-8410-48c0-a1c1-bcc65fc51d97</bpmn:outgoing>
+			<bpmn:outgoing>iddc8bead4-e642-4afc-81e3-8c138a28134b</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:task id="ER Registration" name="ER Registration">
+			<bpmn:incoming>id27c657f9-569e-4045-9b4f-52fd2ee6734e</bpmn:incoming>
+			<bpmn:outgoing>id6f71b9c2-19d2-4ff5-936e-6f78cf94986c</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:task id="Return ER" name="Return ER">
+			<bpmn:incoming>id80191d30-5a8e-4b45-959b-8241e2afb898</bpmn:incoming>
+			<bpmn:outgoing>id1d4ff0f5-3006-4a0c-a10c-4310992dc663</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:sequenceFlow id="id87894e47-0f33-44cb-a979-0c48fc8ef146" name="" sourceRef="LacticAcid__loop_join" targetRef="LacticAcid"/>
+		<bpmn:sequenceFlow id="id610bfe71-f2b8-4ca5-94c5-aedb9befbdb5" name="" sourceRef="ER Triage" targetRef="ER Sepsis Triage"/>
+		<bpmn:sequenceFlow id="id6df6002f-5217-40b2-a662-0f76d9df5dc3" name="" sourceRef="CRP__loop_split" targetRef="Release B"/>
+		<bpmn:sequenceFlow id="idb92f3ee3-a3d0-4649-9844-c38d40901de6" name="" sourceRef="CRP__loop_split" targetRef="Release C"/>
+		<bpmn:sequenceFlow id="id6c84b71b-df72-46df-b1a5-08673d68edf8" name="" sourceRef="CRP__loop_split" targetRef="Release E"/>
+		<bpmn:sequenceFlow id="id8a30d7fc-eb41-46bf-bcbd-62be85391bc7" name="" sourceRef="Admission NC__loop_split" targetRef="xor_2"/>
+		<bpmn:sequenceFlow id="id134d06fd-e1ee-49c4-9989-9edee14c9d41" name="" sourceRef="LacticAcid__loop_split" targetRef="xor_2"/>
+		<bpmn:sequenceFlow id="id240dfbd4-f5a3-40be-8d7f-f45e140147bd" name="" sourceRef="Admission IC__loop_join" targetRef="Admission IC"/>
+		<bpmn:sequenceFlow id="id80191d30-5a8e-4b45-959b-8241e2afb898" name="" sourceRef="xor_5" targetRef="Return ER"/>
+		<bpmn:sequenceFlow id="ida020a41b-5993-4fe6-b38b-eea479fa1a76" name="" sourceRef="Leucocytes__loop_split" targetRef="Leucocytes__loop_join"/>
+		<bpmn:sequenceFlow id="id48e4f507-62b9-422b-a7ea-efee6ea6ca43" name="" sourceRef="Release C" targetRef="xor_7"/>
+		<bpmn:sequenceFlow id="id6f71b9c2-19d2-4ff5-936e-6f78cf94986c" name="" sourceRef="ER Registration" targetRef="ER Triage"/>
+		<bpmn:sequenceFlow id="id1d4ff0f5-3006-4a0c-a10c-4310992dc663" name="" sourceRef="Return ER" targetRef="xor_7"/>
+		<bpmn:sequenceFlow id="idf9f68746-359b-4201-8113-97a9073a931b" name="" sourceRef="Admission NC__loop_split" targetRef="Admission NC__loop_join"/>
+		<bpmn:sequenceFlow id="ida0801ffc-7fbb-45cd-8a8c-9f848cb2760d" name="" sourceRef="Release A" targetRef="xor_5"/>
+		<bpmn:sequenceFlow id="id265ad703-7064-4a34-9b41-106ff9d76e47" name="" sourceRef="Admission IC" targetRef="Admission IC__loop_split"/>
+		<bpmn:sequenceFlow id="id0dc6764e-4b87-4d80-8991-7d9938a22f32" name="" sourceRef="ER Sepsis Triage" targetRef="IV Liquid"/>
+		<bpmn:sequenceFlow id="id4f0e9815-7f26-4613-9605-77bb08898f6d" name="" sourceRef="Leucocytes" targetRef="Leucocytes__loop_split"/>
+		<bpmn:sequenceFlow id="id51604f62-2f8e-4daf-b76d-fa0acc283309" name="" sourceRef="Release D" targetRef="xor_7"/>
+		<bpmn:sequenceFlow id="idfed4b411-1287-422d-ba7d-84e018b414ed" name="" sourceRef="CRP__loop_split" targetRef="CRP__loop_join"/>
+		<bpmn:sequenceFlow id="ide10ff634-ea9e-4470-93f3-5c7321c471ff" name="" sourceRef="Leucocytes__loop_join" targetRef="Leucocytes"/>
+		<bpmn:sequenceFlow id="id019d7ed9-326b-47ab-abd8-f0ff76c73231" name="" sourceRef="xor_5" targetRef="xor_7"/>
+		<bpmn:sequenceFlow id="id12caa1d7-2d23-4667-a8cc-baac55d6c41d" name="" sourceRef="Admission IC__loop_split" targetRef="LacticAcid__loop_join"/>
+		<bpmn:sequenceFlow id="id6a0953c0-d464-45b1-ad37-f3d9752f4488" name="" sourceRef="IV Liquid" targetRef="IV Antibiotics"/>
+		<bpmn:sequenceFlow id="id4f0bed22-6a1e-4a8b-8681-36b5e5b28230" name="" sourceRef="Leucocytes__loop_split" targetRef="LacticAcid__loop_join"/>
+		<bpmn:sequenceFlow id="id1717636e-00fe-4002-8201-c06b062116f5" name="" sourceRef="CRP" targetRef="CRP__loop_split"/>
+		<bpmn:sequenceFlow id="idd9f89582-46cc-47d5-95d6-01c16cc8fccf" name="" sourceRef="Leucocytes__loop_split" targetRef="CRP__loop_join"/>
+		<bpmn:sequenceFlow id="id3831a129-57c4-4e78-9aaf-9f30caf338da" name="" sourceRef="Release E" targetRef="xor_7"/>
+		<bpmn:sequenceFlow id="iddc8bead4-e642-4afc-81e3-8c138a28134b" name="" sourceRef="CRP__loop_split" targetRef="LacticAcid__loop_join"/>
+		<bpmn:sequenceFlow id="id88ec41b2-acac-45c1-ab5b-3b0b6aba3b98" name="" sourceRef="CRP__loop_split" targetRef="Release D"/>
+		<bpmn:sequenceFlow id="idf8364af6-f89e-4362-8c30-5be723898ce0" name="" sourceRef="Release B" targetRef="xor_7"/>
+		<bpmn:sequenceFlow id="id753c3e9c-e11d-4eae-a84e-cc5898973594" name="" sourceRef="CRP__loop_split" targetRef="Release A"/>
+		<bpmn:sequenceFlow id="ide5629e7f-6063-4e50-9feb-7c805386f634" name="" sourceRef="xor_1" targetRef="Admission NC__loop_join"/>
+		<bpmn:sequenceFlow id="id4b2df518-0993-4c4e-9105-b57370d5cdeb" name="" sourceRef="LacticAcid__loop_split" targetRef="LacticAcid__loop_join"/>
+		<bpmn:sequenceFlow id="id585dad1f-a325-4cb7-90cb-ae4078049ceb" name="" sourceRef="Admission NC" targetRef="Admission NC__loop_split"/>
+		<bpmn:sequenceFlow id="idd39bffee-39ea-446b-99e9-bbb58089b193" name="" sourceRef="xor_2" targetRef="Leucocytes__loop_join"/>
+		<bpmn:sequenceFlow id="id46467aec-badc-4747-b955-6da07cae6915" name="" sourceRef="LacticAcid" targetRef="LacticAcid__loop_split"/>
+		<bpmn:sequenceFlow id="id92fdb305-e3eb-4e7a-a84b-90761d86baf6" name="" sourceRef="xor_1" targetRef="Admission IC__loop_join"/>
+		<bpmn:sequenceFlow id="id3913f26d-c4f5-46e7-87ac-f47d61259295" name="" sourceRef="Admission NC__loop_join" targetRef="Admission NC"/>
+		<bpmn:sequenceFlow id="idc53aa8d3-cd68-4898-8d75-60da0b253791" name="" sourceRef="xor_7" targetRef="__end__"/>
+		<bpmn:sequenceFlow id="id5c4baa86-7d77-4c9e-ac16-ed4c0c963b58" name="" sourceRef="Admission IC__loop_split" targetRef="Admission IC__loop_join"/>
+		<bpmn:sequenceFlow id="idb8326237-91a4-4b90-8f32-67ae1b9d4bdc" name="" sourceRef="CRP__loop_join" targetRef="CRP"/>
+		<bpmn:sequenceFlow id="id27c657f9-569e-4045-9b4f-52fd2ee6734e" name="" sourceRef="__start__" targetRef="ER Registration"/>
+		<bpmn:sequenceFlow id="id6b8b41ae-8410-48c0-a1c1-bcc65fc51d97" name="" sourceRef="CRP__loop_split" targetRef="Leucocytes__loop_join"/>
+		<bpmn:sequenceFlow id="id58d4714a-daae-475d-8c14-565724637c2a" name="" sourceRef="IV Antibiotics" targetRef="xor_1"/>
+		<bpmn:sequenceFlow id="ide7ac4f06-e5f7-45af-a36d-72fdb7986dce" name="" sourceRef="xor_2" targetRef="CRP__loop_join"/>
+	</bpmn:process>
+	<bpmndi:BPMNDiagram id="id16297e28-e1d1-499d-8032-7c79839cd92c" name="diagram">
+		<bpmndi:BPMNPlane bpmnElement="id38c5a42c-ce75-4b34-8e34-3a4a42c67363" id="ida17eca16-5c68-4142-9a03-43f63531846c">
+			<bpmndi:BPMNShape bpmnElement="Release E" id="Release E_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Release B" id="Release B_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="IV Antibiotics" id="IV Antibiotics_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Admission IC__loop_join" id="Admission IC__loop_join_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Admission NC" id="Admission NC_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Leucocytes__loop_join" id="Leucocytes__loop_join_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Leucocytes" id="Leucocytes_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="__start__" id="__start___gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="ER Sepsis Triage" id="ER Sepsis Triage_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="LacticAcid__loop_join" id="LacticAcid__loop_join_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Admission NC__loop_join" id="Admission NC__loop_join_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Release D" id="Release D_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="IV Liquid" id="IV Liquid_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="xor_5" id="xor_5_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="CRP" id="CRP_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="__end__" id="__end___gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="LacticAcid__loop_split" id="LacticAcid__loop_split_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="xor_1" id="xor_1_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Admission IC" id="Admission IC_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Release A" id="Release A_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Admission IC__loop_split" id="Admission IC__loop_split_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="xor_7" id="xor_7_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="LacticAcid" id="LacticAcid_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="xor_2" id="xor_2_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Release C" id="Release C_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Admission NC__loop_split" id="Admission NC__loop_split_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="ER Triage" id="ER Triage_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="CRP__loop_join" id="CRP__loop_join_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Leucocytes__loop_split" id="Leucocytes__loop_split_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="CRP__loop_split" id="CRP__loop_split_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="ER Registration" id="ER Registration_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Return ER" id="Return ER_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNEdge bpmnElement="id87894e47-0f33-44cb-a979-0c48fc8ef146" id="id87894e47-0f33-44cb-a979-0c48fc8ef146_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id610bfe71-f2b8-4ca5-94c5-aedb9befbdb5" id="id610bfe71-f2b8-4ca5-94c5-aedb9befbdb5_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id6df6002f-5217-40b2-a662-0f76d9df5dc3" id="id6df6002f-5217-40b2-a662-0f76d9df5dc3_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idb92f3ee3-a3d0-4649-9844-c38d40901de6" id="idb92f3ee3-a3d0-4649-9844-c38d40901de6_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id6c84b71b-df72-46df-b1a5-08673d68edf8" id="id6c84b71b-df72-46df-b1a5-08673d68edf8_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id8a30d7fc-eb41-46bf-bcbd-62be85391bc7" id="id8a30d7fc-eb41-46bf-bcbd-62be85391bc7_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id134d06fd-e1ee-49c4-9989-9edee14c9d41" id="id134d06fd-e1ee-49c4-9989-9edee14c9d41_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id240dfbd4-f5a3-40be-8d7f-f45e140147bd" id="id240dfbd4-f5a3-40be-8d7f-f45e140147bd_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id80191d30-5a8e-4b45-959b-8241e2afb898" id="id80191d30-5a8e-4b45-959b-8241e2afb898_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="ida020a41b-5993-4fe6-b38b-eea479fa1a76" id="ida020a41b-5993-4fe6-b38b-eea479fa1a76_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id48e4f507-62b9-422b-a7ea-efee6ea6ca43" id="id48e4f507-62b9-422b-a7ea-efee6ea6ca43_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id6f71b9c2-19d2-4ff5-936e-6f78cf94986c" id="id6f71b9c2-19d2-4ff5-936e-6f78cf94986c_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id1d4ff0f5-3006-4a0c-a10c-4310992dc663" id="id1d4ff0f5-3006-4a0c-a10c-4310992dc663_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idf9f68746-359b-4201-8113-97a9073a931b" id="idf9f68746-359b-4201-8113-97a9073a931b_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="ida0801ffc-7fbb-45cd-8a8c-9f848cb2760d" id="ida0801ffc-7fbb-45cd-8a8c-9f848cb2760d_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id265ad703-7064-4a34-9b41-106ff9d76e47" id="id265ad703-7064-4a34-9b41-106ff9d76e47_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id0dc6764e-4b87-4d80-8991-7d9938a22f32" id="id0dc6764e-4b87-4d80-8991-7d9938a22f32_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id4f0e9815-7f26-4613-9605-77bb08898f6d" id="id4f0e9815-7f26-4613-9605-77bb08898f6d_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id51604f62-2f8e-4daf-b76d-fa0acc283309" id="id51604f62-2f8e-4daf-b76d-fa0acc283309_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idfed4b411-1287-422d-ba7d-84e018b414ed" id="idfed4b411-1287-422d-ba7d-84e018b414ed_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="ide10ff634-ea9e-4470-93f3-5c7321c471ff" id="ide10ff634-ea9e-4470-93f3-5c7321c471ff_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id019d7ed9-326b-47ab-abd8-f0ff76c73231" id="id019d7ed9-326b-47ab-abd8-f0ff76c73231_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id12caa1d7-2d23-4667-a8cc-baac55d6c41d" id="id12caa1d7-2d23-4667-a8cc-baac55d6c41d_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id6a0953c0-d464-45b1-ad37-f3d9752f4488" id="id6a0953c0-d464-45b1-ad37-f3d9752f4488_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id4f0bed22-6a1e-4a8b-8681-36b5e5b28230" id="id4f0bed22-6a1e-4a8b-8681-36b5e5b28230_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id1717636e-00fe-4002-8201-c06b062116f5" id="id1717636e-00fe-4002-8201-c06b062116f5_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idd9f89582-46cc-47d5-95d6-01c16cc8fccf" id="idd9f89582-46cc-47d5-95d6-01c16cc8fccf_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id3831a129-57c4-4e78-9aaf-9f30caf338da" id="id3831a129-57c4-4e78-9aaf-9f30caf338da_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="iddc8bead4-e642-4afc-81e3-8c138a28134b" id="iddc8bead4-e642-4afc-81e3-8c138a28134b_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id88ec41b2-acac-45c1-ab5b-3b0b6aba3b98" id="id88ec41b2-acac-45c1-ab5b-3b0b6aba3b98_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idf8364af6-f89e-4362-8c30-5be723898ce0" id="idf8364af6-f89e-4362-8c30-5be723898ce0_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id753c3e9c-e11d-4eae-a84e-cc5898973594" id="id753c3e9c-e11d-4eae-a84e-cc5898973594_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="ide5629e7f-6063-4e50-9feb-7c805386f634" id="ide5629e7f-6063-4e50-9feb-7c805386f634_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id4b2df518-0993-4c4e-9105-b57370d5cdeb" id="id4b2df518-0993-4c4e-9105-b57370d5cdeb_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id585dad1f-a325-4cb7-90cb-ae4078049ceb" id="id585dad1f-a325-4cb7-90cb-ae4078049ceb_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idd39bffee-39ea-446b-99e9-bbb58089b193" id="idd39bffee-39ea-446b-99e9-bbb58089b193_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id46467aec-badc-4747-b955-6da07cae6915" id="id46467aec-badc-4747-b955-6da07cae6915_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id92fdb305-e3eb-4e7a-a84b-90761d86baf6" id="id92fdb305-e3eb-4e7a-a84b-90761d86baf6_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id3913f26d-c4f5-46e7-87ac-f47d61259295" id="id3913f26d-c4f5-46e7-87ac-f47d61259295_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idc53aa8d3-cd68-4898-8d75-60da0b253791" id="idc53aa8d3-cd68-4898-8d75-60da0b253791_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id5c4baa86-7d77-4c9e-ac16-ed4c0c963b58" id="id5c4baa86-7d77-4c9e-ac16-ed4c0c963b58_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idb8326237-91a4-4b90-8f32-67ae1b9d4bdc" id="idb8326237-91a4-4b90-8f32-67ae1b9d4bdc_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id27c657f9-569e-4045-9b4f-52fd2ee6734e" id="id27c657f9-569e-4045-9b4f-52fd2ee6734e_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id6b8b41ae-8410-48c0-a1c1-bcc65fc51d97" id="id6b8b41ae-8410-48c0-a1c1-bcc65fc51d97_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id58d4714a-daae-475d-8c14-565724637c2a" id="id58d4714a-daae-475d-8c14-565724637c2a_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="ide7ac4f06-e5f7-45af-a36d-72fdb7986dce" id="ide7ac4f06-e5f7-45af-a36d-72fdb7986dce_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+		</bpmndi:BPMNPlane>
+	</bpmndi:BPMNDiagram>
+</bpmn:definitions>

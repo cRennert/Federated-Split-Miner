@@ -1,0 +1,1837 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.signavio.com/bpmn20" typeLanguage="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.w3.org/1999/XPath">
+	<bpmn:process id="id09412958-a072-4bc2-b6cd-055979706875" isClosed="false" isExecutable="false" processType="None">
+		<bpmn:exclusiveGateway id="Vendor creates invoice__loop_join" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>idff6f97c2-d90a-4948-a05d-f163c891dc75</bpmn:incoming>
+			<bpmn:incoming>ida03c9406-5240-4b80-b548-e184d1e547c1</bpmn:incoming>
+			<bpmn:incoming>idf995c6ad-36c3-4a76-8dc0-c5378e602c72</bpmn:incoming>
+			<bpmn:incoming>id707ea215-0fe5-47ea-83f4-66c26e5aa0be</bpmn:incoming>
+			<bpmn:incoming>id086aaf4f-2227-496f-8f2f-30c5b4dee3c0</bpmn:incoming>
+			<bpmn:incoming>id001d885c-0a92-4f90-a561-25961b16d945</bpmn:incoming>
+			<bpmn:incoming>id34ad093c-c740-429c-b52d-3c98fd2e9c07</bpmn:incoming>
+			<bpmn:incoming>id36167811-6d1c-4d3a-9dae-3541e6620fdf</bpmn:incoming>
+			<bpmn:incoming>idd338eac6-6a84-4464-9a2c-62672a679bbb</bpmn:incoming>
+			<bpmn:incoming>id6a55b256-e91d-41ee-82fa-4763bb8bcd42</bpmn:incoming>
+			<bpmn:incoming>id36fd1b0d-8c3e-4e2c-804e-2fa3a5f3ab7c</bpmn:incoming>
+			<bpmn:incoming>id217d544c-ed19-4a79-ada2-9b3b35a0d803</bpmn:incoming>
+			<bpmn:incoming>id4efdc393-25c6-428d-91e4-36cc50a4798c</bpmn:incoming>
+			<bpmn:outgoing>idcab4ad13-c926-4cb4-9fd8-998c67eea618</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:task id="Record Service Entry Sheet" name="Record Service Entry Sheet">
+			<bpmn:incoming>id6b60070d-6210-4770-8ade-c913c2e30fe2</bpmn:incoming>
+			<bpmn:outgoing>id4ef056ba-fe98-4a4c-8ce8-382cdfc13124</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:exclusiveGateway id="Vendor creates debit memo__loop_split" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>ide4a2b65d-e428-4d3e-853f-50f0618f2bc4</bpmn:incoming>
+			<bpmn:outgoing>id976a0082-5767-407e-a032-e5b05c1b651a</bpmn:outgoing>
+			<bpmn:outgoing>id1799a952-f385-4417-bbdb-e64f5ba8018f</bpmn:outgoing>
+			<bpmn:outgoing>id086aaf4f-2227-496f-8f2f-30c5b4dee3c0</bpmn:outgoing>
+			<bpmn:outgoing>id03c4ff46-edfb-4e4b-a331-b4dc9076299e</bpmn:outgoing>
+			<bpmn:outgoing>id11f29cf3-3239-4c6b-8321-1d284cca6986</bpmn:outgoing>
+			<bpmn:outgoing>id3426a348-c2de-4968-8c80-68838b7a1ff5</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:task id="Delete Purchase Order Item" name="Delete Purchase Order Item">
+			<bpmn:incoming>ida16b723c-9158-4122-b0f3-eb40834370f0</bpmn:incoming>
+			<bpmn:outgoing>id08264e07-0d32-440d-b462-50d29faeb17d</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:task id="Change Currency" name="Change Currency">
+			<bpmn:incoming>id10a65822-75a9-4818-ac5f-56f9f7381d53</bpmn:incoming>
+			<bpmn:outgoing>id4efdc393-25c6-428d-91e4-36cc50a4798c</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:task id="Cancel Invoice Receipt" name="Cancel Invoice Receipt">
+			<bpmn:incoming>id0886da44-ecbf-48c6-a41f-cc383a962df3</bpmn:incoming>
+			<bpmn:outgoing>id8c59d793-989c-4441-a26f-b54690e672ef</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:exclusiveGateway id="Record Service Entry Sheet__loop_join" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>id863d3b36-e941-4285-a743-f94cb74ee0b8</bpmn:incoming>
+			<bpmn:incoming>id5015d4a1-7bda-40bf-a6c9-7d8d6c9c38ff</bpmn:incoming>
+			<bpmn:incoming>id8a24a091-7328-4017-9678-b2036dd91b48</bpmn:incoming>
+			<bpmn:incoming>id65179d1b-b441-4368-942f-c14d72c5eba2</bpmn:incoming>
+			<bpmn:incoming>ide4fcf5ff-e5eb-4f98-9eaf-3351d1ca17fd</bpmn:incoming>
+			<bpmn:incoming>id61758e69-53e8-4e6e-95a7-d892c35ad5b1</bpmn:incoming>
+			<bpmn:incoming>id3f4ddb82-4cb3-40bc-a28d-5a7f94475f66</bpmn:incoming>
+			<bpmn:outgoing>id6b60070d-6210-4770-8ade-c913c2e30fe2</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:exclusiveGateway id="Cancel Subsequent Invoice__loop_join" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>idd6e54e7c-645e-4228-b8fa-b2cf94520ef3</bpmn:incoming>
+			<bpmn:incoming>id1799a952-f385-4417-bbdb-e64f5ba8018f</bpmn:incoming>
+			<bpmn:outgoing>id9609bff7-cd12-4f68-908e-d5142c0a34cb</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:exclusiveGateway id="Change Storage Location__loop_split" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>id67825351-c847-4dd3-80cc-b37aceec86e0</bpmn:incoming>
+			<bpmn:outgoing>id1d9fb448-2450-46c4-a0ed-0c8fe2c1aec1</bpmn:outgoing>
+			<bpmn:outgoing>id62c88e1c-218d-40ce-b568-fc6a08911409</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:exclusiveGateway id="or_35" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>idd70d0b5f-f4ba-4695-8a3b-ad5b9e18ce26</bpmn:incoming>
+			<bpmn:incoming>idca537e02-ead0-4ac1-ab98-e6e563870346</bpmn:incoming>
+			<bpmn:incoming>id1668d129-3fc1-47a9-b4c7-1e9868d674e1</bpmn:incoming>
+			<bpmn:incoming>id867054ae-f89d-4a3a-877b-382443e5353c</bpmn:incoming>
+			<bpmn:incoming>idbe11793b-fcc6-4369-86ec-b8cbf2e4a132</bpmn:incoming>
+			<bpmn:incoming>id1566286f-b819-46bc-baf0-db965c82ab7f</bpmn:incoming>
+			<bpmn:incoming>iddb1b1ee5-54f3-450d-9f6c-1497c3e618e4</bpmn:incoming>
+			<bpmn:incoming>id14fec72c-e925-4528-9eaa-5dd6eed1c0e0</bpmn:incoming>
+			<bpmn:incoming>id5ba0a2b8-85d5-4fbd-a6df-d9970fd66b23</bpmn:incoming>
+			<bpmn:incoming>idfdf1426d-6534-47d2-8e9f-5284495ead2b</bpmn:incoming>
+			<bpmn:incoming>id6d88c444-2035-443e-a6c9-e0c3b5a08892</bpmn:incoming>
+			<bpmn:incoming>idd5d09353-ae00-4ccb-978e-3af3dd596d94</bpmn:incoming>
+			<bpmn:incoming>ide99f8e79-58d5-4704-a5ff-da05799f8777</bpmn:incoming>
+			<bpmn:outgoing>idc1e808ff-5ee9-4391-a11a-2eeae8c9655c</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:exclusiveGateway id="or_43" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>id2d94a11d-6576-410d-bf55-222d2183e8c4</bpmn:incoming>
+			<bpmn:incoming>idbdc2c755-b14f-452e-8584-a8c44068eb69</bpmn:incoming>
+			<bpmn:outgoing>id6b1bf54a-17d6-4443-9a9d-56f2c3f07686</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:exclusiveGateway id="Record Subsequent Invoice__loop_split" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>id99e46bdc-a521-45d5-878e-4ab7d841da92</bpmn:incoming>
+			<bpmn:outgoing>id9c260cfc-f997-456f-b829-38f7b39e3d64</bpmn:outgoing>
+			<bpmn:outgoing>ida8d30fb9-ceda-40db-af69-a89ae7290181</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:task id="SRM: Created" name="SRM: Created">
+			<bpmn:incoming>id16829404-68c7-4ada-9d6c-92633f400410</bpmn:incoming>
+			<bpmn:outgoing>id95925da3-1412-4591-8e3e-d0e44ca11248</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:exclusiveGateway id="xor_24" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>id7f6130fe-8fff-49fc-868d-3630ef7cb367</bpmn:incoming>
+			<bpmn:incoming>id348a2493-aac6-4881-9d03-ce2b5860db9d</bpmn:incoming>
+			<bpmn:outgoing>id0be60ace-dbb4-4715-b124-3734de52606d</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:exclusiveGateway id="xor_21" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>id8c4065af-46a7-4152-bf9b-52bb6232f898</bpmn:incoming>
+			<bpmn:outgoing>id93440423-6842-4baa-ad94-898fb0af0792</bpmn:outgoing>
+			<bpmn:outgoing>id93ae9bd0-0a23-404f-8997-59c7e11cf93f</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:exclusiveGateway id="Cancel Goods Receipt__loop_split" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>ida05b981a-ab4b-4f08-b74f-d472b62c0a0f</bpmn:incoming>
+			<bpmn:outgoing>idf564e9c5-de96-44bd-8cfe-8a00f8b6b2ae</bpmn:outgoing>
+			<bpmn:outgoing>id159b8a59-c524-44c3-b32c-63e06d617a55</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:exclusiveGateway id="xor_19" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>idb9ffd6df-34e0-4580-9186-952834f72b8b</bpmn:incoming>
+			<bpmn:outgoing>ide1766ba2-7831-4277-9a88-9976930a595a</bpmn:outgoing>
+			<bpmn:outgoing>idbea67996-9180-4875-988f-a52d724c93a3</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:task id="SRM: Transaction Completed" name="SRM: Transaction Completed">
+			<bpmn:incoming>idc0f9b41e-2ebf-44fb-adf5-2ead27d53688</bpmn:incoming>
+			<bpmn:outgoing>ide99f8e79-58d5-4704-a5ff-da05799f8777</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:task id="Change Delivery Indicator" name="Change Delivery Indicator">
+			<bpmn:incoming>id537b3eaf-0eb3-466a-b7d6-db3020ea8722</bpmn:incoming>
+			<bpmn:outgoing>idab3df2b4-3971-421f-8aae-4297377969f1</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:task id="SRM: In Transfer to Execution Syst." name="SRM: In Transfer to Execution Syst.">
+			<bpmn:incoming>id4fa63db2-f38b-4084-b35f-f419f23bbdb7</bpmn:incoming>
+			<bpmn:outgoing>id0dc56698-ebf2-4215-acca-a05ba956687b</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:exclusiveGateway id="Remove Payment Block__loop_split" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>idadf500e1-e967-417d-b753-804c97650e82</bpmn:incoming>
+			<bpmn:outgoing>idcdcfedd0-dbb7-476d-a37c-f5d0a33ab703</bpmn:outgoing>
+			<bpmn:outgoing>idca537e02-ead0-4ac1-ab98-e6e563870346</bpmn:outgoing>
+			<bpmn:outgoing>id8b65407a-7fb4-43a6-99bd-7705246d1816</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:exclusiveGateway id="Update Order Confirmation__loop_join" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>idb896311d-a235-46a3-b72b-f6ce543df69b</bpmn:incoming>
+			<bpmn:incoming>idc78b40b2-754b-46bd-8981-6e9be999e30f</bpmn:incoming>
+			<bpmn:outgoing>idd00ef0ae-1d32-4b3b-950d-cfa9fa78ea8a</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:task id="Vendor creates debit memo" name="Vendor creates debit memo">
+			<bpmn:incoming>ida3363a30-bcf7-43c9-954f-f816a55ad443</bpmn:incoming>
+			<bpmn:outgoing>ide4a2b65d-e428-4d3e-853f-50f0618f2bc4</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:task id="Record Invoice Receipt" name="Record Invoice Receipt">
+			<bpmn:incoming>ida2c4f496-1703-44c1-b115-8de955bf33de</bpmn:incoming>
+			<bpmn:outgoing>id27ff1fa4-783f-443c-bef4-e213e771050f</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:task id="SRM: Held" name="SRM: Held">
+			<bpmn:incoming>ide64c3a7b-9796-42a6-9f46-fb739576c5c7</bpmn:incoming>
+			<bpmn:outgoing>id2f067152-a356-492a-82ae-ea76d02ca219</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:exclusiveGateway id="Vendor creates debit memo__loop_join" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>id976a0082-5767-407e-a032-e5b05c1b651a</bpmn:incoming>
+			<bpmn:incoming>id04b269c6-cc7a-455d-9b49-f37d6ab121e9</bpmn:incoming>
+			<bpmn:incoming>ide5449d60-c295-475c-b4db-aad240a4b965</bpmn:incoming>
+			<bpmn:outgoing>ida3363a30-bcf7-43c9-954f-f816a55ad443</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:task id="Reactivate Purchase Order Item" name="Reactivate Purchase Order Item">
+			<bpmn:incoming>idae41b226-f657-4a22-ae05-5cd72a35ef6a</bpmn:incoming>
+			<bpmn:outgoing>id11c4bb93-9b96-49ee-9c03-fd6ee6010728</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:task id="Create Purchase Requisition Item" name="Create Purchase Requisition Item">
+			<bpmn:incoming>id979dfadf-2702-4229-ad1a-9d3f73120506</bpmn:incoming>
+			<bpmn:outgoing>id0ae2d8b1-b7f8-441d-b9db-8d2faa4bfb39</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:exclusiveGateway id="Change Delivery Indicator__loop_join" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>idb43d5b28-bb41-4803-b514-e02383d81e17</bpmn:incoming>
+			<bpmn:incoming>idc76e7d28-e72a-4943-a46e-66b10344ab84</bpmn:incoming>
+			<bpmn:incoming>idea1aeb31-70b6-47d2-b8df-1a0ceaf79b93</bpmn:incoming>
+			<bpmn:outgoing>id537b3eaf-0eb3-466a-b7d6-db3020ea8722</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:exclusiveGateway id="Cancel Invoice Receipt__loop_join" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>idcaab8ef8-d58e-416a-a54e-142fcc72f0f7</bpmn:incoming>
+			<bpmn:incoming>id03c4ff46-edfb-4e4b-a331-b4dc9076299e</bpmn:incoming>
+			<bpmn:incoming>idcb3e4130-e38a-4db0-9649-add988d9cfa4</bpmn:incoming>
+			<bpmn:incoming>id3f76bc4c-5fd8-47aa-ba45-c3c228d25818</bpmn:incoming>
+			<bpmn:outgoing>id0886da44-ecbf-48c6-a41f-cc383a962df3</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:startEvent id="__start__" isInterrupting="false" name="" parallelMultiple="false">
+			<bpmn:outgoing>id597f82cc-2398-4987-a574-0681cc46d603</bpmn:outgoing>
+		</bpmn:startEvent>
+		<bpmn:task id="Change Storage Location" name="Change Storage Location">
+			<bpmn:incoming>id1ed96f21-4665-4904-b793-45b18c919d95</bpmn:incoming>
+			<bpmn:outgoing>id67825351-c847-4dd3-80cc-b37aceec86e0</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:exclusiveGateway id="Change Storage Location__loop_join" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>idd0d99f98-db97-4154-be0f-16d2b284d4c2</bpmn:incoming>
+			<bpmn:incoming>id1d9fb448-2450-46c4-a0ed-0c8fe2c1aec1</bpmn:incoming>
+			<bpmn:outgoing>id1ed96f21-4665-4904-b793-45b18c919d95</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:exclusiveGateway id="Record Invoice Receipt__loop_join" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>idc1cc18df-754e-401b-8f4e-655250fe6f68</bpmn:incoming>
+			<bpmn:incoming>id6187bb17-2ce6-4d8f-b660-fef895f445dc</bpmn:incoming>
+			<bpmn:incoming>id7af36130-167a-453d-bc0e-e1f2dc624f4f</bpmn:incoming>
+			<bpmn:incoming>id531a571e-3719-450f-8d1c-85066613d4b0</bpmn:incoming>
+			<bpmn:incoming>id11f29cf3-3239-4c6b-8321-1d284cca6986</bpmn:incoming>
+			<bpmn:incoming>idc241b652-872f-4a64-920f-dbe9810f136b</bpmn:incoming>
+			<bpmn:incoming>idf2ad5f0d-8bd7-4085-a519-16eefcaf5632</bpmn:incoming>
+			<bpmn:incoming>ideb83fd40-d963-40c3-a8b8-2a9164addf68</bpmn:incoming>
+			<bpmn:incoming>idf74f7634-4784-4f0d-8208-7cc216d386e2</bpmn:incoming>
+			<bpmn:outgoing>ida2c4f496-1703-44c1-b115-8de955bf33de</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:exclusiveGateway id="xor_5" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>id0ae2d8b1-b7f8-441d-b9db-8d2faa4bfb39</bpmn:incoming>
+			<bpmn:outgoing>id6e203546-12d5-40e5-b9a0-7bd599a2b0b8</bpmn:outgoing>
+			<bpmn:outgoing>id15376ae4-08bc-4cc8-8a2c-2ebffc2e01e4</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:exclusiveGateway id="Change Approval for Purchase Order__loop_split" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>id0fa616fa-8fe1-4129-9870-c537af4b7e5a</bpmn:incoming>
+			<bpmn:outgoing>id7ef4a764-6886-45ba-83fb-2f519680d960</bpmn:outgoing>
+			<bpmn:outgoing>id1668d129-3fc1-47a9-b4c7-1e9868d674e1</bpmn:outgoing>
+			<bpmn:outgoing>idbdc2c755-b14f-452e-8584-a8c44068eb69</bpmn:outgoing>
+			<bpmn:outgoing>id001d885c-0a92-4f90-a561-25961b16d945</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:exclusiveGateway id="xor_13" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>idaec96422-7f3a-4485-a6ea-bc4d4384ebfb</bpmn:incoming>
+			<bpmn:outgoing>idb896311d-a235-46a3-b72b-f6ce543df69b</bpmn:outgoing>
+			<bpmn:outgoing>id6a55b256-e91d-41ee-82fa-4763bb8bcd42</bpmn:outgoing>
+			<bpmn:outgoing>ide9e28516-2c75-4dc5-bd99-dbdedf3c7492</bpmn:outgoing>
+			<bpmn:outgoing>id525350dc-a26d-4e45-b221-5b2f754460d8</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:task id="Change Price" name="Change Price">
+			<bpmn:incoming>idaf8573e0-8be4-4e02-98b5-82800af939a8</bpmn:incoming>
+			<bpmn:outgoing>id386d168c-2902-4763-a228-d3b3b8e0c9bf</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:task id="SRM: Awaiting Approval" name="SRM: Awaiting Approval">
+			<bpmn:incoming>id0be60ace-dbb4-4715-b124-3734de52606d</bpmn:incoming>
+			<bpmn:outgoing>id46476d94-6c37-41b8-b481-caa1c9d0322f</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:task id="Change Approval for Purchase Order" name="Change Approval for Purchase Order">
+			<bpmn:incoming>id6ec6b528-8de9-4bfa-9d4c-b0c15c4f3a58</bpmn:incoming>
+			<bpmn:outgoing>id0fa616fa-8fe1-4129-9870-c537af4b7e5a</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:exclusiveGateway id="Record Subsequent Invoice__loop_join" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>id9c260cfc-f997-456f-b829-38f7b39e3d64</bpmn:incoming>
+			<bpmn:incoming>idb86dd64d-a1b9-497d-b845-3e68a4a577e3</bpmn:incoming>
+			<bpmn:outgoing>id3ce4d2e4-3195-4a98-81b5-d15559513a1d</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:task id="SRM: Ordered" name="SRM: Ordered">
+			<bpmn:incoming>ided84d6f7-3477-4e70-8b6f-a47f1a9ea141</bpmn:incoming>
+			<bpmn:outgoing>ida03c9406-5240-4b80-b548-e184d1e547c1</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:task id="Release Purchase Requisition" name="Release Purchase Requisition">
+			<bpmn:incoming>id6e203546-12d5-40e5-b9a0-7bd599a2b0b8</bpmn:incoming>
+			<bpmn:outgoing>id810f957d-6557-40c9-99d2-39c09c2d1e7a</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:endEvent id="__end__" name="">
+			<bpmn:incoming>idc1e808ff-5ee9-4391-a11a-2eeae8c9655c</bpmn:incoming>
+		</bpmn:endEvent>
+		<bpmn:task id="Change Rejection Indicator" name="Change Rejection Indicator">
+			<bpmn:incoming>ideb1d5913-1750-41dd-a747-803fae751b0f</bpmn:incoming>
+			<bpmn:outgoing>id521ca31e-b08f-419b-b12a-a88ef5b0ffc2</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:exclusiveGateway id="Record Service Entry Sheet__loop_split" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>id4ef056ba-fe98-4a4c-8ce8-382cdfc13124</bpmn:incoming>
+			<bpmn:outgoing>id863d3b36-e941-4285-a743-f94cb74ee0b8</bpmn:outgoing>
+			<bpmn:outgoing>idcf5269c3-a4d5-4591-91ff-4a4c97242b2c</bpmn:outgoing>
+			<bpmn:outgoing>id9a68fd47-aa2c-44cc-865b-a9d3e83969fd</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:exclusiveGateway id="Delete Purchase Order Item__loop_join" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>id0795fce3-aa1f-4f13-b540-a53590e4ac31</bpmn:incoming>
+			<bpmn:incoming>id4ee46d9f-e65a-4840-a44d-afcff2b4b390</bpmn:incoming>
+			<bpmn:incoming>ide9e28516-2c75-4dc5-bd99-dbdedf3c7492</bpmn:incoming>
+			<bpmn:outgoing>ida16b723c-9158-4122-b0f3-eb40834370f0</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:task id="Receive Order Confirmation" name="Receive Order Confirmation">
+			<bpmn:incoming>id6b1bf54a-17d6-4443-9a9d-56f2c3f07686</bpmn:incoming>
+			<bpmn:outgoing>idaec96422-7f3a-4485-a6ea-bc4d4384ebfb</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:exclusiveGateway id="Change Approval for Purchase Order__loop_join" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>id7ef4a764-6886-45ba-83fb-2f519680d960</bpmn:incoming>
+			<bpmn:incoming>id2e486bf5-170c-4ce5-98be-f28b71ee7e14</bpmn:incoming>
+			<bpmn:incoming>id8b945bb8-4e69-4b4c-9e50-6b0da708fe63</bpmn:incoming>
+			<bpmn:outgoing>id6ec6b528-8de9-4bfa-9d4c-b0c15c4f3a58</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:task id="Release Purchase Order" name="Release Purchase Order">
+			<bpmn:incoming>id775a246a-14b8-4224-9475-77f0215fa1a6</bpmn:incoming>
+			<bpmn:outgoing>id8b945bb8-4e69-4b4c-9e50-6b0da708fe63</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:task id="SRM: Document Completed" name="SRM: Document Completed">
+			<bpmn:incoming>id0dc8be90-667f-42c1-9168-4312f35aceb6</bpmn:incoming>
+			<bpmn:outgoing>id8c4065af-46a7-4152-bf9b-52bb6232f898</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:exclusiveGateway id="SRM: In Transfer to Execution Syst.__loop_split" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>id0dc56698-ebf2-4215-acca-a05ba956687b</bpmn:incoming>
+			<bpmn:outgoing>id2dda2df8-d77d-4fed-900c-03152e30e653</bpmn:outgoing>
+			<bpmn:outgoing>ided84d6f7-3477-4e70-8b6f-a47f1a9ea141</bpmn:outgoing>
+			<bpmn:outgoing>id5b657c6b-a778-4347-942c-61e9617975da</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:exclusiveGateway id="Cancel Subsequent Invoice__loop_split" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>idb6049fa8-3211-4151-80e0-d7f5ec85a2eb</bpmn:incoming>
+			<bpmn:outgoing>idd6e54e7c-645e-4228-b8fa-b2cf94520ef3</bpmn:outgoing>
+			<bpmn:outgoing>idf2806ae3-4a81-4f36-b8cb-9c0f969150ee</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:task id="Record Goods Receipt" name="Record Goods Receipt">
+			<bpmn:incoming>id166c9545-87d9-46d8-bb05-edc52ef0899b</bpmn:incoming>
+			<bpmn:outgoing>ided6fadd8-dfa4-4a93-be75-5dc12ceeca17</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:exclusiveGateway id="Change Quantity__loop_split" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>id9e6f7399-ec26-4a38-a79b-60b61b0b617b</bpmn:incoming>
+			<bpmn:outgoing>id568d8fb7-aaec-4fc2-a202-1808df919c13</bpmn:outgoing>
+			<bpmn:outgoing>idf995c6ad-36c3-4a76-8dc0-c5378e602c72</bpmn:outgoing>
+			<bpmn:outgoing>idea1aeb31-70b6-47d2-b8df-1a0ceaf79b93</bpmn:outgoing>
+			<bpmn:outgoing>id97ba37b3-a606-464d-9d99-c138d4b3b463</bpmn:outgoing>
+			<bpmn:outgoing>id2cac69c2-a73a-4632-8f9a-02556b6f1a0e</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:task id="Record Subsequent Invoice" name="Record Subsequent Invoice">
+			<bpmn:incoming>id3ce4d2e4-3195-4a98-81b5-d15559513a1d</bpmn:incoming>
+			<bpmn:outgoing>id99e46bdc-a521-45d5-878e-4ab7d841da92</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:exclusiveGateway id="Change Price__loop_split" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>id386d168c-2902-4763-a228-d3b3b8e0c9bf</bpmn:incoming>
+			<bpmn:outgoing>id6c1fb72b-ad9a-4309-bdfa-2de75f27c134</bpmn:outgoing>
+			<bpmn:outgoing>id10a65822-75a9-4818-ac5f-56f9f7381d53</bpmn:outgoing>
+			<bpmn:outgoing>id217d544c-ed19-4a79-ada2-9b3b35a0d803</bpmn:outgoing>
+			<bpmn:outgoing>id7af36130-167a-453d-bc0e-e1f2dc624f4f</bpmn:outgoing>
+			<bpmn:outgoing>id6dc37c02-876d-493f-874c-6d23af0ac7ad</bpmn:outgoing>
+			<bpmn:outgoing>id69c16a10-7ee5-46a0-998c-ebfeb8bf4a2f</bpmn:outgoing>
+			<bpmn:outgoing>id4032a7a1-e0bf-4288-b645-9680b26b3515</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:exclusiveGateway id="Remove Payment Block__loop_join" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>idcdcfedd0-dbb7-476d-a37c-f5d0a33ab703</bpmn:incoming>
+			<bpmn:incoming>id7e196512-97f4-49d5-9f9d-e4b1b27261db</bpmn:incoming>
+			<bpmn:incoming>id4aadd5ee-68bf-40be-9d5e-c0baadaec87d</bpmn:incoming>
+			<bpmn:incoming>id4665cfae-906b-41c3-89fe-b68eb4f95fb1</bpmn:incoming>
+			<bpmn:incoming>id6dc37c02-876d-493f-874c-6d23af0ac7ad</bpmn:incoming>
+			<bpmn:outgoing>id9462d3ca-8284-489c-b2c9-94870d4b2ab4</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:task id="Create Purchase Order Item" name="Create Purchase Order Item">
+			<bpmn:incoming>id378e2926-2a48-46af-897b-83948bb1c6df</bpmn:incoming>
+			<bpmn:outgoing>id8c7ae71f-cb89-4597-8f9a-46bddb4db9e1</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:task id="Clear Invoice" name="Clear Invoice">
+			<bpmn:incoming>id1326753d-e2d4-43c4-a86d-a1cffc08e784</bpmn:incoming>
+			<bpmn:outgoing>id6e2e38c3-2c87-476d-bd74-a268720f49c2</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:task id="Block Purchase Order Item" name="Block Purchase Order Item">
+			<bpmn:incoming>idc45890f5-c1e2-4a61-a436-10d1e43d7eeb</bpmn:incoming>
+			<bpmn:outgoing>id14fec72c-e925-4528-9eaa-5dd6eed1c0e0</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:exclusiveGateway id="xor_1" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>id597f82cc-2398-4987-a574-0681cc46d603</bpmn:incoming>
+			<bpmn:outgoing>id979dfadf-2702-4229-ad1a-9d3f73120506</bpmn:outgoing>
+			<bpmn:outgoing>id5222cad1-e401-4fe7-9f16-21789f40e0e8</bpmn:outgoing>
+			<bpmn:outgoing>id36167811-6d1c-4d3a-9dae-3541e6620fdf</bpmn:outgoing>
+			<bpmn:outgoing>id5015d4a1-7bda-40bf-a6c9-7d8d6c9c38ff</bpmn:outgoing>
+			<bpmn:outgoing>id631c925d-9305-43d2-8dc0-f3e4c425d619</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:exclusiveGateway id="Record Goods Receipt__loop_join" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>ida41230a9-358c-459a-9dd4-f026ac883d62</bpmn:incoming>
+			<bpmn:incoming>id11c4bb93-9b96-49ee-9c03-fd6ee6010728</bpmn:incoming>
+			<bpmn:incoming>id69c16a10-7ee5-46a0-998c-ebfeb8bf4a2f</bpmn:incoming>
+			<bpmn:incoming>id9fb71e3f-d2dd-4fe1-9695-c285e0c7a476</bpmn:incoming>
+			<bpmn:incoming>id3426a348-c2de-4968-8c80-68838b7a1ff5</bpmn:incoming>
+			<bpmn:incoming>id7c7f2410-f593-484d-948f-6957e038c00e</bpmn:incoming>
+			<bpmn:incoming>id159b8a59-c524-44c3-b32c-63e06d617a55</bpmn:incoming>
+			<bpmn:incoming>id6aca6fef-6be7-4ddf-a8f8-62bda80b823d</bpmn:incoming>
+			<bpmn:incoming>id9a68fd47-aa2c-44cc-865b-a9d3e83969fd</bpmn:incoming>
+			<bpmn:incoming>id521ca31e-b08f-419b-b12a-a88ef5b0ffc2</bpmn:incoming>
+			<bpmn:incoming>id525350dc-a26d-4e45-b221-5b2f754460d8</bpmn:incoming>
+			<bpmn:incoming>id2920280e-565e-4620-ac5b-583cfdf57b82</bpmn:incoming>
+			<bpmn:incoming>id92b03ee7-340d-416f-823b-68fa99ef2dea</bpmn:incoming>
+			<bpmn:incoming>id62c88e1c-218d-40ce-b568-fc6a08911409</bpmn:incoming>
+			<bpmn:incoming>id83e07de6-05ed-472f-b423-ff260974056c</bpmn:incoming>
+			<bpmn:incoming>id97ba37b3-a606-464d-9d99-c138d4b3b463</bpmn:incoming>
+			<bpmn:outgoing>id166c9545-87d9-46d8-bb05-edc52ef0899b</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:exclusiveGateway id="Record Goods Receipt__loop_split" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>ided6fadd8-dfa4-4a93-be75-5dc12ceeca17</bpmn:incoming>
+			<bpmn:outgoing>ida41230a9-358c-459a-9dd4-f026ac883d62</bpmn:outgoing>
+			<bpmn:outgoing>id867054ae-f89d-4a3a-877b-382443e5353c</bpmn:outgoing>
+			<bpmn:outgoing>idd338eac6-6a84-4464-9a2c-62672a679bbb</bpmn:outgoing>
+			<bpmn:outgoing>ide4fcf5ff-e5eb-4f98-9eaf-3351d1ca17fd</bpmn:outgoing>
+			<bpmn:outgoing>idc76e7d28-e72a-4943-a46e-66b10344ab84</bpmn:outgoing>
+			<bpmn:outgoing>idf2ad5f0d-8bd7-4085-a519-16eefcaf5632</bpmn:outgoing>
+			<bpmn:outgoing>id4665cfae-906b-41c3-89fe-b68eb4f95fb1</bpmn:outgoing>
+			<bpmn:outgoing>id64d9dc61-dcfa-42a2-9704-4f6077726e79</bpmn:outgoing>
+			<bpmn:outgoing>idacf1be34-7654-4cdc-b6a2-c726c25197b8</bpmn:outgoing>
+			<bpmn:outgoing>idd05fc082-547b-404a-a0f7-32125635c9f6</bpmn:outgoing>
+			<bpmn:outgoing>iddca63b4e-b86c-40e1-818a-b65064778930</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:exclusiveGateway id="Cancel Invoice Receipt__loop_split" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>id8c59d793-989c-4441-a26f-b54690e672ef</bpmn:incoming>
+			<bpmn:outgoing>idcaab8ef8-d58e-416a-a54e-142fcc72f0f7</bpmn:outgoing>
+			<bpmn:outgoing>idbe11793b-fcc6-4369-86ec-b8cbf2e4a132</bpmn:outgoing>
+			<bpmn:outgoing>id6187bb17-2ce6-4d8f-b660-fef895f445dc</bpmn:outgoing>
+			<bpmn:outgoing>id20924462-1956-49be-bd30-3bf3aa7494f4</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:exclusiveGateway id="Vendor creates invoice__loop_split" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>ida8a11201-a4e1-4056-831b-97aa13f418fc</bpmn:incoming>
+			<bpmn:outgoing>idff6f97c2-d90a-4948-a05d-f163c891dc75</bpmn:outgoing>
+			<bpmn:outgoing>id8d927128-b37d-4249-a5aa-927d3187c2e4</bpmn:outgoing>
+			<bpmn:outgoing>id8a24a091-7328-4017-9678-b2036dd91b48</bpmn:outgoing>
+			<bpmn:outgoing>id04b269c6-cc7a-455d-9b49-f37d6ab121e9</bpmn:outgoing>
+			<bpmn:outgoing>idc241b652-872f-4a64-920f-dbe9810f136b</bpmn:outgoing>
+			<bpmn:outgoing>id92b03ee7-340d-416f-823b-68fa99ef2dea</bpmn:outgoing>
+			<bpmn:outgoing>id2b94d4bd-12c5-4e78-bff6-b32a44e5c16e</bpmn:outgoing>
+			<bpmn:outgoing>idfc8b7aff-1dee-45af-be55-8d87c4e17771</bpmn:outgoing>
+			<bpmn:outgoing>id68efd551-9960-400a-b357-a1cc818c03c8</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:task id="Change payment term" name="Change payment term">
+			<bpmn:incoming>id1d6f2b5d-cda2-48a4-ab74-ea80a88ff485</bpmn:incoming>
+			<bpmn:outgoing>id9fb71e3f-d2dd-4fe1-9695-c285e0c7a476</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:exclusiveGateway id="xor_6" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>id8c7ae71f-cb89-4597-8f9a-46bddb4db9e1</bpmn:incoming>
+			<bpmn:outgoing>idc45890f5-c1e2-4a61-a436-10d1e43d7eeb</bpmn:outgoing>
+			<bpmn:outgoing>id1d6f2b5d-cda2-48a4-ab74-ea80a88ff485</bpmn:outgoing>
+			<bpmn:outgoing>id775a246a-14b8-4224-9475-77f0215fa1a6</bpmn:outgoing>
+			<bpmn:outgoing>id2d94a11d-6576-410d-bf55-222d2183e8c4</bpmn:outgoing>
+			<bpmn:outgoing>idd0d99f98-db97-4154-be0f-16d2b284d4c2</bpmn:outgoing>
+			<bpmn:outgoing>id34ad093c-c740-429c-b52d-3c98fd2e9c07</bpmn:outgoing>
+			<bpmn:outgoing>id3f4ddb82-4cb3-40bc-a28d-5a7f94475f66</bpmn:outgoing>
+			<bpmn:outgoing>id5ba0a2b8-85d5-4fbd-a6df-d9970fd66b23</bpmn:outgoing>
+			<bpmn:outgoing>ide5449d60-c295-475c-b4db-aad240a4b965</bpmn:outgoing>
+			<bpmn:outgoing>idf74f7634-4784-4f0d-8208-7cc216d386e2</bpmn:outgoing>
+			<bpmn:outgoing>id4ee46d9f-e65a-4840-a44d-afcff2b4b390</bpmn:outgoing>
+			<bpmn:outgoing>id2e486bf5-170c-4ce5-98be-f28b71ee7e14</bpmn:outgoing>
+			<bpmn:outgoing>id6aca6fef-6be7-4ddf-a8f8-62bda80b823d</bpmn:outgoing>
+			<bpmn:outgoing>idd590959e-0b0f-4ddc-b4ed-b8ff6eb8d602</bpmn:outgoing>
+			<bpmn:outgoing>id316d82c7-e2d6-4e48-9666-ba6c2086b6b1</bpmn:outgoing>
+			<bpmn:outgoing>id5096ab2e-f65d-41ba-a012-86772ed5b3d2</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:task id="Set Payment Block" name="Set Payment Block">
+			<bpmn:incoming>id445ec4b4-f24a-4ed5-86ce-44ca6bf1191e</bpmn:incoming>
+			<bpmn:outgoing>idfdf1426d-6534-47d2-8e9f-5284495ead2b</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:task id="Vendor creates invoice" name="Vendor creates invoice">
+			<bpmn:incoming>idcab4ad13-c926-4cb4-9fd8-998c67eea618</bpmn:incoming>
+			<bpmn:outgoing>ida8a11201-a4e1-4056-831b-97aa13f418fc</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:exclusiveGateway id="Change Quantity__loop_join" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>id568d8fb7-aaec-4fc2-a202-1808df919c13</bpmn:incoming>
+			<bpmn:incoming>idd590959e-0b0f-4ddc-b4ed-b8ff6eb8d602</bpmn:incoming>
+			<bpmn:incoming>id4032a7a1-e0bf-4288-b645-9680b26b3515</bpmn:incoming>
+			<bpmn:incoming>id2b94d4bd-12c5-4e78-bff6-b32a44e5c16e</bpmn:incoming>
+			<bpmn:incoming>id64d9dc61-dcfa-42a2-9704-4f6077726e79</bpmn:incoming>
+			<bpmn:outgoing>id8fb10da8-e611-4a6f-bec2-57e8b3e69ded</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:exclusiveGateway id="Clear Invoice__loop_join" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>id8e9eadb5-1023-440e-82d9-47699ba4e8b7</bpmn:incoming>
+			<bpmn:incoming>id1497c939-3000-49b6-a939-7eeb023b1ae1</bpmn:incoming>
+			<bpmn:incoming>idacf1be34-7654-4cdc-b6a2-c726c25197b8</bpmn:incoming>
+			<bpmn:incoming>idfc8b7aff-1dee-45af-be55-8d87c4e17771</bpmn:incoming>
+			<bpmn:incoming>ida8d30fb9-ceda-40db-af69-a89ae7290181</bpmn:incoming>
+			<bpmn:incoming>id8b65407a-7fb4-43a6-99bd-7705246d1816</bpmn:incoming>
+			<bpmn:incoming>idf2806ae3-4a81-4f36-b8cb-9c0f969150ee</bpmn:incoming>
+			<bpmn:incoming>id20924462-1956-49be-bd30-3bf3aa7494f4</bpmn:incoming>
+			<bpmn:outgoing>id1326753d-e2d4-43c4-a86d-a1cffc08e784</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:task id="SRM: Complete" name="SRM: Complete">
+			<bpmn:incoming>ide1766ba2-7831-4277-9a88-9976930a595a</bpmn:incoming>
+			<bpmn:outgoing>id0dc8be90-667f-42c1-9168-4312f35aceb6</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:exclusiveGateway id="Clear Invoice__loop_split" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>id6e2e38c3-2c87-476d-bd74-a268720f49c2</bpmn:incoming>
+			<bpmn:outgoing>id8e9eadb5-1023-440e-82d9-47699ba4e8b7</bpmn:outgoing>
+			<bpmn:outgoing>id1566286f-b819-46bc-baf0-db965c82ab7f</bpmn:outgoing>
+			<bpmn:outgoing>idb86dd64d-a1b9-497d-b845-3e68a4a577e3</bpmn:outgoing>
+			<bpmn:outgoing>id36fd1b0d-8c3e-4e2c-804e-2fa3a5f3ab7c</bpmn:outgoing>
+			<bpmn:outgoing>id65179d1b-b441-4368-942f-c14d72c5eba2</bpmn:outgoing>
+			<bpmn:outgoing>idcb3e4130-e38a-4db0-9649-add988d9cfa4</bpmn:outgoing>
+			<bpmn:outgoing>ideb83fd40-d963-40c3-a8b8-2a9164addf68</bpmn:outgoing>
+			<bpmn:outgoing>id7e196512-97f4-49d5-9f9d-e4b1b27261db</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:exclusiveGateway id="Update Order Confirmation__loop_split" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>idaa287fd8-c721-4c95-8e52-70dfd6f9e024</bpmn:incoming>
+			<bpmn:outgoing>idc78b40b2-754b-46bd-8981-6e9be999e30f</bpmn:outgoing>
+			<bpmn:outgoing>id83e07de6-05ed-472f-b423-ff260974056c</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:exclusiveGateway id="Delete Purchase Order Item__loop_split" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>id08264e07-0d32-440d-b462-50d29faeb17d</bpmn:incoming>
+			<bpmn:outgoing>id0795fce3-aa1f-4f13-b540-a53590e4ac31</bpmn:outgoing>
+			<bpmn:outgoing>ideb1d5913-1750-41dd-a747-803fae751b0f</bpmn:outgoing>
+			<bpmn:outgoing>idc0f9b41e-2ebf-44fb-adf5-2ead27d53688</bpmn:outgoing>
+			<bpmn:outgoing>idae41b226-f657-4a22-ae05-5cd72a35ef6a</bpmn:outgoing>
+			<bpmn:outgoing>idd5d09353-ae00-4ccb-978e-3af3dd596d94</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:task id="Cancel Goods Receipt" name="Cancel Goods Receipt">
+			<bpmn:incoming>idae3b91fd-a7bd-4997-bfdd-0a897747f8f8</bpmn:incoming>
+			<bpmn:outgoing>ida05b981a-ab4b-4f08-b74f-d472b62c0a0f</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:task id="SRM: Transfer Failed (E.Sys.)" name="SRM: Transfer Failed (E.Sys.)">
+			<bpmn:incoming>id5b657c6b-a778-4347-942c-61e9617975da</bpmn:incoming>
+			<bpmn:outgoing>idd70d0b5f-f4ba-4695-8a3b-ad5b9e18ce26</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:task id="SRM: Change was Transmitted" name="SRM: Change was Transmitted">
+			<bpmn:incoming>id46476d94-6c37-41b8-b481-caa1c9d0322f</bpmn:incoming>
+			<bpmn:outgoing>idb9ffd6df-34e0-4580-9186-952834f72b8b</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:exclusiveGateway id="SRM: In Transfer to Execution Syst.__loop_join" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>id2dda2df8-d77d-4fed-900c-03152e30e653</bpmn:incoming>
+			<bpmn:incoming>id93ae9bd0-0a23-404f-8997-59c7e11cf93f</bpmn:incoming>
+			<bpmn:incoming>ida722bae5-a410-4590-80b2-e0c13bdfa071</bpmn:incoming>
+			<bpmn:incoming>id61805976-7c7d-43ca-9e79-95037ec08082</bpmn:incoming>
+			<bpmn:outgoing>id4fa63db2-f38b-4084-b35f-f419f23bbdb7</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:exclusiveGateway id="Change Price__loop_join" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>id6c1fb72b-ad9a-4309-bdfa-2de75f27c134</bpmn:incoming>
+			<bpmn:incoming>id68efd551-9960-400a-b357-a1cc818c03c8</bpmn:incoming>
+			<bpmn:incoming>id49d5ab22-58f8-4742-9813-d2a7300af83d</bpmn:incoming>
+			<bpmn:incoming>id316d82c7-e2d6-4e48-9666-ba6c2086b6b1</bpmn:incoming>
+			<bpmn:incoming>idd05fc082-547b-404a-a0f7-32125635c9f6</bpmn:incoming>
+			<bpmn:incoming>id2cac69c2-a73a-4632-8f9a-02556b6f1a0e</bpmn:incoming>
+			<bpmn:outgoing>idaf8573e0-8be4-4e02-98b5-82800af939a8</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:exclusiveGateway id="SRM: Created__loop_split" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>id95925da3-1412-4591-8e3e-d0e44ca11248</bpmn:incoming>
+			<bpmn:outgoing>id33d32cc1-238d-43e7-87fe-48fa18895209</bpmn:outgoing>
+			<bpmn:outgoing>id348a2493-aac6-4881-9d03-ce2b5860db9d</bpmn:outgoing>
+			<bpmn:outgoing>ide64c3a7b-9796-42a6-9f46-fb739576c5c7</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:exclusiveGateway id="SRM: Created__loop_join" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>id5222cad1-e401-4fe7-9f16-21789f40e0e8</bpmn:incoming>
+			<bpmn:incoming>id33d32cc1-238d-43e7-87fe-48fa18895209</bpmn:incoming>
+			<bpmn:outgoing>id16829404-68c7-4ada-9d6c-92633f400410</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:task id="Change Quantity" name="Change Quantity">
+			<bpmn:incoming>id8fb10da8-e611-4a6f-bec2-57e8b3e69ded</bpmn:incoming>
+			<bpmn:outgoing>id9e6f7399-ec26-4a38-a79b-60b61b0b617b</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:task id="SRM: Incomplete" name="SRM: Incomplete">
+			<bpmn:incoming>id2f067152-a356-492a-82ae-ea76d02ca219</bpmn:incoming>
+			<bpmn:outgoing>id7f6130fe-8fff-49fc-868d-3630ef7cb367</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:task id="Update Order Confirmation" name="Update Order Confirmation">
+			<bpmn:incoming>idd00ef0ae-1d32-4b3b-950d-cfa9fa78ea8a</bpmn:incoming>
+			<bpmn:outgoing>idaa287fd8-c721-4c95-8e52-70dfd6f9e024</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:exclusiveGateway id="Record Invoice Receipt__loop_split" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>id27ff1fa4-783f-443c-bef4-e213e771050f</bpmn:incoming>
+			<bpmn:outgoing>idc1cc18df-754e-401b-8f4e-655250fe6f68</bpmn:outgoing>
+			<bpmn:outgoing>id445ec4b4-f24a-4ed5-86ce-44ca6bf1191e</bpmn:outgoing>
+			<bpmn:outgoing>id707ea215-0fe5-47ea-83f4-66c26e5aa0be</bpmn:outgoing>
+			<bpmn:outgoing>id61758e69-53e8-4e6e-95a7-d892c35ad5b1</bpmn:outgoing>
+			<bpmn:outgoing>id6d88c444-2035-443e-a6c9-e0c3b5a08892</bpmn:outgoing>
+			<bpmn:outgoing>id3f76bc4c-5fd8-47aa-ba45-c3c228d25818</bpmn:outgoing>
+			<bpmn:outgoing>id4aadd5ee-68bf-40be-9d5e-c0baadaec87d</bpmn:outgoing>
+			<bpmn:outgoing>id2920280e-565e-4620-ac5b-583cfdf57b82</bpmn:outgoing>
+			<bpmn:outgoing>id1497c939-3000-49b6-a939-7eeb023b1ae1</bpmn:outgoing>
+			<bpmn:outgoing>id49d5ab22-58f8-4742-9813-d2a7300af83d</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:exclusiveGateway id="Change Delivery Indicator__loop_split" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>idab3df2b4-3971-421f-8aae-4297377969f1</bpmn:incoming>
+			<bpmn:outgoing>idb43d5b28-bb41-4803-b514-e02383d81e17</bpmn:outgoing>
+			<bpmn:outgoing>id51d5e7ff-ff6d-4cc7-ba5b-0b1a4a94b568</bpmn:outgoing>
+			<bpmn:outgoing>iddb1b1ee5-54f3-450d-9f6c-1497c3e618e4</bpmn:outgoing>
+			<bpmn:outgoing>id531a571e-3719-450f-8d1c-85066613d4b0</bpmn:outgoing>
+			<bpmn:outgoing>id7c7f2410-f593-484d-948f-6957e038c00e</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:task id="SRM: Deleted" name="SRM: Deleted">
+			<bpmn:incoming>id93440423-6842-4baa-ad94-898fb0af0792</bpmn:incoming>
+			<bpmn:outgoing>id61805976-7c7d-43ca-9e79-95037ec08082</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:exclusiveGateway id="xor_54" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>idcf5269c3-a4d5-4591-91ff-4a4c97242b2c</bpmn:incoming>
+			<bpmn:incoming>id8d927128-b37d-4249-a5aa-927d3187c2e4</bpmn:incoming>
+			<bpmn:incoming>idbea67996-9180-4875-988f-a52d724c93a3</bpmn:incoming>
+			<bpmn:incoming>id631c925d-9305-43d2-8dc0-f3e4c425d619</bpmn:incoming>
+			<bpmn:incoming>id810f957d-6557-40c9-99d2-39c09c2d1e7a</bpmn:incoming>
+			<bpmn:incoming>id15376ae4-08bc-4cc8-8a2c-2ebffc2e01e4</bpmn:incoming>
+			<bpmn:outgoing>id378e2926-2a48-46af-897b-83948bb1c6df</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:task id="Remove Payment Block" name="Remove Payment Block">
+			<bpmn:incoming>id9462d3ca-8284-489c-b2c9-94870d4b2ab4</bpmn:incoming>
+			<bpmn:outgoing>idadf500e1-e967-417d-b753-804c97650e82</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:exclusiveGateway id="Cancel Goods Receipt__loop_join" gatewayDirection="Unspecified" name="">
+			<bpmn:incoming>idf564e9c5-de96-44bd-8cfe-8a00f8b6b2ae</bpmn:incoming>
+			<bpmn:incoming>id5096ab2e-f65d-41ba-a012-86772ed5b3d2</bpmn:incoming>
+			<bpmn:incoming>iddca63b4e-b86c-40e1-818a-b65064778930</bpmn:incoming>
+			<bpmn:outgoing>idae3b91fd-a7bd-4997-bfdd-0a897747f8f8</bpmn:outgoing>
+		</bpmn:exclusiveGateway>
+		<bpmn:task id="Change Final Invoice Indicator" name="Change Final Invoice Indicator">
+			<bpmn:incoming>id51d5e7ff-ff6d-4cc7-ba5b-0b1a4a94b568</bpmn:incoming>
+			<bpmn:outgoing>ida722bae5-a410-4590-80b2-e0c13bdfa071</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:task id="Cancel Subsequent Invoice" name="Cancel Subsequent Invoice">
+			<bpmn:incoming>id9609bff7-cd12-4f68-908e-d5142c0a34cb</bpmn:incoming>
+			<bpmn:outgoing>idb6049fa8-3211-4151-80e0-d7f5ec85a2eb</bpmn:outgoing>
+		</bpmn:task>
+		<bpmn:sequenceFlow id="idc78b40b2-754b-46bd-8981-6e9be999e30f" name="" sourceRef="Update Order Confirmation__loop_split" targetRef="Update Order Confirmation__loop_join"/>
+		<bpmn:sequenceFlow id="id537b3eaf-0eb3-466a-b7d6-db3020ea8722" name="" sourceRef="Change Delivery Indicator__loop_join" targetRef="Change Delivery Indicator"/>
+		<bpmn:sequenceFlow id="id36167811-6d1c-4d3a-9dae-3541e6620fdf" name="" sourceRef="xor_1" targetRef="Vendor creates invoice__loop_join"/>
+		<bpmn:sequenceFlow id="id8e9eadb5-1023-440e-82d9-47699ba4e8b7" name="" sourceRef="Clear Invoice__loop_split" targetRef="Clear Invoice__loop_join"/>
+		<bpmn:sequenceFlow id="id521ca31e-b08f-419b-b12a-a88ef5b0ffc2" name="" sourceRef="Change Rejection Indicator" targetRef="Record Goods Receipt__loop_join"/>
+		<bpmn:sequenceFlow id="id810f957d-6557-40c9-99d2-39c09c2d1e7a" name="" sourceRef="Release Purchase Requisition" targetRef="xor_54"/>
+		<bpmn:sequenceFlow id="id531a571e-3719-450f-8d1c-85066613d4b0" name="" sourceRef="Change Delivery Indicator__loop_split" targetRef="Record Invoice Receipt__loop_join"/>
+		<bpmn:sequenceFlow id="id9e6f7399-ec26-4a38-a79b-60b61b0b617b" name="" sourceRef="Change Quantity" targetRef="Change Quantity__loop_split"/>
+		<bpmn:sequenceFlow id="id62c88e1c-218d-40ce-b568-fc6a08911409" name="" sourceRef="Change Storage Location__loop_split" targetRef="Record Goods Receipt__loop_join"/>
+		<bpmn:sequenceFlow id="id6d88c444-2035-443e-a6c9-e0c3b5a08892" name="" sourceRef="Record Invoice Receipt__loop_split" targetRef="or_35"/>
+		<bpmn:sequenceFlow id="id0fa616fa-8fe1-4129-9870-c537af4b7e5a" name="" sourceRef="Change Approval for Purchase Order" targetRef="Change Approval for Purchase Order__loop_split"/>
+		<bpmn:sequenceFlow id="id2cac69c2-a73a-4632-8f9a-02556b6f1a0e" name="" sourceRef="Change Quantity__loop_split" targetRef="Change Price__loop_join"/>
+		<bpmn:sequenceFlow id="idcb3e4130-e38a-4db0-9649-add988d9cfa4" name="" sourceRef="Clear Invoice__loop_split" targetRef="Cancel Invoice Receipt__loop_join"/>
+		<bpmn:sequenceFlow id="id4fa63db2-f38b-4084-b35f-f419f23bbdb7" name="" sourceRef="SRM: In Transfer to Execution Syst.__loop_join" targetRef="SRM: In Transfer to Execution Syst."/>
+		<bpmn:sequenceFlow id="id93ae9bd0-0a23-404f-8997-59c7e11cf93f" name="" sourceRef="xor_21" targetRef="SRM: In Transfer to Execution Syst.__loop_join"/>
+		<bpmn:sequenceFlow id="id97ba37b3-a606-464d-9d99-c138d4b3b463" name="" sourceRef="Change Quantity__loop_split" targetRef="Record Goods Receipt__loop_join"/>
+		<bpmn:sequenceFlow id="id597f82cc-2398-4987-a574-0681cc46d603" name="" sourceRef="__start__" targetRef="xor_1"/>
+		<bpmn:sequenceFlow id="id11c4bb93-9b96-49ee-9c03-fd6ee6010728" name="" sourceRef="Reactivate Purchase Order Item" targetRef="Record Goods Receipt__loop_join"/>
+		<bpmn:sequenceFlow id="id9462d3ca-8284-489c-b2c9-94870d4b2ab4" name="" sourceRef="Remove Payment Block__loop_join" targetRef="Remove Payment Block"/>
+		<bpmn:sequenceFlow id="id20924462-1956-49be-bd30-3bf3aa7494f4" name="" sourceRef="Cancel Invoice Receipt__loop_split" targetRef="Clear Invoice__loop_join"/>
+		<bpmn:sequenceFlow id="id83e07de6-05ed-472f-b423-ff260974056c" name="" sourceRef="Update Order Confirmation__loop_split" targetRef="Record Goods Receipt__loop_join"/>
+		<bpmn:sequenceFlow id="id6aca6fef-6be7-4ddf-a8f8-62bda80b823d" name="" sourceRef="xor_6" targetRef="Record Goods Receipt__loop_join"/>
+		<bpmn:sequenceFlow id="id7f6130fe-8fff-49fc-868d-3630ef7cb367" name="" sourceRef="SRM: Incomplete" targetRef="xor_24"/>
+		<bpmn:sequenceFlow id="id1799a952-f385-4417-bbdb-e64f5ba8018f" name="" sourceRef="Vendor creates debit memo__loop_split" targetRef="Cancel Subsequent Invoice__loop_join"/>
+		<bpmn:sequenceFlow id="id086aaf4f-2227-496f-8f2f-30c5b4dee3c0" name="" sourceRef="Vendor creates debit memo__loop_split" targetRef="Vendor creates invoice__loop_join"/>
+		<bpmn:sequenceFlow id="id49d5ab22-58f8-4742-9813-d2a7300af83d" name="" sourceRef="Record Invoice Receipt__loop_split" targetRef="Change Price__loop_join"/>
+		<bpmn:sequenceFlow id="id2b94d4bd-12c5-4e78-bff6-b32a44e5c16e" name="" sourceRef="Vendor creates invoice__loop_split" targetRef="Change Quantity__loop_join"/>
+		<bpmn:sequenceFlow id="idcdcfedd0-dbb7-476d-a37c-f5d0a33ab703" name="" sourceRef="Remove Payment Block__loop_split" targetRef="Remove Payment Block__loop_join"/>
+		<bpmn:sequenceFlow id="iddca63b4e-b86c-40e1-818a-b65064778930" name="" sourceRef="Record Goods Receipt__loop_split" targetRef="Cancel Goods Receipt__loop_join"/>
+		<bpmn:sequenceFlow id="id5ba0a2b8-85d5-4fbd-a6df-d9970fd66b23" name="" sourceRef="xor_6" targetRef="or_35"/>
+		<bpmn:sequenceFlow id="idb86dd64d-a1b9-497d-b845-3e68a4a577e3" name="" sourceRef="Clear Invoice__loop_split" targetRef="Record Subsequent Invoice__loop_join"/>
+		<bpmn:sequenceFlow id="id1d9fb448-2450-46c4-a0ed-0c8fe2c1aec1" name="" sourceRef="Change Storage Location__loop_split" targetRef="Change Storage Location__loop_join"/>
+		<bpmn:sequenceFlow id="ida05b981a-ab4b-4f08-b74f-d472b62c0a0f" name="" sourceRef="Cancel Goods Receipt" targetRef="Cancel Goods Receipt__loop_split"/>
+		<bpmn:sequenceFlow id="idc1e808ff-5ee9-4391-a11a-2eeae8c9655c" name="" sourceRef="or_35" targetRef="__end__"/>
+		<bpmn:sequenceFlow id="id0dc8be90-667f-42c1-9168-4312f35aceb6" name="" sourceRef="SRM: Complete" targetRef="SRM: Document Completed"/>
+		<bpmn:sequenceFlow id="idf74f7634-4784-4f0d-8208-7cc216d386e2" name="" sourceRef="xor_6" targetRef="Record Invoice Receipt__loop_join"/>
+		<bpmn:sequenceFlow id="id6a55b256-e91d-41ee-82fa-4763bb8bcd42" name="" sourceRef="xor_13" targetRef="Vendor creates invoice__loop_join"/>
+		<bpmn:sequenceFlow id="id2f067152-a356-492a-82ae-ea76d02ca219" name="" sourceRef="SRM: Held" targetRef="SRM: Incomplete"/>
+		<bpmn:sequenceFlow id="id33d32cc1-238d-43e7-87fe-48fa18895209" name="" sourceRef="SRM: Created__loop_split" targetRef="SRM: Created__loop_join"/>
+		<bpmn:sequenceFlow id="ideb1d5913-1750-41dd-a747-803fae751b0f" name="" sourceRef="Delete Purchase Order Item__loop_split" targetRef="Change Rejection Indicator"/>
+		<bpmn:sequenceFlow id="id4ef056ba-fe98-4a4c-8ce8-382cdfc13124" name="" sourceRef="Record Service Entry Sheet" targetRef="Record Service Entry Sheet__loop_split"/>
+		<bpmn:sequenceFlow id="id2d94a11d-6576-410d-bf55-222d2183e8c4" name="" sourceRef="xor_6" targetRef="or_43"/>
+		<bpmn:sequenceFlow id="id1668d129-3fc1-47a9-b4c7-1e9868d674e1" name="" sourceRef="Change Approval for Purchase Order__loop_split" targetRef="or_35"/>
+		<bpmn:sequenceFlow id="idacf1be34-7654-4cdc-b6a2-c726c25197b8" name="" sourceRef="Record Goods Receipt__loop_split" targetRef="Clear Invoice__loop_join"/>
+		<bpmn:sequenceFlow id="idd590959e-0b0f-4ddc-b4ed-b8ff6eb8d602" name="" sourceRef="xor_6" targetRef="Change Quantity__loop_join"/>
+		<bpmn:sequenceFlow id="id08264e07-0d32-440d-b462-50d29faeb17d" name="" sourceRef="Delete Purchase Order Item" targetRef="Delete Purchase Order Item__loop_split"/>
+		<bpmn:sequenceFlow id="id61805976-7c7d-43ca-9e79-95037ec08082" name="" sourceRef="SRM: Deleted" targetRef="SRM: In Transfer to Execution Syst.__loop_join"/>
+		<bpmn:sequenceFlow id="id0795fce3-aa1f-4f13-b540-a53590e4ac31" name="" sourceRef="Delete Purchase Order Item__loop_split" targetRef="Delete Purchase Order Item__loop_join"/>
+		<bpmn:sequenceFlow id="idd6e54e7c-645e-4228-b8fa-b2cf94520ef3" name="" sourceRef="Cancel Subsequent Invoice__loop_split" targetRef="Cancel Subsequent Invoice__loop_join"/>
+		<bpmn:sequenceFlow id="id8c7ae71f-cb89-4597-8f9a-46bddb4db9e1" name="" sourceRef="Create Purchase Order Item" targetRef="xor_6"/>
+		<bpmn:sequenceFlow id="id6e203546-12d5-40e5-b9a0-7bd599a2b0b8" name="" sourceRef="xor_5" targetRef="Release Purchase Requisition"/>
+		<bpmn:sequenceFlow id="idae3b91fd-a7bd-4997-bfdd-0a897747f8f8" name="" sourceRef="Cancel Goods Receipt__loop_join" targetRef="Cancel Goods Receipt"/>
+		<bpmn:sequenceFlow id="id775a246a-14b8-4224-9475-77f0215fa1a6" name="" sourceRef="xor_6" targetRef="Release Purchase Order"/>
+		<bpmn:sequenceFlow id="ida03c9406-5240-4b80-b548-e184d1e547c1" name="" sourceRef="SRM: Ordered" targetRef="Vendor creates invoice__loop_join"/>
+		<bpmn:sequenceFlow id="id5096ab2e-f65d-41ba-a012-86772ed5b3d2" name="" sourceRef="xor_6" targetRef="Cancel Goods Receipt__loop_join"/>
+		<bpmn:sequenceFlow id="id1326753d-e2d4-43c4-a86d-a1cffc08e784" name="" sourceRef="Clear Invoice__loop_join" targetRef="Clear Invoice"/>
+		<bpmn:sequenceFlow id="ide99f8e79-58d5-4704-a5ff-da05799f8777" name="" sourceRef="SRM: Transaction Completed" targetRef="or_35"/>
+		<bpmn:sequenceFlow id="ided6fadd8-dfa4-4a93-be75-5dc12ceeca17" name="" sourceRef="Record Goods Receipt" targetRef="Record Goods Receipt__loop_split"/>
+		<bpmn:sequenceFlow id="id0886da44-ecbf-48c6-a41f-cc383a962df3" name="" sourceRef="Cancel Invoice Receipt__loop_join" targetRef="Cancel Invoice Receipt"/>
+		<bpmn:sequenceFlow id="ide1766ba2-7831-4277-9a88-9976930a595a" name="" sourceRef="xor_19" targetRef="SRM: Complete"/>
+		<bpmn:sequenceFlow id="idf995c6ad-36c3-4a76-8dc0-c5378e602c72" name="" sourceRef="Change Quantity__loop_split" targetRef="Vendor creates invoice__loop_join"/>
+		<bpmn:sequenceFlow id="id10a65822-75a9-4818-ac5f-56f9f7381d53" name="" sourceRef="Change Price__loop_split" targetRef="Change Currency"/>
+		<bpmn:sequenceFlow id="id976a0082-5767-407e-a032-e5b05c1b651a" name="" sourceRef="Vendor creates debit memo__loop_split" targetRef="Vendor creates debit memo__loop_join"/>
+		<bpmn:sequenceFlow id="id5222cad1-e401-4fe7-9f16-21789f40e0e8" name="" sourceRef="xor_1" targetRef="SRM: Created__loop_join"/>
+		<bpmn:sequenceFlow id="id51d5e7ff-ff6d-4cc7-ba5b-0b1a4a94b568" name="" sourceRef="Change Delivery Indicator__loop_split" targetRef="Change Final Invoice Indicator"/>
+		<bpmn:sequenceFlow id="id1566286f-b819-46bc-baf0-db965c82ab7f" name="" sourceRef="Clear Invoice__loop_split" targetRef="or_35"/>
+		<bpmn:sequenceFlow id="id15376ae4-08bc-4cc8-8a2c-2ebffc2e01e4" name="" sourceRef="xor_5" targetRef="xor_54"/>
+		<bpmn:sequenceFlow id="idd70d0b5f-f4ba-4695-8a3b-ad5b9e18ce26" name="" sourceRef="SRM: Transfer Failed (E.Sys.)" targetRef="or_35"/>
+		<bpmn:sequenceFlow id="id386d168c-2902-4763-a228-d3b3b8e0c9bf" name="" sourceRef="Change Price" targetRef="Change Price__loop_split"/>
+		<bpmn:sequenceFlow id="id03c4ff46-edfb-4e4b-a331-b4dc9076299e" name="" sourceRef="Vendor creates debit memo__loop_split" targetRef="Cancel Invoice Receipt__loop_join"/>
+		<bpmn:sequenceFlow id="id4efdc393-25c6-428d-91e4-36cc50a4798c" name="" sourceRef="Change Currency" targetRef="Vendor creates invoice__loop_join"/>
+		<bpmn:sequenceFlow id="id04b269c6-cc7a-455d-9b49-f37d6ab121e9" name="" sourceRef="Vendor creates invoice__loop_split" targetRef="Vendor creates debit memo__loop_join"/>
+		<bpmn:sequenceFlow id="ide4fcf5ff-e5eb-4f98-9eaf-3351d1ca17fd" name="" sourceRef="Record Goods Receipt__loop_split" targetRef="Record Service Entry Sheet__loop_join"/>
+		<bpmn:sequenceFlow id="id0ae2d8b1-b7f8-441d-b9db-8d2faa4bfb39" name="" sourceRef="Create Purchase Requisition Item" targetRef="xor_5"/>
+		<bpmn:sequenceFlow id="id7ef4a764-6886-45ba-83fb-2f519680d960" name="" sourceRef="Change Approval for Purchase Order__loop_split" targetRef="Change Approval for Purchase Order__loop_join"/>
+		<bpmn:sequenceFlow id="id6b60070d-6210-4770-8ade-c913c2e30fe2" name="" sourceRef="Record Service Entry Sheet__loop_join" targetRef="Record Service Entry Sheet"/>
+		<bpmn:sequenceFlow id="idab3df2b4-3971-421f-8aae-4297377969f1" name="" sourceRef="Change Delivery Indicator" targetRef="Change Delivery Indicator__loop_split"/>
+		<bpmn:sequenceFlow id="id7c7f2410-f593-484d-948f-6957e038c00e" name="" sourceRef="Change Delivery Indicator__loop_split" targetRef="Record Goods Receipt__loop_join"/>
+		<bpmn:sequenceFlow id="id6b1bf54a-17d6-4443-9a9d-56f2c3f07686" name="" sourceRef="or_43" targetRef="Receive Order Confirmation"/>
+		<bpmn:sequenceFlow id="id93440423-6842-4baa-ad94-898fb0af0792" name="" sourceRef="xor_21" targetRef="SRM: Deleted"/>
+		<bpmn:sequenceFlow id="id0be60ace-dbb4-4715-b124-3734de52606d" name="" sourceRef="xor_24" targetRef="SRM: Awaiting Approval"/>
+		<bpmn:sequenceFlow id="idbe11793b-fcc6-4369-86ec-b8cbf2e4a132" name="" sourceRef="Cancel Invoice Receipt__loop_split" targetRef="or_35"/>
+		<bpmn:sequenceFlow id="id631c925d-9305-43d2-8dc0-f3e4c425d619" name="" sourceRef="xor_1" targetRef="xor_54"/>
+		<bpmn:sequenceFlow id="id707ea215-0fe5-47ea-83f4-66c26e5aa0be" name="" sourceRef="Record Invoice Receipt__loop_split" targetRef="Vendor creates invoice__loop_join"/>
+		<bpmn:sequenceFlow id="id46476d94-6c37-41b8-b481-caa1c9d0322f" name="" sourceRef="SRM: Awaiting Approval" targetRef="SRM: Change was Transmitted"/>
+		<bpmn:sequenceFlow id="id8fb10da8-e611-4a6f-bec2-57e8b3e69ded" name="" sourceRef="Change Quantity__loop_join" targetRef="Change Quantity"/>
+		<bpmn:sequenceFlow id="id9fb71e3f-d2dd-4fe1-9695-c285e0c7a476" name="" sourceRef="Change payment term" targetRef="Record Goods Receipt__loop_join"/>
+		<bpmn:sequenceFlow id="id378e2926-2a48-46af-897b-83948bb1c6df" name="" sourceRef="xor_54" targetRef="Create Purchase Order Item"/>
+		<bpmn:sequenceFlow id="idc0f9b41e-2ebf-44fb-adf5-2ead27d53688" name="" sourceRef="Delete Purchase Order Item__loop_split" targetRef="SRM: Transaction Completed"/>
+		<bpmn:sequenceFlow id="idae41b226-f657-4a22-ae05-5cd72a35ef6a" name="" sourceRef="Delete Purchase Order Item__loop_split" targetRef="Reactivate Purchase Order Item"/>
+		<bpmn:sequenceFlow id="id4032a7a1-e0bf-4288-b645-9680b26b3515" name="" sourceRef="Change Price__loop_split" targetRef="Change Quantity__loop_join"/>
+		<bpmn:sequenceFlow id="id445ec4b4-f24a-4ed5-86ce-44ca6bf1191e" name="" sourceRef="Record Invoice Receipt__loop_split" targetRef="Set Payment Block"/>
+		<bpmn:sequenceFlow id="id348a2493-aac6-4881-9d03-ce2b5860db9d" name="" sourceRef="SRM: Created__loop_split" targetRef="xor_24"/>
+		<bpmn:sequenceFlow id="id159b8a59-c524-44c3-b32c-63e06d617a55" name="" sourceRef="Cancel Goods Receipt__loop_split" targetRef="Record Goods Receipt__loop_join"/>
+		<bpmn:sequenceFlow id="id4665cfae-906b-41c3-89fe-b68eb4f95fb1" name="" sourceRef="Record Goods Receipt__loop_split" targetRef="Remove Payment Block__loop_join"/>
+		<bpmn:sequenceFlow id="idd00ef0ae-1d32-4b3b-950d-cfa9fa78ea8a" name="" sourceRef="Update Order Confirmation__loop_join" targetRef="Update Order Confirmation"/>
+		<bpmn:sequenceFlow id="id8b945bb8-4e69-4b4c-9e50-6b0da708fe63" name="" sourceRef="Release Purchase Order" targetRef="Change Approval for Purchase Order__loop_join"/>
+		<bpmn:sequenceFlow id="id979dfadf-2702-4229-ad1a-9d3f73120506" name="" sourceRef="xor_1" targetRef="Create Purchase Requisition Item"/>
+		<bpmn:sequenceFlow id="id27ff1fa4-783f-443c-bef4-e213e771050f" name="" sourceRef="Record Invoice Receipt" targetRef="Record Invoice Receipt__loop_split"/>
+		<bpmn:sequenceFlow id="idf2ad5f0d-8bd7-4085-a519-16eefcaf5632" name="" sourceRef="Record Goods Receipt__loop_split" targetRef="Record Invoice Receipt__loop_join"/>
+		<bpmn:sequenceFlow id="id11f29cf3-3239-4c6b-8321-1d284cca6986" name="" sourceRef="Vendor creates debit memo__loop_split" targetRef="Record Invoice Receipt__loop_join"/>
+		<bpmn:sequenceFlow id="idbdc2c755-b14f-452e-8584-a8c44068eb69" name="" sourceRef="Change Approval for Purchase Order__loop_split" targetRef="or_43"/>
+		<bpmn:sequenceFlow id="id61758e69-53e8-4e6e-95a7-d892c35ad5b1" name="" sourceRef="Record Invoice Receipt__loop_split" targetRef="Record Service Entry Sheet__loop_join"/>
+		<bpmn:sequenceFlow id="idc1cc18df-754e-401b-8f4e-655250fe6f68" name="" sourceRef="Record Invoice Receipt__loop_split" targetRef="Record Invoice Receipt__loop_join"/>
+		<bpmn:sequenceFlow id="ida8d30fb9-ceda-40db-af69-a89ae7290181" name="" sourceRef="Record Subsequent Invoice__loop_split" targetRef="Clear Invoice__loop_join"/>
+		<bpmn:sequenceFlow id="idaa287fd8-c721-4c95-8e52-70dfd6f9e024" name="" sourceRef="Update Order Confirmation" targetRef="Update Order Confirmation__loop_split"/>
+		<bpmn:sequenceFlow id="ida41230a9-358c-459a-9dd4-f026ac883d62" name="" sourceRef="Record Goods Receipt__loop_split" targetRef="Record Goods Receipt__loop_join"/>
+		<bpmn:sequenceFlow id="ida16b723c-9158-4122-b0f3-eb40834370f0" name="" sourceRef="Delete Purchase Order Item__loop_join" targetRef="Delete Purchase Order Item"/>
+		<bpmn:sequenceFlow id="idc76e7d28-e72a-4943-a46e-66b10344ab84" name="" sourceRef="Record Goods Receipt__loop_split" targetRef="Change Delivery Indicator__loop_join"/>
+		<bpmn:sequenceFlow id="id99e46bdc-a521-45d5-878e-4ab7d841da92" name="" sourceRef="Record Subsequent Invoice" targetRef="Record Subsequent Invoice__loop_split"/>
+		<bpmn:sequenceFlow id="id3426a348-c2de-4968-8c80-68838b7a1ff5" name="" sourceRef="Vendor creates debit memo__loop_split" targetRef="Record Goods Receipt__loop_join"/>
+		<bpmn:sequenceFlow id="iddb1b1ee5-54f3-450d-9f6c-1497c3e618e4" name="" sourceRef="Change Delivery Indicator__loop_split" targetRef="or_35"/>
+		<bpmn:sequenceFlow id="id64d9dc61-dcfa-42a2-9704-4f6077726e79" name="" sourceRef="Record Goods Receipt__loop_split" targetRef="Change Quantity__loop_join"/>
+		<bpmn:sequenceFlow id="id1d6f2b5d-cda2-48a4-ab74-ea80a88ff485" name="" sourceRef="xor_6" targetRef="Change payment term"/>
+		<bpmn:sequenceFlow id="id7e196512-97f4-49d5-9f9d-e4b1b27261db" name="" sourceRef="Clear Invoice__loop_split" targetRef="Remove Payment Block__loop_join"/>
+		<bpmn:sequenceFlow id="id568d8fb7-aaec-4fc2-a202-1808df919c13" name="" sourceRef="Change Quantity__loop_split" targetRef="Change Quantity__loop_join"/>
+		<bpmn:sequenceFlow id="ida722bae5-a410-4590-80b2-e0c13bdfa071" name="" sourceRef="Change Final Invoice Indicator" targetRef="SRM: In Transfer to Execution Syst.__loop_join"/>
+		<bpmn:sequenceFlow id="idcf5269c3-a4d5-4591-91ff-4a4c97242b2c" name="" sourceRef="Record Service Entry Sheet__loop_split" targetRef="xor_54"/>
+		<bpmn:sequenceFlow id="idcab4ad13-c926-4cb4-9fd8-998c67eea618" name="" sourceRef="Vendor creates invoice__loop_join" targetRef="Vendor creates invoice"/>
+		<bpmn:sequenceFlow id="id8c59d793-989c-4441-a26f-b54690e672ef" name="" sourceRef="Cancel Invoice Receipt" targetRef="Cancel Invoice Receipt__loop_split"/>
+		<bpmn:sequenceFlow id="id92b03ee7-340d-416f-823b-68fa99ef2dea" name="" sourceRef="Vendor creates invoice__loop_split" targetRef="Record Goods Receipt__loop_join"/>
+		<bpmn:sequenceFlow id="idbea67996-9180-4875-988f-a52d724c93a3" name="" sourceRef="xor_19" targetRef="xor_54"/>
+		<bpmn:sequenceFlow id="id2dda2df8-d77d-4fed-900c-03152e30e653" name="" sourceRef="SRM: In Transfer to Execution Syst.__loop_split" targetRef="SRM: In Transfer to Execution Syst.__loop_join"/>
+		<bpmn:sequenceFlow id="id6dc37c02-876d-493f-874c-6d23af0ac7ad" name="" sourceRef="Change Price__loop_split" targetRef="Remove Payment Block__loop_join"/>
+		<bpmn:sequenceFlow id="ide64c3a7b-9796-42a6-9f46-fb739576c5c7" name="" sourceRef="SRM: Created__loop_split" targetRef="SRM: Held"/>
+		<bpmn:sequenceFlow id="id9c260cfc-f997-456f-b829-38f7b39e3d64" name="" sourceRef="Record Subsequent Invoice__loop_split" targetRef="Record Subsequent Invoice__loop_join"/>
+		<bpmn:sequenceFlow id="id8d927128-b37d-4249-a5aa-927d3187c2e4" name="" sourceRef="Vendor creates invoice__loop_split" targetRef="xor_54"/>
+		<bpmn:sequenceFlow id="id34ad093c-c740-429c-b52d-3c98fd2e9c07" name="" sourceRef="xor_6" targetRef="Vendor creates invoice__loop_join"/>
+		<bpmn:sequenceFlow id="id867054ae-f89d-4a3a-877b-382443e5353c" name="" sourceRef="Record Goods Receipt__loop_split" targetRef="or_35"/>
+		<bpmn:sequenceFlow id="id6c1fb72b-ad9a-4309-bdfa-2de75f27c134" name="" sourceRef="Change Price__loop_split" targetRef="Change Price__loop_join"/>
+		<bpmn:sequenceFlow id="idcaab8ef8-d58e-416a-a54e-142fcc72f0f7" name="" sourceRef="Cancel Invoice Receipt__loop_split" targetRef="Cancel Invoice Receipt__loop_join"/>
+		<bpmn:sequenceFlow id="id65179d1b-b441-4368-942f-c14d72c5eba2" name="" sourceRef="Clear Invoice__loop_split" targetRef="Record Service Entry Sheet__loop_join"/>
+		<bpmn:sequenceFlow id="idb43d5b28-bb41-4803-b514-e02383d81e17" name="" sourceRef="Change Delivery Indicator__loop_split" targetRef="Change Delivery Indicator__loop_join"/>
+		<bpmn:sequenceFlow id="idc45890f5-c1e2-4a61-a436-10d1e43d7eeb" name="" sourceRef="xor_6" targetRef="Block Purchase Order Item"/>
+		<bpmn:sequenceFlow id="id8c4065af-46a7-4152-bf9b-52bb6232f898" name="" sourceRef="SRM: Document Completed" targetRef="xor_21"/>
+		<bpmn:sequenceFlow id="idb6049fa8-3211-4151-80e0-d7f5ec85a2eb" name="" sourceRef="Cancel Subsequent Invoice" targetRef="Cancel Subsequent Invoice__loop_split"/>
+		<bpmn:sequenceFlow id="id8b65407a-7fb4-43a6-99bd-7705246d1816" name="" sourceRef="Remove Payment Block__loop_split" targetRef="Clear Invoice__loop_join"/>
+		<bpmn:sequenceFlow id="id8a24a091-7328-4017-9678-b2036dd91b48" name="" sourceRef="Vendor creates invoice__loop_split" targetRef="Record Service Entry Sheet__loop_join"/>
+		<bpmn:sequenceFlow id="idaec96422-7f3a-4485-a6ea-bc4d4384ebfb" name="" sourceRef="Receive Order Confirmation" targetRef="xor_13"/>
+		<bpmn:sequenceFlow id="id9a68fd47-aa2c-44cc-865b-a9d3e83969fd" name="" sourceRef="Record Service Entry Sheet__loop_split" targetRef="Record Goods Receipt__loop_join"/>
+		<bpmn:sequenceFlow id="id9609bff7-cd12-4f68-908e-d5142c0a34cb" name="" sourceRef="Cancel Subsequent Invoice__loop_join" targetRef="Cancel Subsequent Invoice"/>
+		<bpmn:sequenceFlow id="idd5d09353-ae00-4ccb-978e-3af3dd596d94" name="" sourceRef="Delete Purchase Order Item__loop_split" targetRef="or_35"/>
+		<bpmn:sequenceFlow id="id4aadd5ee-68bf-40be-9d5e-c0baadaec87d" name="" sourceRef="Record Invoice Receipt__loop_split" targetRef="Remove Payment Block__loop_join"/>
+		<bpmn:sequenceFlow id="ided84d6f7-3477-4e70-8b6f-a47f1a9ea141" name="" sourceRef="SRM: In Transfer to Execution Syst.__loop_split" targetRef="SRM: Ordered"/>
+		<bpmn:sequenceFlow id="ideb83fd40-d963-40c3-a8b8-2a9164addf68" name="" sourceRef="Clear Invoice__loop_split" targetRef="Record Invoice Receipt__loop_join"/>
+		<bpmn:sequenceFlow id="id3f76bc4c-5fd8-47aa-ba45-c3c228d25818" name="" sourceRef="Record Invoice Receipt__loop_split" targetRef="Cancel Invoice Receipt__loop_join"/>
+		<bpmn:sequenceFlow id="ide4a2b65d-e428-4d3e-853f-50f0618f2bc4" name="" sourceRef="Vendor creates debit memo" targetRef="Vendor creates debit memo__loop_split"/>
+		<bpmn:sequenceFlow id="ide5449d60-c295-475c-b4db-aad240a4b965" name="" sourceRef="xor_6" targetRef="Vendor creates debit memo__loop_join"/>
+		<bpmn:sequenceFlow id="idfdf1426d-6534-47d2-8e9f-5284495ead2b" name="" sourceRef="Set Payment Block" targetRef="or_35"/>
+		<bpmn:sequenceFlow id="id14fec72c-e925-4528-9eaa-5dd6eed1c0e0" name="" sourceRef="Block Purchase Order Item" targetRef="or_35"/>
+		<bpmn:sequenceFlow id="ida8a11201-a4e1-4056-831b-97aa13f418fc" name="" sourceRef="Vendor creates invoice" targetRef="Vendor creates invoice__loop_split"/>
+		<bpmn:sequenceFlow id="id16829404-68c7-4ada-9d6c-92633f400410" name="" sourceRef="SRM: Created__loop_join" targetRef="SRM: Created"/>
+		<bpmn:sequenceFlow id="id316d82c7-e2d6-4e48-9666-ba6c2086b6b1" name="" sourceRef="xor_6" targetRef="Change Price__loop_join"/>
+		<bpmn:sequenceFlow id="id217d544c-ed19-4a79-ada2-9b3b35a0d803" name="" sourceRef="Change Price__loop_split" targetRef="Vendor creates invoice__loop_join"/>
+		<bpmn:sequenceFlow id="idc241b652-872f-4a64-920f-dbe9810f136b" name="" sourceRef="Vendor creates invoice__loop_split" targetRef="Record Invoice Receipt__loop_join"/>
+		<bpmn:sequenceFlow id="id6e2e38c3-2c87-476d-bd74-a268720f49c2" name="" sourceRef="Clear Invoice" targetRef="Clear Invoice__loop_split"/>
+		<bpmn:sequenceFlow id="id0dc56698-ebf2-4215-acca-a05ba956687b" name="" sourceRef="SRM: In Transfer to Execution Syst." targetRef="SRM: In Transfer to Execution Syst.__loop_split"/>
+		<bpmn:sequenceFlow id="ida2c4f496-1703-44c1-b115-8de955bf33de" name="" sourceRef="Record Invoice Receipt__loop_join" targetRef="Record Invoice Receipt"/>
+		<bpmn:sequenceFlow id="id1497c939-3000-49b6-a939-7eeb023b1ae1" name="" sourceRef="Record Invoice Receipt__loop_split" targetRef="Clear Invoice__loop_join"/>
+		<bpmn:sequenceFlow id="id95925da3-1412-4591-8e3e-d0e44ca11248" name="" sourceRef="SRM: Created" targetRef="SRM: Created__loop_split"/>
+		<bpmn:sequenceFlow id="ide9e28516-2c75-4dc5-bd99-dbdedf3c7492" name="" sourceRef="xor_13" targetRef="Delete Purchase Order Item__loop_join"/>
+		<bpmn:sequenceFlow id="ida3363a30-bcf7-43c9-954f-f816a55ad443" name="" sourceRef="Vendor creates debit memo__loop_join" targetRef="Vendor creates debit memo"/>
+		<bpmn:sequenceFlow id="idb9ffd6df-34e0-4580-9186-952834f72b8b" name="" sourceRef="SRM: Change was Transmitted" targetRef="xor_19"/>
+		<bpmn:sequenceFlow id="id5015d4a1-7bda-40bf-a6c9-7d8d6c9c38ff" name="" sourceRef="xor_1" targetRef="Record Service Entry Sheet__loop_join"/>
+		<bpmn:sequenceFlow id="id3f4ddb82-4cb3-40bc-a28d-5a7f94475f66" name="" sourceRef="xor_6" targetRef="Record Service Entry Sheet__loop_join"/>
+		<bpmn:sequenceFlow id="idadf500e1-e967-417d-b753-804c97650e82" name="" sourceRef="Remove Payment Block" targetRef="Remove Payment Block__loop_split"/>
+		<bpmn:sequenceFlow id="idff6f97c2-d90a-4948-a05d-f163c891dc75" name="" sourceRef="Vendor creates invoice__loop_split" targetRef="Vendor creates invoice__loop_join"/>
+		<bpmn:sequenceFlow id="id001d885c-0a92-4f90-a561-25961b16d945" name="" sourceRef="Change Approval for Purchase Order__loop_split" targetRef="Vendor creates invoice__loop_join"/>
+		<bpmn:sequenceFlow id="id525350dc-a26d-4e45-b221-5b2f754460d8" name="" sourceRef="xor_13" targetRef="Record Goods Receipt__loop_join"/>
+		<bpmn:sequenceFlow id="id4ee46d9f-e65a-4840-a44d-afcff2b4b390" name="" sourceRef="xor_6" targetRef="Delete Purchase Order Item__loop_join"/>
+		<bpmn:sequenceFlow id="id2920280e-565e-4620-ac5b-583cfdf57b82" name="" sourceRef="Record Invoice Receipt__loop_split" targetRef="Record Goods Receipt__loop_join"/>
+		<bpmn:sequenceFlow id="idd0d99f98-db97-4154-be0f-16d2b284d4c2" name="" sourceRef="xor_6" targetRef="Change Storage Location__loop_join"/>
+		<bpmn:sequenceFlow id="id3ce4d2e4-3195-4a98-81b5-d15559513a1d" name="" sourceRef="Record Subsequent Invoice__loop_join" targetRef="Record Subsequent Invoice"/>
+		<bpmn:sequenceFlow id="idb896311d-a235-46a3-b72b-f6ce543df69b" name="" sourceRef="xor_13" targetRef="Update Order Confirmation__loop_join"/>
+		<bpmn:sequenceFlow id="idd338eac6-6a84-4464-9a2c-62672a679bbb" name="" sourceRef="Record Goods Receipt__loop_split" targetRef="Vendor creates invoice__loop_join"/>
+		<bpmn:sequenceFlow id="id68efd551-9960-400a-b357-a1cc818c03c8" name="" sourceRef="Vendor creates invoice__loop_split" targetRef="Change Price__loop_join"/>
+		<bpmn:sequenceFlow id="id6ec6b528-8de9-4bfa-9d4c-b0c15c4f3a58" name="" sourceRef="Change Approval for Purchase Order__loop_join" targetRef="Change Approval for Purchase Order"/>
+		<bpmn:sequenceFlow id="idd05fc082-547b-404a-a0f7-32125635c9f6" name="" sourceRef="Record Goods Receipt__loop_split" targetRef="Change Price__loop_join"/>
+		<bpmn:sequenceFlow id="idf2806ae3-4a81-4f36-b8cb-9c0f969150ee" name="" sourceRef="Cancel Subsequent Invoice__loop_split" targetRef="Clear Invoice__loop_join"/>
+		<bpmn:sequenceFlow id="idf564e9c5-de96-44bd-8cfe-8a00f8b6b2ae" name="" sourceRef="Cancel Goods Receipt__loop_split" targetRef="Cancel Goods Receipt__loop_join"/>
+		<bpmn:sequenceFlow id="idfc8b7aff-1dee-45af-be55-8d87c4e17771" name="" sourceRef="Vendor creates invoice__loop_split" targetRef="Clear Invoice__loop_join"/>
+		<bpmn:sequenceFlow id="id166c9545-87d9-46d8-bb05-edc52ef0899b" name="" sourceRef="Record Goods Receipt__loop_join" targetRef="Record Goods Receipt"/>
+		<bpmn:sequenceFlow id="id67825351-c847-4dd3-80cc-b37aceec86e0" name="" sourceRef="Change Storage Location" targetRef="Change Storage Location__loop_split"/>
+		<bpmn:sequenceFlow id="id1ed96f21-4665-4904-b793-45b18c919d95" name="" sourceRef="Change Storage Location__loop_join" targetRef="Change Storage Location"/>
+		<bpmn:sequenceFlow id="id36fd1b0d-8c3e-4e2c-804e-2fa3a5f3ab7c" name="" sourceRef="Clear Invoice__loop_split" targetRef="Vendor creates invoice__loop_join"/>
+		<bpmn:sequenceFlow id="id2e486bf5-170c-4ce5-98be-f28b71ee7e14" name="" sourceRef="xor_6" targetRef="Change Approval for Purchase Order__loop_join"/>
+		<bpmn:sequenceFlow id="idaf8573e0-8be4-4e02-98b5-82800af939a8" name="" sourceRef="Change Price__loop_join" targetRef="Change Price"/>
+		<bpmn:sequenceFlow id="id7af36130-167a-453d-bc0e-e1f2dc624f4f" name="" sourceRef="Change Price__loop_split" targetRef="Record Invoice Receipt__loop_join"/>
+		<bpmn:sequenceFlow id="id863d3b36-e941-4285-a743-f94cb74ee0b8" name="" sourceRef="Record Service Entry Sheet__loop_split" targetRef="Record Service Entry Sheet__loop_join"/>
+		<bpmn:sequenceFlow id="id69c16a10-7ee5-46a0-998c-ebfeb8bf4a2f" name="" sourceRef="Change Price__loop_split" targetRef="Record Goods Receipt__loop_join"/>
+		<bpmn:sequenceFlow id="idca537e02-ead0-4ac1-ab98-e6e563870346" name="" sourceRef="Remove Payment Block__loop_split" targetRef="or_35"/>
+		<bpmn:sequenceFlow id="idea1aeb31-70b6-47d2-b8df-1a0ceaf79b93" name="" sourceRef="Change Quantity__loop_split" targetRef="Change Delivery Indicator__loop_join"/>
+		<bpmn:sequenceFlow id="id5b657c6b-a778-4347-942c-61e9617975da" name="" sourceRef="SRM: In Transfer to Execution Syst.__loop_split" targetRef="SRM: Transfer Failed (E.Sys.)"/>
+		<bpmn:sequenceFlow id="id6187bb17-2ce6-4d8f-b660-fef895f445dc" name="" sourceRef="Cancel Invoice Receipt__loop_split" targetRef="Record Invoice Receipt__loop_join"/>
+	</bpmn:process>
+	<bpmndi:BPMNDiagram id="idc4acbb7c-d75b-4a7a-b9e3-a0e6f4696940" name="diagram">
+		<bpmndi:BPMNPlane bpmnElement="id09412958-a072-4bc2-b6cd-055979706875" id="idcf5d930c-0fae-4945-aaa8-ef9d6725917c">
+			<bpmndi:BPMNShape bpmnElement="Vendor creates invoice__loop_join" id="Vendor creates invoice__loop_join_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Record Service Entry Sheet" id="Record Service Entry Sheet_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Vendor creates debit memo__loop_split" id="Vendor creates debit memo__loop_split_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Delete Purchase Order Item" id="Delete Purchase Order Item_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Change Currency" id="Change Currency_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Cancel Invoice Receipt" id="Cancel Invoice Receipt_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Record Service Entry Sheet__loop_join" id="Record Service Entry Sheet__loop_join_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Cancel Subsequent Invoice__loop_join" id="Cancel Subsequent Invoice__loop_join_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Change Storage Location__loop_split" id="Change Storage Location__loop_split_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="or_35" id="or_35_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="or_43" id="or_43_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Record Subsequent Invoice__loop_split" id="Record Subsequent Invoice__loop_split_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="SRM: Created" id="SRM: Created_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="xor_24" id="xor_24_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="xor_21" id="xor_21_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Cancel Goods Receipt__loop_split" id="Cancel Goods Receipt__loop_split_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="xor_19" id="xor_19_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="SRM: Transaction Completed" id="SRM: Transaction Completed_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Change Delivery Indicator" id="Change Delivery Indicator_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="SRM: In Transfer to Execution Syst." id="SRM: In Transfer to Execution Syst._gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Remove Payment Block__loop_split" id="Remove Payment Block__loop_split_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Update Order Confirmation__loop_join" id="Update Order Confirmation__loop_join_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Vendor creates debit memo" id="Vendor creates debit memo_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Record Invoice Receipt" id="Record Invoice Receipt_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="SRM: Held" id="SRM: Held_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Vendor creates debit memo__loop_join" id="Vendor creates debit memo__loop_join_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Reactivate Purchase Order Item" id="Reactivate Purchase Order Item_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Create Purchase Requisition Item" id="Create Purchase Requisition Item_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Change Delivery Indicator__loop_join" id="Change Delivery Indicator__loop_join_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Cancel Invoice Receipt__loop_join" id="Cancel Invoice Receipt__loop_join_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="__start__" id="__start___gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Change Storage Location" id="Change Storage Location_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Change Storage Location__loop_join" id="Change Storage Location__loop_join_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Record Invoice Receipt__loop_join" id="Record Invoice Receipt__loop_join_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="xor_5" id="xor_5_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Change Approval for Purchase Order__loop_split" id="Change Approval for Purchase Order__loop_split_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="xor_13" id="xor_13_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Change Price" id="Change Price_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="SRM: Awaiting Approval" id="SRM: Awaiting Approval_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Change Approval for Purchase Order" id="Change Approval for Purchase Order_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Record Subsequent Invoice__loop_join" id="Record Subsequent Invoice__loop_join_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="SRM: Ordered" id="SRM: Ordered_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Release Purchase Requisition" id="Release Purchase Requisition_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="__end__" id="__end___gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Change Rejection Indicator" id="Change Rejection Indicator_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Record Service Entry Sheet__loop_split" id="Record Service Entry Sheet__loop_split_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Delete Purchase Order Item__loop_join" id="Delete Purchase Order Item__loop_join_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Receive Order Confirmation" id="Receive Order Confirmation_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Change Approval for Purchase Order__loop_join" id="Change Approval for Purchase Order__loop_join_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Release Purchase Order" id="Release Purchase Order_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="SRM: Document Completed" id="SRM: Document Completed_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="SRM: In Transfer to Execution Syst.__loop_split" id="SRM: In Transfer to Execution Syst.__loop_split_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Cancel Subsequent Invoice__loop_split" id="Cancel Subsequent Invoice__loop_split_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Record Goods Receipt" id="Record Goods Receipt_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Change Quantity__loop_split" id="Change Quantity__loop_split_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Record Subsequent Invoice" id="Record Subsequent Invoice_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Change Price__loop_split" id="Change Price__loop_split_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Remove Payment Block__loop_join" id="Remove Payment Block__loop_join_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Create Purchase Order Item" id="Create Purchase Order Item_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Clear Invoice" id="Clear Invoice_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Block Purchase Order Item" id="Block Purchase Order Item_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="xor_1" id="xor_1_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Record Goods Receipt__loop_join" id="Record Goods Receipt__loop_join_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Record Goods Receipt__loop_split" id="Record Goods Receipt__loop_split_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Cancel Invoice Receipt__loop_split" id="Cancel Invoice Receipt__loop_split_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Vendor creates invoice__loop_split" id="Vendor creates invoice__loop_split_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Change payment term" id="Change payment term_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="xor_6" id="xor_6_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Set Payment Block" id="Set Payment Block_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Vendor creates invoice" id="Vendor creates invoice_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Change Quantity__loop_join" id="Change Quantity__loop_join_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Clear Invoice__loop_join" id="Clear Invoice__loop_join_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="SRM: Complete" id="SRM: Complete_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Clear Invoice__loop_split" id="Clear Invoice__loop_split_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Update Order Confirmation__loop_split" id="Update Order Confirmation__loop_split_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Delete Purchase Order Item__loop_split" id="Delete Purchase Order Item__loop_split_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Cancel Goods Receipt" id="Cancel Goods Receipt_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="SRM: Transfer Failed (E.Sys.)" id="SRM: Transfer Failed (E.Sys.)_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="SRM: Change was Transmitted" id="SRM: Change was Transmitted_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="SRM: In Transfer to Execution Syst.__loop_join" id="SRM: In Transfer to Execution Syst.__loop_join_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Change Price__loop_join" id="Change Price__loop_join_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="SRM: Created__loop_split" id="SRM: Created__loop_split_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="SRM: Created__loop_join" id="SRM: Created__loop_join_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Change Quantity" id="Change Quantity_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="SRM: Incomplete" id="SRM: Incomplete_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Update Order Confirmation" id="Update Order Confirmation_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Record Invoice Receipt__loop_split" id="Record Invoice Receipt__loop_split_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Change Delivery Indicator__loop_split" id="Change Delivery Indicator__loop_split_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="SRM: Deleted" id="SRM: Deleted_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="xor_54" id="xor_54_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Remove Payment Block" id="Remove Payment Block_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Cancel Goods Receipt__loop_join" id="Cancel Goods Receipt__loop_join_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Change Final Invoice Indicator" id="Change Final Invoice Indicator_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="Cancel Subsequent Invoice" id="Cancel Subsequent Invoice_gui">
+				<omgdc:Bounds height="100" width="100" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNEdge bpmnElement="idc78b40b2-754b-46bd-8981-6e9be999e30f" id="idc78b40b2-754b-46bd-8981-6e9be999e30f_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id537b3eaf-0eb3-466a-b7d6-db3020ea8722" id="id537b3eaf-0eb3-466a-b7d6-db3020ea8722_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id36167811-6d1c-4d3a-9dae-3541e6620fdf" id="id36167811-6d1c-4d3a-9dae-3541e6620fdf_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id8e9eadb5-1023-440e-82d9-47699ba4e8b7" id="id8e9eadb5-1023-440e-82d9-47699ba4e8b7_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id521ca31e-b08f-419b-b12a-a88ef5b0ffc2" id="id521ca31e-b08f-419b-b12a-a88ef5b0ffc2_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id810f957d-6557-40c9-99d2-39c09c2d1e7a" id="id810f957d-6557-40c9-99d2-39c09c2d1e7a_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id531a571e-3719-450f-8d1c-85066613d4b0" id="id531a571e-3719-450f-8d1c-85066613d4b0_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id9e6f7399-ec26-4a38-a79b-60b61b0b617b" id="id9e6f7399-ec26-4a38-a79b-60b61b0b617b_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id62c88e1c-218d-40ce-b568-fc6a08911409" id="id62c88e1c-218d-40ce-b568-fc6a08911409_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id6d88c444-2035-443e-a6c9-e0c3b5a08892" id="id6d88c444-2035-443e-a6c9-e0c3b5a08892_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id0fa616fa-8fe1-4129-9870-c537af4b7e5a" id="id0fa616fa-8fe1-4129-9870-c537af4b7e5a_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id2cac69c2-a73a-4632-8f9a-02556b6f1a0e" id="id2cac69c2-a73a-4632-8f9a-02556b6f1a0e_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idcb3e4130-e38a-4db0-9649-add988d9cfa4" id="idcb3e4130-e38a-4db0-9649-add988d9cfa4_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id4fa63db2-f38b-4084-b35f-f419f23bbdb7" id="id4fa63db2-f38b-4084-b35f-f419f23bbdb7_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id93ae9bd0-0a23-404f-8997-59c7e11cf93f" id="id93ae9bd0-0a23-404f-8997-59c7e11cf93f_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id97ba37b3-a606-464d-9d99-c138d4b3b463" id="id97ba37b3-a606-464d-9d99-c138d4b3b463_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id597f82cc-2398-4987-a574-0681cc46d603" id="id597f82cc-2398-4987-a574-0681cc46d603_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id11c4bb93-9b96-49ee-9c03-fd6ee6010728" id="id11c4bb93-9b96-49ee-9c03-fd6ee6010728_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id9462d3ca-8284-489c-b2c9-94870d4b2ab4" id="id9462d3ca-8284-489c-b2c9-94870d4b2ab4_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id20924462-1956-49be-bd30-3bf3aa7494f4" id="id20924462-1956-49be-bd30-3bf3aa7494f4_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id83e07de6-05ed-472f-b423-ff260974056c" id="id83e07de6-05ed-472f-b423-ff260974056c_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id6aca6fef-6be7-4ddf-a8f8-62bda80b823d" id="id6aca6fef-6be7-4ddf-a8f8-62bda80b823d_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id7f6130fe-8fff-49fc-868d-3630ef7cb367" id="id7f6130fe-8fff-49fc-868d-3630ef7cb367_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id1799a952-f385-4417-bbdb-e64f5ba8018f" id="id1799a952-f385-4417-bbdb-e64f5ba8018f_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id086aaf4f-2227-496f-8f2f-30c5b4dee3c0" id="id086aaf4f-2227-496f-8f2f-30c5b4dee3c0_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id49d5ab22-58f8-4742-9813-d2a7300af83d" id="id49d5ab22-58f8-4742-9813-d2a7300af83d_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id2b94d4bd-12c5-4e78-bff6-b32a44e5c16e" id="id2b94d4bd-12c5-4e78-bff6-b32a44e5c16e_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idcdcfedd0-dbb7-476d-a37c-f5d0a33ab703" id="idcdcfedd0-dbb7-476d-a37c-f5d0a33ab703_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="iddca63b4e-b86c-40e1-818a-b65064778930" id="iddca63b4e-b86c-40e1-818a-b65064778930_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id5ba0a2b8-85d5-4fbd-a6df-d9970fd66b23" id="id5ba0a2b8-85d5-4fbd-a6df-d9970fd66b23_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idb86dd64d-a1b9-497d-b845-3e68a4a577e3" id="idb86dd64d-a1b9-497d-b845-3e68a4a577e3_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id1d9fb448-2450-46c4-a0ed-0c8fe2c1aec1" id="id1d9fb448-2450-46c4-a0ed-0c8fe2c1aec1_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="ida05b981a-ab4b-4f08-b74f-d472b62c0a0f" id="ida05b981a-ab4b-4f08-b74f-d472b62c0a0f_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idc1e808ff-5ee9-4391-a11a-2eeae8c9655c" id="idc1e808ff-5ee9-4391-a11a-2eeae8c9655c_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id0dc8be90-667f-42c1-9168-4312f35aceb6" id="id0dc8be90-667f-42c1-9168-4312f35aceb6_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idf74f7634-4784-4f0d-8208-7cc216d386e2" id="idf74f7634-4784-4f0d-8208-7cc216d386e2_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id6a55b256-e91d-41ee-82fa-4763bb8bcd42" id="id6a55b256-e91d-41ee-82fa-4763bb8bcd42_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id2f067152-a356-492a-82ae-ea76d02ca219" id="id2f067152-a356-492a-82ae-ea76d02ca219_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id33d32cc1-238d-43e7-87fe-48fa18895209" id="id33d32cc1-238d-43e7-87fe-48fa18895209_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="ideb1d5913-1750-41dd-a747-803fae751b0f" id="ideb1d5913-1750-41dd-a747-803fae751b0f_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id4ef056ba-fe98-4a4c-8ce8-382cdfc13124" id="id4ef056ba-fe98-4a4c-8ce8-382cdfc13124_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id2d94a11d-6576-410d-bf55-222d2183e8c4" id="id2d94a11d-6576-410d-bf55-222d2183e8c4_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id1668d129-3fc1-47a9-b4c7-1e9868d674e1" id="id1668d129-3fc1-47a9-b4c7-1e9868d674e1_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idacf1be34-7654-4cdc-b6a2-c726c25197b8" id="idacf1be34-7654-4cdc-b6a2-c726c25197b8_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idd590959e-0b0f-4ddc-b4ed-b8ff6eb8d602" id="idd590959e-0b0f-4ddc-b4ed-b8ff6eb8d602_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id08264e07-0d32-440d-b462-50d29faeb17d" id="id08264e07-0d32-440d-b462-50d29faeb17d_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id61805976-7c7d-43ca-9e79-95037ec08082" id="id61805976-7c7d-43ca-9e79-95037ec08082_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id0795fce3-aa1f-4f13-b540-a53590e4ac31" id="id0795fce3-aa1f-4f13-b540-a53590e4ac31_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idd6e54e7c-645e-4228-b8fa-b2cf94520ef3" id="idd6e54e7c-645e-4228-b8fa-b2cf94520ef3_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id8c7ae71f-cb89-4597-8f9a-46bddb4db9e1" id="id8c7ae71f-cb89-4597-8f9a-46bddb4db9e1_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id6e203546-12d5-40e5-b9a0-7bd599a2b0b8" id="id6e203546-12d5-40e5-b9a0-7bd599a2b0b8_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idae3b91fd-a7bd-4997-bfdd-0a897747f8f8" id="idae3b91fd-a7bd-4997-bfdd-0a897747f8f8_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id775a246a-14b8-4224-9475-77f0215fa1a6" id="id775a246a-14b8-4224-9475-77f0215fa1a6_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="ida03c9406-5240-4b80-b548-e184d1e547c1" id="ida03c9406-5240-4b80-b548-e184d1e547c1_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id5096ab2e-f65d-41ba-a012-86772ed5b3d2" id="id5096ab2e-f65d-41ba-a012-86772ed5b3d2_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id1326753d-e2d4-43c4-a86d-a1cffc08e784" id="id1326753d-e2d4-43c4-a86d-a1cffc08e784_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="ide99f8e79-58d5-4704-a5ff-da05799f8777" id="ide99f8e79-58d5-4704-a5ff-da05799f8777_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="ided6fadd8-dfa4-4a93-be75-5dc12ceeca17" id="ided6fadd8-dfa4-4a93-be75-5dc12ceeca17_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id0886da44-ecbf-48c6-a41f-cc383a962df3" id="id0886da44-ecbf-48c6-a41f-cc383a962df3_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="ide1766ba2-7831-4277-9a88-9976930a595a" id="ide1766ba2-7831-4277-9a88-9976930a595a_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idf995c6ad-36c3-4a76-8dc0-c5378e602c72" id="idf995c6ad-36c3-4a76-8dc0-c5378e602c72_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id10a65822-75a9-4818-ac5f-56f9f7381d53" id="id10a65822-75a9-4818-ac5f-56f9f7381d53_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id976a0082-5767-407e-a032-e5b05c1b651a" id="id976a0082-5767-407e-a032-e5b05c1b651a_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id5222cad1-e401-4fe7-9f16-21789f40e0e8" id="id5222cad1-e401-4fe7-9f16-21789f40e0e8_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id51d5e7ff-ff6d-4cc7-ba5b-0b1a4a94b568" id="id51d5e7ff-ff6d-4cc7-ba5b-0b1a4a94b568_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id1566286f-b819-46bc-baf0-db965c82ab7f" id="id1566286f-b819-46bc-baf0-db965c82ab7f_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id15376ae4-08bc-4cc8-8a2c-2ebffc2e01e4" id="id15376ae4-08bc-4cc8-8a2c-2ebffc2e01e4_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idd70d0b5f-f4ba-4695-8a3b-ad5b9e18ce26" id="idd70d0b5f-f4ba-4695-8a3b-ad5b9e18ce26_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id386d168c-2902-4763-a228-d3b3b8e0c9bf" id="id386d168c-2902-4763-a228-d3b3b8e0c9bf_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id03c4ff46-edfb-4e4b-a331-b4dc9076299e" id="id03c4ff46-edfb-4e4b-a331-b4dc9076299e_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id4efdc393-25c6-428d-91e4-36cc50a4798c" id="id4efdc393-25c6-428d-91e4-36cc50a4798c_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id04b269c6-cc7a-455d-9b49-f37d6ab121e9" id="id04b269c6-cc7a-455d-9b49-f37d6ab121e9_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="ide4fcf5ff-e5eb-4f98-9eaf-3351d1ca17fd" id="ide4fcf5ff-e5eb-4f98-9eaf-3351d1ca17fd_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id0ae2d8b1-b7f8-441d-b9db-8d2faa4bfb39" id="id0ae2d8b1-b7f8-441d-b9db-8d2faa4bfb39_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id7ef4a764-6886-45ba-83fb-2f519680d960" id="id7ef4a764-6886-45ba-83fb-2f519680d960_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id6b60070d-6210-4770-8ade-c913c2e30fe2" id="id6b60070d-6210-4770-8ade-c913c2e30fe2_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idab3df2b4-3971-421f-8aae-4297377969f1" id="idab3df2b4-3971-421f-8aae-4297377969f1_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id7c7f2410-f593-484d-948f-6957e038c00e" id="id7c7f2410-f593-484d-948f-6957e038c00e_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id6b1bf54a-17d6-4443-9a9d-56f2c3f07686" id="id6b1bf54a-17d6-4443-9a9d-56f2c3f07686_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id93440423-6842-4baa-ad94-898fb0af0792" id="id93440423-6842-4baa-ad94-898fb0af0792_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id0be60ace-dbb4-4715-b124-3734de52606d" id="id0be60ace-dbb4-4715-b124-3734de52606d_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idbe11793b-fcc6-4369-86ec-b8cbf2e4a132" id="idbe11793b-fcc6-4369-86ec-b8cbf2e4a132_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id631c925d-9305-43d2-8dc0-f3e4c425d619" id="id631c925d-9305-43d2-8dc0-f3e4c425d619_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id707ea215-0fe5-47ea-83f4-66c26e5aa0be" id="id707ea215-0fe5-47ea-83f4-66c26e5aa0be_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id46476d94-6c37-41b8-b481-caa1c9d0322f" id="id46476d94-6c37-41b8-b481-caa1c9d0322f_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id8fb10da8-e611-4a6f-bec2-57e8b3e69ded" id="id8fb10da8-e611-4a6f-bec2-57e8b3e69ded_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id9fb71e3f-d2dd-4fe1-9695-c285e0c7a476" id="id9fb71e3f-d2dd-4fe1-9695-c285e0c7a476_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id378e2926-2a48-46af-897b-83948bb1c6df" id="id378e2926-2a48-46af-897b-83948bb1c6df_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idc0f9b41e-2ebf-44fb-adf5-2ead27d53688" id="idc0f9b41e-2ebf-44fb-adf5-2ead27d53688_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idae41b226-f657-4a22-ae05-5cd72a35ef6a" id="idae41b226-f657-4a22-ae05-5cd72a35ef6a_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id4032a7a1-e0bf-4288-b645-9680b26b3515" id="id4032a7a1-e0bf-4288-b645-9680b26b3515_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id445ec4b4-f24a-4ed5-86ce-44ca6bf1191e" id="id445ec4b4-f24a-4ed5-86ce-44ca6bf1191e_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id348a2493-aac6-4881-9d03-ce2b5860db9d" id="id348a2493-aac6-4881-9d03-ce2b5860db9d_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id159b8a59-c524-44c3-b32c-63e06d617a55" id="id159b8a59-c524-44c3-b32c-63e06d617a55_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id4665cfae-906b-41c3-89fe-b68eb4f95fb1" id="id4665cfae-906b-41c3-89fe-b68eb4f95fb1_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idd00ef0ae-1d32-4b3b-950d-cfa9fa78ea8a" id="idd00ef0ae-1d32-4b3b-950d-cfa9fa78ea8a_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id8b945bb8-4e69-4b4c-9e50-6b0da708fe63" id="id8b945bb8-4e69-4b4c-9e50-6b0da708fe63_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id979dfadf-2702-4229-ad1a-9d3f73120506" id="id979dfadf-2702-4229-ad1a-9d3f73120506_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id27ff1fa4-783f-443c-bef4-e213e771050f" id="id27ff1fa4-783f-443c-bef4-e213e771050f_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idf2ad5f0d-8bd7-4085-a519-16eefcaf5632" id="idf2ad5f0d-8bd7-4085-a519-16eefcaf5632_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id11f29cf3-3239-4c6b-8321-1d284cca6986" id="id11f29cf3-3239-4c6b-8321-1d284cca6986_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idbdc2c755-b14f-452e-8584-a8c44068eb69" id="idbdc2c755-b14f-452e-8584-a8c44068eb69_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id61758e69-53e8-4e6e-95a7-d892c35ad5b1" id="id61758e69-53e8-4e6e-95a7-d892c35ad5b1_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idc1cc18df-754e-401b-8f4e-655250fe6f68" id="idc1cc18df-754e-401b-8f4e-655250fe6f68_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="ida8d30fb9-ceda-40db-af69-a89ae7290181" id="ida8d30fb9-ceda-40db-af69-a89ae7290181_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idaa287fd8-c721-4c95-8e52-70dfd6f9e024" id="idaa287fd8-c721-4c95-8e52-70dfd6f9e024_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="ida41230a9-358c-459a-9dd4-f026ac883d62" id="ida41230a9-358c-459a-9dd4-f026ac883d62_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="ida16b723c-9158-4122-b0f3-eb40834370f0" id="ida16b723c-9158-4122-b0f3-eb40834370f0_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idc76e7d28-e72a-4943-a46e-66b10344ab84" id="idc76e7d28-e72a-4943-a46e-66b10344ab84_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id99e46bdc-a521-45d5-878e-4ab7d841da92" id="id99e46bdc-a521-45d5-878e-4ab7d841da92_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id3426a348-c2de-4968-8c80-68838b7a1ff5" id="id3426a348-c2de-4968-8c80-68838b7a1ff5_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="iddb1b1ee5-54f3-450d-9f6c-1497c3e618e4" id="iddb1b1ee5-54f3-450d-9f6c-1497c3e618e4_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id64d9dc61-dcfa-42a2-9704-4f6077726e79" id="id64d9dc61-dcfa-42a2-9704-4f6077726e79_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id1d6f2b5d-cda2-48a4-ab74-ea80a88ff485" id="id1d6f2b5d-cda2-48a4-ab74-ea80a88ff485_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id7e196512-97f4-49d5-9f9d-e4b1b27261db" id="id7e196512-97f4-49d5-9f9d-e4b1b27261db_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id568d8fb7-aaec-4fc2-a202-1808df919c13" id="id568d8fb7-aaec-4fc2-a202-1808df919c13_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="ida722bae5-a410-4590-80b2-e0c13bdfa071" id="ida722bae5-a410-4590-80b2-e0c13bdfa071_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idcf5269c3-a4d5-4591-91ff-4a4c97242b2c" id="idcf5269c3-a4d5-4591-91ff-4a4c97242b2c_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idcab4ad13-c926-4cb4-9fd8-998c67eea618" id="idcab4ad13-c926-4cb4-9fd8-998c67eea618_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id8c59d793-989c-4441-a26f-b54690e672ef" id="id8c59d793-989c-4441-a26f-b54690e672ef_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id92b03ee7-340d-416f-823b-68fa99ef2dea" id="id92b03ee7-340d-416f-823b-68fa99ef2dea_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idbea67996-9180-4875-988f-a52d724c93a3" id="idbea67996-9180-4875-988f-a52d724c93a3_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id2dda2df8-d77d-4fed-900c-03152e30e653" id="id2dda2df8-d77d-4fed-900c-03152e30e653_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id6dc37c02-876d-493f-874c-6d23af0ac7ad" id="id6dc37c02-876d-493f-874c-6d23af0ac7ad_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="ide64c3a7b-9796-42a6-9f46-fb739576c5c7" id="ide64c3a7b-9796-42a6-9f46-fb739576c5c7_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id9c260cfc-f997-456f-b829-38f7b39e3d64" id="id9c260cfc-f997-456f-b829-38f7b39e3d64_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id8d927128-b37d-4249-a5aa-927d3187c2e4" id="id8d927128-b37d-4249-a5aa-927d3187c2e4_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id34ad093c-c740-429c-b52d-3c98fd2e9c07" id="id34ad093c-c740-429c-b52d-3c98fd2e9c07_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id867054ae-f89d-4a3a-877b-382443e5353c" id="id867054ae-f89d-4a3a-877b-382443e5353c_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id6c1fb72b-ad9a-4309-bdfa-2de75f27c134" id="id6c1fb72b-ad9a-4309-bdfa-2de75f27c134_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idcaab8ef8-d58e-416a-a54e-142fcc72f0f7" id="idcaab8ef8-d58e-416a-a54e-142fcc72f0f7_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id65179d1b-b441-4368-942f-c14d72c5eba2" id="id65179d1b-b441-4368-942f-c14d72c5eba2_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idb43d5b28-bb41-4803-b514-e02383d81e17" id="idb43d5b28-bb41-4803-b514-e02383d81e17_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idc45890f5-c1e2-4a61-a436-10d1e43d7eeb" id="idc45890f5-c1e2-4a61-a436-10d1e43d7eeb_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id8c4065af-46a7-4152-bf9b-52bb6232f898" id="id8c4065af-46a7-4152-bf9b-52bb6232f898_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idb6049fa8-3211-4151-80e0-d7f5ec85a2eb" id="idb6049fa8-3211-4151-80e0-d7f5ec85a2eb_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id8b65407a-7fb4-43a6-99bd-7705246d1816" id="id8b65407a-7fb4-43a6-99bd-7705246d1816_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id8a24a091-7328-4017-9678-b2036dd91b48" id="id8a24a091-7328-4017-9678-b2036dd91b48_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idaec96422-7f3a-4485-a6ea-bc4d4384ebfb" id="idaec96422-7f3a-4485-a6ea-bc4d4384ebfb_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id9a68fd47-aa2c-44cc-865b-a9d3e83969fd" id="id9a68fd47-aa2c-44cc-865b-a9d3e83969fd_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id9609bff7-cd12-4f68-908e-d5142c0a34cb" id="id9609bff7-cd12-4f68-908e-d5142c0a34cb_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idd5d09353-ae00-4ccb-978e-3af3dd596d94" id="idd5d09353-ae00-4ccb-978e-3af3dd596d94_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id4aadd5ee-68bf-40be-9d5e-c0baadaec87d" id="id4aadd5ee-68bf-40be-9d5e-c0baadaec87d_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="ided84d6f7-3477-4e70-8b6f-a47f1a9ea141" id="ided84d6f7-3477-4e70-8b6f-a47f1a9ea141_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="ideb83fd40-d963-40c3-a8b8-2a9164addf68" id="ideb83fd40-d963-40c3-a8b8-2a9164addf68_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id3f76bc4c-5fd8-47aa-ba45-c3c228d25818" id="id3f76bc4c-5fd8-47aa-ba45-c3c228d25818_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="ide4a2b65d-e428-4d3e-853f-50f0618f2bc4" id="ide4a2b65d-e428-4d3e-853f-50f0618f2bc4_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="ide5449d60-c295-475c-b4db-aad240a4b965" id="ide5449d60-c295-475c-b4db-aad240a4b965_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idfdf1426d-6534-47d2-8e9f-5284495ead2b" id="idfdf1426d-6534-47d2-8e9f-5284495ead2b_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id14fec72c-e925-4528-9eaa-5dd6eed1c0e0" id="id14fec72c-e925-4528-9eaa-5dd6eed1c0e0_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="ida8a11201-a4e1-4056-831b-97aa13f418fc" id="ida8a11201-a4e1-4056-831b-97aa13f418fc_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id16829404-68c7-4ada-9d6c-92633f400410" id="id16829404-68c7-4ada-9d6c-92633f400410_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id316d82c7-e2d6-4e48-9666-ba6c2086b6b1" id="id316d82c7-e2d6-4e48-9666-ba6c2086b6b1_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id217d544c-ed19-4a79-ada2-9b3b35a0d803" id="id217d544c-ed19-4a79-ada2-9b3b35a0d803_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idc241b652-872f-4a64-920f-dbe9810f136b" id="idc241b652-872f-4a64-920f-dbe9810f136b_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id6e2e38c3-2c87-476d-bd74-a268720f49c2" id="id6e2e38c3-2c87-476d-bd74-a268720f49c2_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id0dc56698-ebf2-4215-acca-a05ba956687b" id="id0dc56698-ebf2-4215-acca-a05ba956687b_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="ida2c4f496-1703-44c1-b115-8de955bf33de" id="ida2c4f496-1703-44c1-b115-8de955bf33de_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id1497c939-3000-49b6-a939-7eeb023b1ae1" id="id1497c939-3000-49b6-a939-7eeb023b1ae1_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id95925da3-1412-4591-8e3e-d0e44ca11248" id="id95925da3-1412-4591-8e3e-d0e44ca11248_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="ide9e28516-2c75-4dc5-bd99-dbdedf3c7492" id="ide9e28516-2c75-4dc5-bd99-dbdedf3c7492_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="ida3363a30-bcf7-43c9-954f-f816a55ad443" id="ida3363a30-bcf7-43c9-954f-f816a55ad443_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idb9ffd6df-34e0-4580-9186-952834f72b8b" id="idb9ffd6df-34e0-4580-9186-952834f72b8b_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id5015d4a1-7bda-40bf-a6c9-7d8d6c9c38ff" id="id5015d4a1-7bda-40bf-a6c9-7d8d6c9c38ff_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id3f4ddb82-4cb3-40bc-a28d-5a7f94475f66" id="id3f4ddb82-4cb3-40bc-a28d-5a7f94475f66_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idadf500e1-e967-417d-b753-804c97650e82" id="idadf500e1-e967-417d-b753-804c97650e82_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idff6f97c2-d90a-4948-a05d-f163c891dc75" id="idff6f97c2-d90a-4948-a05d-f163c891dc75_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id001d885c-0a92-4f90-a561-25961b16d945" id="id001d885c-0a92-4f90-a561-25961b16d945_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id525350dc-a26d-4e45-b221-5b2f754460d8" id="id525350dc-a26d-4e45-b221-5b2f754460d8_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id4ee46d9f-e65a-4840-a44d-afcff2b4b390" id="id4ee46d9f-e65a-4840-a44d-afcff2b4b390_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id2920280e-565e-4620-ac5b-583cfdf57b82" id="id2920280e-565e-4620-ac5b-583cfdf57b82_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idd0d99f98-db97-4154-be0f-16d2b284d4c2" id="idd0d99f98-db97-4154-be0f-16d2b284d4c2_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id3ce4d2e4-3195-4a98-81b5-d15559513a1d" id="id3ce4d2e4-3195-4a98-81b5-d15559513a1d_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idb896311d-a235-46a3-b72b-f6ce543df69b" id="idb896311d-a235-46a3-b72b-f6ce543df69b_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idd338eac6-6a84-4464-9a2c-62672a679bbb" id="idd338eac6-6a84-4464-9a2c-62672a679bbb_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id68efd551-9960-400a-b357-a1cc818c03c8" id="id68efd551-9960-400a-b357-a1cc818c03c8_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id6ec6b528-8de9-4bfa-9d4c-b0c15c4f3a58" id="id6ec6b528-8de9-4bfa-9d4c-b0c15c4f3a58_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idd05fc082-547b-404a-a0f7-32125635c9f6" id="idd05fc082-547b-404a-a0f7-32125635c9f6_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idf2806ae3-4a81-4f36-b8cb-9c0f969150ee" id="idf2806ae3-4a81-4f36-b8cb-9c0f969150ee_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idf564e9c5-de96-44bd-8cfe-8a00f8b6b2ae" id="idf564e9c5-de96-44bd-8cfe-8a00f8b6b2ae_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idfc8b7aff-1dee-45af-be55-8d87c4e17771" id="idfc8b7aff-1dee-45af-be55-8d87c4e17771_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id166c9545-87d9-46d8-bb05-edc52ef0899b" id="id166c9545-87d9-46d8-bb05-edc52ef0899b_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id67825351-c847-4dd3-80cc-b37aceec86e0" id="id67825351-c847-4dd3-80cc-b37aceec86e0_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id1ed96f21-4665-4904-b793-45b18c919d95" id="id1ed96f21-4665-4904-b793-45b18c919d95_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id36fd1b0d-8c3e-4e2c-804e-2fa3a5f3ab7c" id="id36fd1b0d-8c3e-4e2c-804e-2fa3a5f3ab7c_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id2e486bf5-170c-4ce5-98be-f28b71ee7e14" id="id2e486bf5-170c-4ce5-98be-f28b71ee7e14_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idaf8573e0-8be4-4e02-98b5-82800af939a8" id="idaf8573e0-8be4-4e02-98b5-82800af939a8_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id7af36130-167a-453d-bc0e-e1f2dc624f4f" id="id7af36130-167a-453d-bc0e-e1f2dc624f4f_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id863d3b36-e941-4285-a743-f94cb74ee0b8" id="id863d3b36-e941-4285-a743-f94cb74ee0b8_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id69c16a10-7ee5-46a0-998c-ebfeb8bf4a2f" id="id69c16a10-7ee5-46a0-998c-ebfeb8bf4a2f_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idca537e02-ead0-4ac1-ab98-e6e563870346" id="idca537e02-ead0-4ac1-ab98-e6e563870346_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="idea1aeb31-70b6-47d2-b8df-1a0ceaf79b93" id="idea1aeb31-70b6-47d2-b8df-1a0ceaf79b93_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id5b657c6b-a778-4347-942c-61e9617975da" id="id5b657c6b-a778-4347-942c-61e9617975da_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+			<bpmndi:BPMNEdge bpmnElement="id6187bb17-2ce6-4d8f-b660-fef895f445dc" id="id6187bb17-2ce6-4d8f-b660-fef895f445dc_gui">
+				<omgdi:waypoint x="0" y="0"/>
+				<omgdi:waypoint x="0" y="0"/>
+			</bpmndi:BPMNEdge>
+		</bpmndi:BPMNPlane>
+	</bpmndi:BPMNDiagram>
+</bpmn:definitions>

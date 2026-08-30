@@ -1,0 +1,77 @@
+{
+  "log": "sepsis_by_department",
+  "P": 3,
+  "assignment": "by department, not random; see split_sepsis_by_department.py",
+  "organizations": [
+    "Emergency Room",
+    "Medical Department",
+    "Financial Department"
+  ],
+  "activities": 16,
+  "labels_per_organization": [
+    3,
+    7,
+    6
+  ],
+  "events": 15214,
+  "events_per_organization": [
+    3152,
+    10986,
+    1076
+  ],
+  "traces_per_organization": [
+    1050,
+    1015,
+    782
+  ],
+  "mapping": {
+    "Admission IC": [
+      1
+    ],
+    "Admission NC": [
+      1
+    ],
+    "CRP": [
+      1
+    ],
+    "ER Registration": [
+      0
+    ],
+    "ER Sepsis Triage": [
+      0
+    ],
+    "ER Triage": [
+      0
+    ],
+    "IV Antibiotics": [
+      1
+    ],
+    "IV Liquid": [
+      1
+    ],
+    "LacticAcid": [
+      1
+    ],
+    "Leucocytes": [
+      1
+    ],
+    "Release A": [
+      2
+    ],
+    "Release B": [
+      2
+    ],
+    "Release C": [
+      2
+    ],
+    "Release D": [
+      2
+    ],
+    "Release E": [
+      2
+    ],
+    "Return ER": [
+      2
+    ]
+  }
+}
