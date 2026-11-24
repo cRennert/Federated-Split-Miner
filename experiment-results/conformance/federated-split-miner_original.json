@@ -1,101 +1,101 @@
 {
   "algorithm": "Federated Split Miner",
   "input": "original log",
+  "model_file": "FederatedSplitMiner_original.pnml",
   "parameters": {
     "epsilon": 0.1,
     "eta": 0.4
   },
-  "model_file": "FederatedSplitMiner_original.apnml",
   "results": [
     {
+      "error": null,
+      "f1": 0.16691529544482842,
+      "fitness": 0.8640571671246701,
       "log": "BPIC 11: Hospital Log",
       "log_file": "Hospital_log.xes.gz",
-      "fitness": null,
-      "precision": null,
-      "f1": null,
-      "status": "failed",
-      "measured_in": "base"
+      "precision": 0.0923805061027168,
+      "status": "measured"
     },
     {
+      "error": null,
+      "f1": 0.6714949703679434,
+      "fitness": 0.9613442756912738,
       "log": "BPIC 12: Loan applications",
       "log_file": "BPI_Challenge_2012.xes.gz",
-      "fitness": 0.9613442756912944,
-      "precision": 0.5201747754443063,
-      "f1": 0.6750733881539782,
-      "status": "measured",
-      "measured_in": "federated-split-miner re-measurement"
+      "precision": 0.5159376260508237,
+      "status": "measured"
     },
     {
+      "error": null,
+      "f1": 0.9483064580480093,
+      "fitness": 0.9385776921491211,
       "log": "BPIC 13: Open Problems",
       "log_file": "BPI_Challenge_2013_open_problems.xes.gz",
-      "fitness": 0.9385776921491207,
-      "precision": 0.9585550900237799,
-      "f1": 0.9484612069818918,
-      "status": "measured",
-      "measured_in": "federated-split-miner re-measurement"
+      "precision": 0.9582390221819828,
+      "status": "measured"
     },
     {
+      "error": null,
+      "f1": 0.925603184375623,
+      "fitness": 0.9880978038499556,
       "log": "BPIC 13: Closed Problems",
       "log_file": "BPI_Challenge_2013_closed_problems.xes.gz",
-      "fitness": 0.9880978038499545,
       "precision": 0.8705435651478817,
-      "f1": 0.9256031843756223,
-      "status": "measured",
-      "measured_in": "federated-split-miner re-measurement"
+      "status": "measured"
     },
     {
+      "error": null,
+      "f1": 0.9210978397317159,
+      "fitness": 0.9769377378875717,
       "log": "BPIC 13: Incidents",
       "log_file": "BPI_Challenge_2013_incidents.xes.gz",
-      "fitness": 0.9769377378875743,
-      "precision": 0.8741859256492294,
-      "f1": 0.9227100679650879,
-      "status": "measured",
-      "measured_in": "federated-split-miner re-measurement"
+      "precision": 0.8712962098675746,
+      "status": "measured"
     },
     {
+      "error": null,
+      "f1": 0.9900589494412868,
+      "fitness": 0.9803136023568629,
       "log": "BPIC 17: Offer log",
       "log_file": "BPIC17 - Offer log.xes.gz",
-      "fitness": 0.9803136023568632,
       "precision": 1.0,
-      "f1": 0.9900589494412868,
-      "status": "measured",
-      "measured_in": "federated-split-miner re-measurement"
+      "status": "measured"
     },
     {
+      "error": null,
+      "f1": 0.439052912964351,
+      "fitness": 0.985337813296346,
       "log": "BPIC 18: Payment process",
       "log_file": "BPI_Challenge_2018.xes.gz",
-      "fitness": null,
-      "precision": null,
-      "f1": null,
-      "status": "timeout",
-      "measured_in": "federated-split-miner re-measurement"
+      "precision": 0.28245561608109043,
+      "status": "measured"
     },
     {
+      "error": null,
+      "f1": 0.8887340123618327,
+      "fitness": 0.9876945966218394,
       "log": "BPIC 19: Purchase order handling",
       "log_file": "BPI_Challenge_2019.xes.gz",
-      "fitness": null,
-      "precision": null,
-      "f1": null,
-      "status": "timeout",
-      "measured_in": "federated-split-miner re-measurement"
+      "precision": 0.8077979080093058,
+      "status": "measured"
     },
     {
+      "error": null,
+      "f1": 0.7393012871777104,
+      "fitness": 0.7636128053622117,
       "log": "Sepsis Cases",
       "log_file": "Sepsis Cases.xes.gz",
-      "fitness": 0.7636128053622112,
-      "precision": 0.7102998202969829,
-      "f1": 0.73599211918369,
-      "status": "measured",
-      "measured_in": "federated-split-miner re-measurement"
+      "precision": 0.7164900397648357,
+      "status": "measured"
     },
     {
+      "error": null,
+      "f1": 0.977647495617814,
+      "fitness": 0.995911693358257,
       "log": "Road Traffic Fines",
       "log_file": "road_traffic_fine_management.xes.gz",
-      "fitness": 0.9959116933582585,
-      "precision": 0.9582915279720913,
-      "f1": 0.9767394996963067,
-      "status": "measured",
-      "measured_in": "federated-split-miner re-measurement"
+      "precision": 0.9600411342981139,
+      "status": "measured"
     }
   ]
 }

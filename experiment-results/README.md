@@ -14,27 +14,26 @@ by the combination of algorithm, parameters and data. One file per combination:
 | `inductive-miner-df_tau0.1.json` | Inductive Miner directly-follows | original log | τ = 0.1 |
 | `inductive-miner-df_tau0.2.json` | Inductive Miner directly-follows | original log | τ = 0.2 |
 
+The files are written by [`code/conformance`](../code/conformance), which
+measures the Petri net of every model against the original event log with
+Rust4PM (`process_mining` 0.7.1): the alignment-based fitness averaged over the
+traces (standard costs) and the escaping-edges precision on the same
+alignments with the ProM preset, within 10 minutes per model.
+
 Every file records the algorithm, its input, its parameters and the model file
 it was measured on, followed by one entry per event log with the fitness, the
-precision, their harmonic mean, and a status:
+precision, their harmonic mean, a status and, where a value is missing, the
+reason:
 
 * `measured` — both values returned,
 * `timeout` — the checker exceeded its time limit,
-* `failed` — the checker raised,
-* `undefined` — a fitness was returned but the precision was not, which happens
-  for a model permissive enough that the measure degenerates.
+* `failed` — no value could be measured, e.g. because the final marking of the
+  net is unreachable,
+* `missing` — there is no Petri net for the model.
 
-Of the sixty combinations, 39 are fully measured, 2 return a fitness only, and
-19 return nothing.
-
-### `conformance/raw`
-
-The three files as the conformance checker produced them, kept for provenance.
-They are organised by measurement batch rather than by what was measured: a base
-sweep over all six settings, a re-measurement of our two settings on the models
-discovered after the η-percentile was corrected, and two Inductive Miner values
-the base sweep did not return. The files above merge the three, with the
-re-measurements taking precedence.
+Of the sixty combinations, 58 are measured. Split Miner 1.0 on BPIC 19 fails,
+as the final marking of its net is unreachable, and Split Miner 1.0 on BPIC 11
+has no Petri net.
 
 ## `tables`
 
@@ -47,8 +46,11 @@ reading here:
 | `runtimes-semi-honest-lan.md`, `runtimes-sh-lan.tex` | runtime per protocol stage, `replicated-ring`, LAN |
 | `runtimes-malicious-lan.md`, `runtimes-mal-lan.tex` | runtime per protocol stage, `sy-rep-ring`, LAN |
 
-`quality.md` is generated from the files in `conformance`, so it cannot drift
-from them; the runtime tables come from the computation reports of a secure run.
+`quality.md` and `quality.tex` are written by
+[`code/conformance`](../code/conformance) together with the files in
+`conformance`, so they cannot drift from them; in both, the highest harmonic
+mean per event log is set in bold. The runtime tables come from the
+computation reports of a secure run.
 
 ## `evaluation-reports`
 

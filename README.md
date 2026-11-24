@@ -6,7 +6,8 @@ Discovery of Cross-Organizational BPMN Models"*. It contains
 * the implementation (in [`code`](code)), which is split into the cleartext
   reference implementation of our variant ([`code/reference`](code/reference))
   and the MP-SPDZ implementation of every protocol presented in the paper
-  ([`code/federated`](code/federated)),
+  ([`code/federated`](code/federated)), together with the conformance checker
+  that measures the quality table ([`code/conformance`](code/conformance)),
 * our version of NEON in [`neonik-runtime`](neonik-runtime), used to emulate the
   network settings and to capture the reported metrics,
 * the partial event logs that the federated runs read
@@ -36,6 +37,8 @@ code/
     extract_model_outputs.py     pulls the models out of the computation reports
     plot-eval.py                 turns computation reports into figures and tables
     neonik-project.yml           declares the experiment parameters
+  conformance/                 fitness and precision of every model, with Rust4PM
+    src/main.rs                  measures all models and writes the results and tables
 neonik-runtime/              our version of NEON
 experiment-inputs/
   split_logs.py                the seeded splitter that produces the partial logs
@@ -47,7 +50,6 @@ experiment-outputs/
   models/<log>/                the discovered models, one folder per event log
 experiment-results/
   conformance/                 fitness and precision, one file per setting
-    raw/                         the measurement batches as delivered
   tables/                      the tables of the paper, as LaTeX and Markdown
   evaluation-reports/          raw runtime reports (see below)
 ```
@@ -58,6 +60,8 @@ experiment-results/
   * [`uv`](https://docs.astral.sh/uv/getting-started/installation/)
 * **To re-run the secure evaluation**, which the reported runtimes rest on:
   * [Docker](https://docs.docker.com/get-started/)
+* **To measure fitness and precision**, which the quality table rests on:
+  * [Rust](https://www.rust-lang.org/tools/install) with `cargo`
 
 * [MP-SPDZ](https://mp-spdz.readthedocs.io/en/latest/) (needs no build toolchain as the prebuilt release is already downloaded)
 
@@ -107,12 +111,33 @@ model that the original Split Miner 1.0 produces on the same log. It reports,
 per event log, the number of nodes and sequence flows and the arcs on which the
 three models differ. Running it on the partial logs alone needs nothing beyond
 this repository, and so do the runs on the original logs, which are bundled in
-[`experiment-inputs/original-logs`](experiment-inputs/original-logs). The fitness and precision computations
-were done with ProM and therefore not a protocol provided here.
+[`experiment-inputs/original-logs`](experiment-inputs/original-logs). Fitness and precision are measured
+separately, see below.
 
 Both thresholds are fixed to the values used throughout the paper, $\epsilon =
 0.1$ and $\eta = 0.4$, which are the defaults of the original tool and carry
 its meaning: a larger $\eta$ filters harder.
+
+## Measuring fitness and precision
+
+The quality table is measured with [Rust4PM](https://github.com/aarkue/rust4pm)
+(`process_mining` 0.7.1) by [`code/conformance`](code/conformance). It measures
+every Petri net `experiment-outputs/models/<log>/<model>.pnml` against the
+original event log: the alignment-based fitness averaged over the traces
+(standard costs), and the escaping-edges precision on the same alignments with
+Rust4PM's ProM preset, within 10 minutes per model. After assembling BPIC 18
+(see Installation):
+
+```bash
+cd code/conformance
+cargo run --release
+```
+
+It writes one file per setting to
+[`experiment-results/conformance`](experiment-results/conformance) and the
+quality table to [`experiment-results/tables`](experiment-results/tables), as
+`quality.tex` for the paper and `quality.md` for reading. A full run takes a few
+minutes.
 
 ## Running your own evaluation
 

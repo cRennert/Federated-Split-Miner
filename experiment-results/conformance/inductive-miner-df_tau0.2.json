@@ -1,100 +1,100 @@
 {
   "algorithm": "Inductive Miner directly-follows",
   "input": "original log",
+  "model_file": "dfg_im_02.pnml",
   "parameters": {
     "tau": 0.2
   },
-  "model_file": "dfg_im_02.pnml",
   "results": [
     {
+      "error": null,
+      "f1": 0.09284155490492702,
+      "fitness": 0.8527016672380393,
       "log": "BPIC 11: Hospital Log",
       "log_file": "Hospital_log.xes.gz",
-      "fitness": null,
-      "precision": null,
-      "f1": null,
-      "status": "failed",
-      "measured_in": "base"
+      "precision": 0.04909340507714182,
+      "status": "measured"
     },
     {
+      "error": null,
+      "f1": 0.703328153416672,
+      "fitness": 0.9960375881578376,
       "log": "BPIC 12: Loan applications",
       "log_file": "BPI_Challenge_2012.xes.gz",
-      "fitness": 0.9960375881578404,
-      "precision": 0.5442264850931511,
-      "f1": 0.7038663629667986,
-      "status": "measured",
-      "measured_in": "base"
+      "precision": 0.5435832364033696,
+      "status": "measured"
     },
     {
+      "error": null,
+      "f1": 0.7270936126723073,
+      "fitness": 0.9774605117336945,
       "log": "BPIC 13: Open Problems",
       "log_file": "BPI_Challenge_2013_open_problems.xes.gz",
-      "fitness": 0.9774605117336946,
-      "precision": 0.7116173839840051,
-      "f1": 0.8236184892018178,
-      "status": "measured",
-      "measured_in": "base"
+      "precision": 0.5788315918609078,
+      "status": "measured"
     },
     {
+      "error": null,
+      "f1": 0.9308167451154439,
+      "fitness": 0.9925371562980851,
       "log": "BPIC 13: Closed Problems",
       "log_file": "BPI_Challenge_2013_closed_problems.xes.gz",
-      "fitness": 0.9925371562980845,
-      "precision": 0.8760426023354292,
-      "f1": 0.930658516769813,
-      "status": "measured",
-      "measured_in": "base"
+      "precision": 0.8763230483032908,
+      "status": "measured"
     },
     {
+      "error": null,
+      "f1": 0.7370505021209571,
+      "fitness": 0.9932772126052846,
       "log": "BPIC 13: Incidents",
       "log_file": "BPI_Challenge_2013_incidents.xes.gz",
-      "fitness": 0.9932772126052862,
-      "precision": 0.6856850034589664,
-      "f1": 0.8113050817278238,
-      "status": "measured",
-      "measured_in": "base"
+      "precision": 0.5859088993380658,
+      "status": "measured"
     },
     {
+      "error": null,
+      "f1": 0.9772233636630466,
+      "fitness": 1.0,
       "log": "BPIC 17: Offer log",
       "log_file": "BPIC17 - Offer log.xes.gz",
-      "fitness": 1.0,
       "precision": 0.9554611720140045,
-      "f1": 0.9772233636630466,
-      "status": "measured",
-      "measured_in": "base"
+      "status": "measured"
     },
     {
+      "error": null,
+      "f1": 0.3381052595845561,
+      "fitness": 0.7591555899628177,
       "log": "BPIC 18: Payment process",
       "log_file": "BPI_Challenge_2018.xes.gz",
-      "fitness": null,
-      "precision": null,
-      "f1": null,
-      "status": "failed",
-      "measured_in": "base"
+      "precision": 0.21748280819949323,
+      "status": "measured"
     },
     {
+      "error": null,
+      "f1": 0.6364412598164211,
+      "fitness": 0.9381489312442056,
       "log": "BPIC 19: Purchase order handling",
       "log_file": "BPI_Challenge_2019.xes.gz",
-      "fitness": null,
-      "precision": null,
-      "f1": null,
-      "status": "failed",
-      "measured_in": "base"
+      "precision": 0.48156914792383504,
+      "status": "measured"
     },
     {
+      "error": null,
+      "f1": 0.4390752564826424,
+      "fitness": 0.9000897873952932,
       "log": "Sepsis Cases",
       "log_file": "Sepsis Cases.xes.gz",
-      "fitness": 0.9000897873952932,
-      "precision": 0.31083280536560853,
-      "f1": 0.46208970807807126,
-      "status": "measured",
-      "measured_in": "base"
+      "precision": 0.29035772566594825,
+      "status": "measured"
     },
     {
+      "error": null,
+      "f1": 0.8472192975984703,
+      "fitness": 0.8537772986752528,
       "log": "Road Traffic Fines",
       "log_file": "road_traffic_fine_management.xes.gz",
-      "fitness": 0.8537772986752514,
-      "precision": 0.9032551621402138,
-      "f1": 0.8778195844926306,
-      "status": "measured",
-      "measured_in": "base"
+      "precision": 0.840761274700278,
+      "status": "measured"
     }
   ]
 }

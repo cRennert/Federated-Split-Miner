@@ -10,6 +10,14 @@ compares:
 | `SplitMiner1.0.bpmn` | the original Split Miner 1.0 |
 | `dfg_im_00.pnml`, `dfg_im_01.pnml`, `dfg_im_02.pnml` | the Inductive Miner directly-follows at the noise thresholds 0, 0.1 and 0.2 |
 
+Next to each of the three BPMN models lies the Petri net that ProM converts it
+into and reduces with Murata's rules, under the same name with `.pnml`; these nets, together with the Inductive
+Miner nets, are what the conformance checker in
+[`code/conformance`](../code/conformance) measures. ProM exports them without a
+final marking, so the checker takes one token in the net's sink as the final
+marking. There is no Petri net for `Hospital_log/SplitMiner1.0.bpmn`, so that
+model is not measured.
+
 The first two differ only in whether the algorithm saw one log or three partial
 ones. They are identical wherever the timestamps of a log fix the order of every
 case; where two events of one case share a timestamp, the merged order of a

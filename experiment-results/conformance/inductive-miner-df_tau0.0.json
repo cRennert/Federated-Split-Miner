@@ -1,100 +1,100 @@
 {
   "algorithm": "Inductive Miner directly-follows",
   "input": "original log",
+  "model_file": "dfg_im_00.pnml",
   "parameters": {
     "tau": 0.0
   },
-  "model_file": "dfg_im_00.pnml",
   "results": [
     {
+      "error": null,
+      "f1": 0.007812983242949045,
+      "fitness": 1.0,
       "log": "BPIC 11: Hospital Log",
       "log_file": "Hospital_log.xes.gz",
-      "fitness": null,
-      "precision": null,
-      "f1": null,
-      "status": "failed",
-      "measured_in": "base"
+      "precision": 0.003921812147770786,
+      "status": "measured"
     },
     {
+      "error": null,
+      "f1": 0.29791856949570955,
+      "fitness": 1.0,
       "log": "BPIC 12: Loan applications",
       "log_file": "BPI_Challenge_2012.xes.gz",
-      "fitness": 1.0,
-      "precision": 0.17532819599468244,
-      "f1": 0.2983476387143114,
-      "status": "measured",
-      "measured_in": "base"
+      "precision": 0.17503191337176072,
+      "status": "measured"
     },
     {
+      "error": null,
+      "f1": 0.7270936126723073,
+      "fitness": 0.9774605117336945,
       "log": "BPIC 13: Open Problems",
       "log_file": "BPI_Challenge_2013_open_problems.xes.gz",
-      "fitness": 0.9774605117336946,
-      "precision": 0.7157715983867544,
-      "f1": 0.8263940527253435,
-      "status": "measured",
-      "measured_in": "base"
+      "precision": 0.5788315918609078,
+      "status": "measured"
     },
     {
+      "error": null,
+      "f1": 0.7959740615682454,
+      "fitness": 0.9997918467992443,
       "log": "BPIC 13: Closed Problems",
       "log_file": "BPI_Challenge_2013_closed_problems.xes.gz",
-      "fitness": 0.9997918467992443,
-      "precision": 0.7091698542334333,
-      "f1": 0.8297696055212388,
-      "status": "measured",
-      "measured_in": "inductive-miner re-measurement"
+      "precision": 0.6611847860317016,
+      "status": "measured"
     },
     {
+      "error": null,
+      "f1": 0.8268352767623403,
+      "fitness": 1.0,
       "log": "BPIC 13: Incidents",
       "log_file": "BPI_Challenge_2013_incidents.xes.gz",
-      "fitness": 1.0,
-      "precision": 0.7048655783282461,
-      "f1": 0.8268869842740586,
-      "status": "measured",
-      "measured_in": "inductive-miner re-measurement"
+      "precision": 0.7047904359760057,
+      "status": "measured"
     },
     {
+      "error": null,
+      "f1": 0.9772233636630466,
+      "fitness": 1.0,
       "log": "BPIC 17: Offer log",
       "log_file": "BPIC17 - Offer log.xes.gz",
-      "fitness": 1.0,
       "precision": 0.9554611720140045,
-      "f1": 0.9772233636630466,
-      "status": "measured",
-      "measured_in": "base"
+      "status": "measured"
     },
     {
+      "error": null,
+      "f1": 0.12770085363162334,
+      "fitness": 1.0,
       "log": "BPIC 18: Payment process",
       "log_file": "BPI_Challenge_2018.xes.gz",
-      "fitness": null,
-      "precision": null,
-      "f1": null,
-      "status": "failed",
-      "measured_in": "base"
+      "precision": 0.06820536871969395,
+      "status": "measured"
     },
     {
+      "error": null,
+      "f1": 0.4670833458330507,
+      "fitness": 1.0,
       "log": "BPIC 19: Purchase order handling",
       "log_file": "BPI_Challenge_2019.xes.gz",
-      "fitness": null,
-      "precision": null,
-      "f1": null,
-      "status": "failed",
-      "measured_in": "base"
+      "precision": 0.3047023754118473,
+      "status": "measured"
     },
     {
+      "error": null,
+      "f1": 0.6080247487040374,
+      "fitness": 1.0,
       "log": "Sepsis Cases",
       "log_file": "Sepsis Cases.xes.gz",
-      "fitness": null,
-      "precision": null,
-      "f1": null,
-      "status": "failed",
-      "measured_in": "base"
+      "precision": 0.43680715453665697,
+      "status": "measured"
     },
     {
+      "error": null,
+      "f1": 0.6685494677512763,
+      "fitness": 1.0,
       "log": "Road Traffic Fines",
       "log_file": "road_traffic_fine_management.xes.gz",
-      "fitness": 1.0,
       "precision": 0.502121146492874,
-      "f1": 0.6685494677512763,
-      "status": "measured",
-      "measured_in": "base"
+      "status": "measured"
     }
   ]
 }
